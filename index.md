@@ -1,8 +1,8 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Kelsey Allen</title>
+  <title>Md Ashikur Rahman</title>
   
-  <meta name="author" content="Kelsey Allen">
+  <meta name="author" content="Md Ashikur Rahman">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="stylesheet" type="text/css" href="./Kelsey Allen_files/stylesheet.css">
@@ -166,7 +166,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:30%;max-width:30%">
-              <a href="./img/kelseyallen.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="./img/kelseyallen.jpg" class="hoverZoomLink"></a>
+              <a href="Images/ProfilePic.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="./img/kelseyallen.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
