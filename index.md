@@ -153,7 +153,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <h1>Kelsey Allen</h1>
+                <h1>Md Ashikur Rahman</h1>
               </p>
               <p>
                 I am currently a research scientist at DeepMind. I completed my PhD under the supervision of Josh Tenenbaum in the <a href="https://web.mit.edu/krallen/www/cocosci.mit.edu">Computational Cognitive Science group</a> at MIT, and received my B.Sc. from the <a href="https://web.mit.edu/krallen/www/ubc.ca">University of British Columbia</a> in Physics.
