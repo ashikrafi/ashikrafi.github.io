@@ -1,10 +1,10 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Md Ashikur Rahman</title>
-  
+
   <meta name="author" content="Md Ashikur Rahman">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
   <link rel="stylesheet" type="text/css" href="./Kelsey Allen_files/stylesheet.css">
   <link rel="icon" type="image/png" href="https://web.mit.edu/krallen/www/images/brain.jpg">
 <style type="text/css">.__react_component_tooltip {
@@ -156,7 +156,7 @@
                 <h1>Kelsey Allen</h1>
               </p>
               <p>
-                I am currently a research scientist at DeepMind. I completed my PhD under the supervision of Josh Tenenbaum in the <a href="https://web.mit.edu/krallen/www/cocosci.mit.edu">Computational Cognitive Science group</a> at MIT, and received my B.Sc. from the <a href="https://web.mit.edu/krallen/www/ubc.ca">University of British Columbia</a> in Physics. 
+                I am currently a research scientist at DeepMind. I completed my PhD under the supervision of Josh Tenenbaum in the <a href="https://web.mit.edu/krallen/www/cocosci.mit.edu">Computational Cognitive Science group</a> at MIT, and received my B.Sc. from the <a href="https://web.mit.edu/krallen/www/ubc.ca">University of British Columbia</a> in Physics.
               </p>
               <p style="text-align:center">
                 <a href="mailto:krallen@google.com">Email</a> &nbsp;&nbsp;
@@ -166,7 +166,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:30%;max-width:30%">
-              <a href="Images/ProfilePic.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="./img/kelseyallen.jpg" class="hoverZoomLink"></a>
+              <a href="Images/ProfilePic.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="Images/ProfilePic.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -175,7 +175,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am interested in cognitive science, animal cognition, robotics, and AI. I want to understand how humans generalize so well from such little data, and build machines to be equally flexible. Specifically I am mostly focused on the interactions between predictive representations and planning (particularly in the domain of tool use). 
+                I am interested in cognitive science, animal cognition, robotics, and AI. I want to understand how humans generalize so well from such little data, and build machines to be equally flexible. Specifically I am mostly focused on the interactions between predictive representations and planning (particularly in the domain of tool use).
               </p>
               <p>* denotes equal contribution.</p>
 
@@ -246,7 +246,7 @@
               <br>
               Jessica Hamrick*, <strong>Kelsey Allen*</strong>, Victor Bapst, Tina Zhu, Kevin R McKee, Joshua B Tenenbaum, Peter W Battaglia
               <br>
-              <em>Cognitive Science Society</em>, 2018 &nbsp; 
+              <em>Cognitive Science Society</em>, 2018 &nbsp;
               <p></p>
               <p>We introduce a deep reinforcement learning agent whose policy is represented over the edges of a graph. We demonstrate that this method is able to learn how to glue blocks together to ensure a block tower is stable and generalizes across different sizes of block towers. The relational policy representation obtains super-human performance on this task.</p>
             </td>
@@ -307,7 +307,7 @@
           </table>
                  <br><table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody><tr>
-          
+
             <td width="100%" valign="middle">
             <br>
               <strong>More AI/ML projects</strong>
@@ -410,7 +410,7 @@
               <br>
               Peter W Battaglia, Jessica B Hamrick, Victor Bapst, Alvaro Sanchez-Gonzalez, Vinicius Zambaldi, Mateusz Malinowski, Andrea Tacchetti, David Raposo, Adam Santoro, Ryan Faulkner, Caglar Gulcehre, Francis Song, Andrew Ballard, Justin Gilmer, George Dahl, Ashish Vaswani, <strong>Kelsey Allen</strong>, Charles Nash, Victoria Langston, Chris Dyer, Nicolas Heess, Daan Wierstra, Pushmeet Kohli, Matt Botvinick, Oriol Vinyals, Yujia Li, Razvan Pascanu
               <br>
-              <em>arXiv</em>, 2018 
+              <em>arXiv</em>, 2018
               <br>
               [<a href="https://github.com/deepmind/graph_nets">Code</a>]
               [<a href="https://cbmm.mit.edu/video/principles-and-applications-relational-inductive-biases-deep-learning">Tutorial Video</a>]
