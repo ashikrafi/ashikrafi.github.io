@@ -156,13 +156,13 @@
                 <h1>Md Ashikur Rahman</h1>
               </p>
               <p>
-                I am currently a research scientist at DeepMind. I completed my PhD under the supervision of Josh Tenenbaum in the <a href="https://web.mit.edu/krallen/www/cocosci.mit.edu">Computational Cognitive Science group</a> at MIT, and received my B.Sc. from the <a href="https://web.mit.edu/krallen/www/ubc.ca">University of British Columbia</a> in Physics.
+                I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin">Dr. Tabin Hasan</a> at AIUB,
               </p>
               <p style="text-align:center">
-                <a href="mailto:krallen@google.com">Email</a> &nbsp;&nbsp;
-                <a href="https://twitter.com/KelseyRAllen">Twitter</a> &nbsp;&nbsp;
-                <a href="https://github.com/k-r-allen">GitHub</a> &nbsp;&nbsp;
-                <a href="https://scholar.google.com/citations?user=kpcjFekAAAAJ&amp;hl=en">Google Scholar</a> &nbsp;&nbsp;
+                <a href="mailto:ashik.rafi@hotmail.com" target="=_blank">Email</a> &nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/mdashikrah/" target="=_blank">Linkedin</a> &nbsp;&nbsp;
+                <a href="https://github.com/ashikrafi/" target="=_blank">GitHub</a> &nbsp;&nbsp;
+                <a href="https://scholar.google.com/citations?user=Htgw_vEAAAAJ&amp;hl=en" target="=_blank">Google Scholar</a> &nbsp;&nbsp;
               </p>
             </td>
             <td style="padding:2.5%;width:30%;max-width:30%">
@@ -175,12 +175,11 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am interested in cognitive science, animal cognition, robotics, and AI. I want to understand how humans generalize so well from such little data, and build machines to be equally flexible. Specifically I am mostly focused on the interactions between predictive representations and planning (particularly in the domain of tool use).
-              </p>
+               I am interested in Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
               <p>* denotes equal contribution.</p>
 
               <p>
-              <strong>Selected projects for physical reasoning</strong>
+              <strong>Selected projects for Image Processing</strong>
               </p>
             </td>
           </tr>
@@ -194,14 +193,14 @@
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1907.09620">
-                <papertitle>The Tools challenge: rapid trial-and-error learning in physical problem solving</papertitle>
+            <a href="" target="=_self">
+                <papertitle>Deep Network Architectures for Object Detection and Segmentation</papertitle>
             </a>
               <br>
-              <strong>Kelsey Allen*</strong>, Kevin Smith*, Josh Tenenbaum
+              <strong>Md Ashikur Rahman</strong>
               <br>
-              <em>Cognitive Science Society</em>, 2019 <font color="red"><strong>(Oral Presentation)</strong></font><br>
-              <em>ICLR <a href="http://spirl.info/">SPiRL Workshop</a></em>, 2019 <br>
+              <em><a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a> </em><font color="red"><strong>(Champion)</strong></font><br>
+              <em><font color="green"><strong>Qualified for</strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a></em><br>
               <em>RLDM</em>, 2019
               <br>
               [<a href="https://k-r-allen.github.io/tool-games/">Website</a>]
