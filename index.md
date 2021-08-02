@@ -156,7 +156,7 @@
                 <h1>Md Ashikur Rahman</h1>
               </p>
               <p>
-                I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin">Dr. Tabin Hasan</a> at AIUB,
+                I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/" target="=_blank">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin" target="=_blank">Dr. Tabin Hasan</a> at AIUB,
               </p>
               <p style="text-align:center">
                 <a href="mailto:ashik.rafi@hotmail.com" target="=_blank">Email</a> &nbsp;&nbsp;
@@ -189,7 +189,7 @@
 
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./img/catapult.gif" width="160"></div>
+                <div class="two"><img src="Images/IBR.jpg" width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -197,37 +197,33 @@
                 <papertitle>Deep Network Architectures for Object Detection and Segmentation</papertitle>
             </a>
               <br>
-              <strong>Md Ashikur Rahman</strong>
+              <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <br>
               <em><a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a> </em><font color="red"><strong>(Champion)</strong></font><br>
               <em><font color="green"><strong>Qualified for</strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a></em><br>
-              <em>RLDM</em>, 2019
-              <br>
-              [<a href="https://k-r-allen.github.io/tool-games/">Website</a>]
               <br>
               <p></p>
-              <p>We present a new domain for testing physical problem solving skills in humans and machines. In these tool-use problems, people demonstrate both `a-ha' insights and local optimization, solving each level in 1-10 attempts. We present a model that uses model-based policy optimization with structured object-oriented priors which mimics human performance. In contrast, a deep reinforcement learning baseline is unable to generalize effectively.</p>
+              <p>In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
+              <br>
             </td>
           </tr>
 
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./img/rss_tools_image.png" width="160"></div>
+                <div class="two"><img src="Images/IR.jpeg" width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
             <a href="http://ipvs.informatik.uni-stuttgart.de/mlr/papers/18-toussaint-RSS.pdf">
-                <papertitle>Differentiable physics and stable modes for tool-use and manipulation planning</papertitle>
+                <papertitle>Automatic Image Resizing from Masking</papertitle>
             </a>
               <br>
-              Marc Toussaint, <strong>Kelsey Allen</strong>, Kevin Smith, Joshua B Tenenbaum
+              Md Arifur Rahman, <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <br>
-              <em>Robotics: Science and Systems (RSS)</em>, 2018 &nbsp; <font color="red"><strong>(Best Paper)</strong></font><br>
-              [<a href="https://github.com/MarcToussaint/18-RSS-PhysicalManipulation">Code</a>]
-              [<a href="https://www.youtube.com/watch?v=-L4tCIGXKBE">Video</a>]
               <p></p>
-              <p>We integrate Task And Motion Planning (TAMP) with primitives that impose stable kinematic constraints or differentiable dynamical and impulse exchange constraints at the path optimization level. This enables the approach to solve a variety of physical puzzles involving tool-use and dynamic interactions, in a similar way to humans on these same puzzles.</p>
+              <p>In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
+              <br>
             </td>
           </tr>
 
