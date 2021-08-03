@@ -176,7 +176,8 @@
               <h4>Research Interests</h4>
               <p>
                I am interested in Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
-              <strong>Selected Projects for Image Processing</strong>
+              <p></p>
+                <strong>Selected Projects for Image Processing</strong>
               </p>
             </td>
           </tr>
