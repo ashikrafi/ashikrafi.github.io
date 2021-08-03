@@ -176,9 +176,7 @@
               <h4>Research Interests</h4>
               <p>
                I am interested in Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
-              <p>* denotes equal contribution.</p>
-
-              <strong>Selected projects for Image Processing</strong>
+              <strong>Selected Projects for Image Processing</strong>
               </p>
             </td>
           </tr>
@@ -198,8 +196,8 @@
               <br>
               <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <br>
-              <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(Champion)</strong></font><br>
-              <font color="green"><strong>Qualified for</strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><br>
+              <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(CHAMPION)</strong></font><br>
+              <font color="green"><strong>QUALIFIED for </strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><br>
               <br>
               <p></p>
               <p>In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
@@ -249,7 +247,7 @@
        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody><tr>
             <td width="100%" valign="middle">
-              <strong>Selected projects for few-shot learning</strong>
+              <strong>Selected Projects Named-Entity Recognition</strong>
             </td>
           </tr>
         </tbody></table>
@@ -257,24 +255,26 @@
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/tactics_image.png" width="160"></div>
+                <div class="two"><img src="Images/CNER.png" width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1904.06317">
-                <papertitle>Few-shot Bayesian imitation learning with policies as logic over programs</papertitle>
+            <a href="#">
+                <papertitle>Comprehensive Named Entity Recognition (NER) on the N2C2 dataset with Distant Supervision</papertitle>
             </a>
               <br>
-              Tom Silver, <strong>Kelsey Allen</strong>, Leslie Kaelbling, Josh Tenenbaum
+              <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
               <br>
-              <em>ICLR <a href="http://spirl.info/">SPiRL Workshop</a></em>, 2019 <br>
-              <em>RLDM</em>, 2019
-              <br>
-              [<a href="https://sites.google.com/view/plp-mit">Website</a>]
-              [<a href="https://github.com/tomsilver/policies_logic_programs">Code</a>]
-              [<a href="https://youtu.be/MJTPdEj2y_4">Video</a>]
+              [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
+               [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
               <p></p>
-              <p>We can learn policies from five or fewer demonstrations that generalize to dramatically different test task instances.</p>
+              <p>CORD-NER methods are domain-independent that can be applied to corpus in different domains. We evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
+              <ol>
+                <li>Pretrained NER on 18 General Entity Types: Spacy</li>
+                <li>Pretrained NER on 18 Biomedical Entity Types: SciSpacy</li>
+                <li>Knowledge Base (KB)-Guided NER on 127 Biomedical Entity Types</li>
+                <li>Seed-Guided NER on 9 New Entity Types</li>
+            </ol>
             </td>
           </tr>
          <tr>
