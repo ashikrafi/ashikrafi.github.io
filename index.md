@@ -153,7 +153,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <h1>Md Ashikur Rahman</h1>
+                <h2>Md Ashikur Rahman</h2>
               </p>
               <p>
                 I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/" target="=_blank">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin" target="=_blank">Dr. Tabin Hasan</a> at AIUB,
@@ -173,12 +173,11 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <h4>Research Interests</h4>
               <p>
                I am interested in Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
               <p>* denotes equal contribution.</p>
 
-              <p>
               <strong>Selected projects for Image Processing</strong>
               </p>
             </td>
@@ -193,14 +192,14 @@
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="" target="=_self">
+            <a href="#">
                 <papertitle>Deep Network Architectures for Object Detection and Segmentation</papertitle>
             </a>
               <br>
-              <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
+              <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <br>
-              <em><a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a> </em><font color="red"><strong>(Champion)</strong></font><br>
-              <em><font color="green"><strong>Qualified for</strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a></em><br>
+              <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(Champion)</strong></font><br>
+              <font color="green"><strong>Qualified for</strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><br>
               <br>
               <p></p>
               <p>In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
@@ -215,14 +214,14 @@
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="http://ipvs.informatik.uni-stuttgart.de/mlr/papers/18-toussaint-RSS.pdf">
+            <a href="#">
                 <papertitle>Automatic Image Resizing from Masking</papertitle>
             </a>
               <br>
               Md Arifur Rahman, <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <br>
               <p></p>
-              <p>In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
+              <p>In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99.15%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
               <br>
             </td>
           </tr>
@@ -231,19 +230,18 @@
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/towers_image.png" width="160"></div>
+                <div class="two"><img src="Images/IRC.jpg" width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1806.01203">
-                <papertitle>Relational inductive bias for physical construction in humans and machines</papertitle>
+            <a href="#">
+                <papertitle>Translucent Image Recoloring through Dominant Color Estimation & Proportionate Color Distribution</papertitle>
             </a>
               <br>
-              Jessica Hamrick*, <strong>Kelsey Allen*</strong>, Victor Bapst, Tina Zhu, Kevin R McKee, Joshua B Tenenbaum, Peter W Battaglia
-              <br>
-              <em>Cognitive Science Society</em>, 2018 &nbsp;
+              <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
               <p></p>
-              <p>We introduce a deep reinforcement learning agent whose policy is represented over the edges of a graph. We demonstrate that this method is able to learn how to glue blocks together to ensure a block tower is stable and generalizes across different sizes of block towers. The relational policy representation obtains super-human performance on this task.</p>
+              <p>We introduce a deep learning algorithm that learns to find the dominant color and distributes the color ratio over the image matrix. We have shown how this algorithm is able to find the dominant color in an enigmatic palette and distribute the color ratio over the image matrix to recolor. The relational representation achieves the novel performance of this task.</p>
+              <br>
             </td>
           </tr>
           </tbody>
