@@ -261,7 +261,7 @@
             </td>
             <td valign="middle" width="75%">
             <a href="#">
-                <papertitle>Comprehensive Named Entity Recognition (NER) on the N2C2 dataset with Distant Supervision</papertitle>
+                <papertitle>Comprehensive Named Entity Recognition (NER) on De-identification and Heart Disease Risk Factors with Distant Supervision</papertitle>
             </a>
               <br>
               <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
@@ -269,7 +269,7 @@
               [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
                [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
               <p></p>
-              <p>CORD-NER methods are domain-independent that can be applied to corpus in different domains. We evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
+              <p>CORD-NER methods are domain-independent that can be applied to corpus in different domains. Regarding "De-identification and Heart Disease Risk Factors", we evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset  (with 7-9% improvements over previous approaches) and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
               <ol>
                 <li>Pretrained NER on 18 General Entity Types: Spacy</li>
                 <li>Pretrained NER on 18 Biomedical Entity Types: SciSpacy</li>
@@ -281,20 +281,26 @@
          <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/imp.png" width="160" vspace="24"></div>
+                <div class="two"><img src="Images/NeuroNER.JPG" width="160" vspace="24"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="http://proceedings.mlr.press/v97/allen19b.html">
-                <papertitle>Infinite mixture prototypes for few-shot learning</papertitle>
+            <a href="#">
+                <papertitle>Named Entity Recognition (NER) on the N2C2 Dataset: Obesity Challenge Factors</papertitle>
             </a>
               <br>
-              <strong>Kelsey Allen</strong>, Evan Shelhamer*, Hanul Shin*, Josh Tenenbaum
+             <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
               <br>
-              <em>ICML</em>, 2019
-              <br>
+             [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
+               [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
               <p></p>
-              <p>We present infinite mixture prototypes (IMP), which adaptively adjust model capacity by representing classes as <em>sets</em> of clusters and inferring their number. IMP can be trained in fully or semi-supervised settings, and generalizes well to sub-class testing from super-class training (with 10-25% improvements over previous approaches).</p>
+              <p>NeuroNER leverages the state-of-the-art prediction capabilities of deep learning and enables the users to create or modify annotations for a new or existing corpus. The NeuroNER engine is based on artificial neural networks (ANNs). Specifically, it relies on a variant of recurrent neural network (RNN) called long short-term memory (LSTM). The NER engine's ANN contains three layers:<strong> (Reference: <a href="http://neuroner.com/" target="_blank">here</a> )</strong></p>
+              <ol>
+                <li>Character-enhanced token-embedding layer</li>
+                <li>Label prediction layer</li>
+                <li>Label sequence optimization layer</li>
+              </ol>
+              <p>On the N2C2 Dataset (Obesity Challenge Factors), we have trained the neural network that performs the NER and evaluated the quality of the predictions made by NeuroNER. Also, we have developed an algorithm that converts NeuroNER output to WebAnno input format. However, the performance metrics can be calculated and plotted by comparing the predicted labels with the gold labels. The evaluation can be done at the same time as the training if the test set is provided along with the training and validation sets, or separately after the training.</p>
             </td>
           </tr>
           </tbody>
@@ -312,24 +318,21 @@
             <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/rpl_image.png" width="160"></div>
+                <div class="two"><img src="Images/TLSTM.png" width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1812.06298">
-                <papertitle>Residual policy learning</papertitle>
+            <a href="#">
+                <papertitle>Tree LSTM implementation in PyTorch</papertitle>
             </a>
               <br>
-              Tom Silver*, <strong>Kelsey Allen*</strong>, Josh Tenenbaum, Leslie Kaelbling
+               <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
               <br>
-              <em>arXiv</em>, 2018
-              <br>
-              [<a href="https://k-r-allen.github.io/residual-policy-learning/">Website</a>]
-              [<a href="https://github.com/k-r-allen/residual-policy-learning">Code</a>]
-              [<a href="https://www.youtube.com/watch?v=TbALweu6Zpc">Video</a>]
+              [<a href="https://github.com/LanguageAndIntelligence/Tree-LSTM" target="_blank">Code</a>]
+              [<a href="https://arxiv.org/pdf/1503.00075.pdf" target="_blank">Reference</a>]
               <br>
               <p></p>
-              <p>We present a simple method for learning a "residual" correction to a policy to improve nondifferentiable policies using model-free deep reinforcement learning.</p>
+              <p>The only underlying LSTM structure that has been explored so far is the linear chain. However, natural language exhibits syntactic features that combine words naturally into phrases. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences and classification.</p>
             </td>
           </tr>
 
