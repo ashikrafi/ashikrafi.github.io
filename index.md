@@ -354,7 +354,7 @@
                 <br>
               <p></p>
                 <p>A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common form of brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The presence of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable prognostic factor and a strong predictor of responsiveness to chemotherapy.</p>
-              <p>We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponding to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
+              <p>We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponds to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
             </td>
           </tr>
 
