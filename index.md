@@ -322,8 +322,8 @@
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="#">
-                <papertitle>Tree LSTM implementation in PyTorch</papertitle>
+            <a href="https://github.com/LanguageAndIntelligence/Tree-LSTM" target="_blank">
+                <papertitle>Tree LSTM implementation on Molecular Property using PyTorch</papertitle>
             </a>
               <br>
                <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
@@ -333,26 +333,28 @@
               <br>
               <p></p>
               <p>The only underlying LSTM structure that has been explored so far is the linear chain. However, natural language exhibits syntactic features that combine words naturally into phrases. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences and classification.</p>
+            <br>
             </td>
           </tr>
-
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/spare_image.png" width="160" vspace="24"></div>
+                <div class="two"><img src="Images/BrainTumor.jpg" width="160" vspace="24"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="https://openreview.net/forum?id=SJxsV2R5FQ">
-                <papertitle>Learning sparse relational transition models</papertitle>
+            <a href="https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification" target="_blank">
+                <papertitle>RSNA-MICCAI Brain Tumor Radiogenomic Classification: Predict the status of a genetic biomarker important for brain cancer treatment</papertitle>
             </a>
+                <br>
+              <strong>Md Ashikur Rahman</strong>
               <br>
-              Victoria Xia*, Zi Wang*, <strong>Kelsey Allen</strong>, Tom Silver, Leslie Kaelbling
-              <br>
-              <em>ICLR</em>, 2019
-              <br>
+              [<a href="https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification" target="_blank">Kaggle Competition</a>]
+                [<a href="https://www.kaggle.com/mdashikrah/notebooke26ea03689/" target="_blank">Notebook</a>]
+                <br>
               <p></p>
-              <p>We present a method for describing and learning transition models in complex uncertain domains using relational rules.</p>
+                <p>A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common form of brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The presence of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable prognostic factor and a strong predictor of responsiveness to chemotherapy.</p>
+              <p>We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponding to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
             </td>
           </tr>
 
