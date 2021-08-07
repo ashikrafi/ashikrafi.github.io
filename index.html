@@ -357,66 +357,6 @@
               <p>We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponds to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
             </td>
           </tr>
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/icml2019_image.png" width="160" vspace="1"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-              <papertitle>Learning models for mode-based planning</papertitle>
-              <br>
-              João Loula, Tom Silver, <strong>Kelsey Allen</strong>, Josh Tenenbuam
-              <br>
-              <em>ICML <a href="https://sites.google.com/view/mbrl-icml2019/home?authuser=0">MBRL Workshop</a></em>, 2019
-              <br>
-              <p></p>
-              <p>We present a model that learns mode constraints from expert demonstrations. We show that it is data efficient, and that it learns interpretable representations that it can leverage to effectively plan in out-of-distribution environments.</p>
-            </td>
-          </tr>
-
-
-            <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/end_to_end_physics.png" width="160" vspace="1"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <a href="http://papers.nips.cc/paper/7948-end-to-end-differentiable-physics-for-learning-and-control">
-              <papertitle>End-to-end differentiable physics for learning and control</papertitle>
-              </a>
-              <br>
-              Filipe de Avila Belbute-Peres, Kevin Smith, <strong>Kelsey Allen</strong>, Josh Tenenbaum, J. Zico Kolter
-              <br>
-              <em>NeurIPS</em>, 2018 <font color="red"><strong>(Spotlight)</strong></font><br>
-              [<a href="https://github.com/locuslab/lcp-physics">Code</a>]
-              <p></p>
-              <p>We develop a differentiable physics engine in PyTorch which can be incorporated into standard end-to-end pipelines for model-based learning and control.</p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%">
-              <div class="one">
-                <div class="two"><img src="./Kelsey Allen_files/graph_nets_shortest.gif" width="160" vspace="1"></div>
-              </div>
-            </td>
-            <td valign="middle" width="75%">
-            <a href="https://arxiv.org/abs/1806.01261">
-              <papertitle>Relational inductive biases, deep learning, and graph networks</papertitle>
-              </a>
-              <br>
-              Peter W Battaglia, Jessica B Hamrick, Victor Bapst, Alvaro Sanchez-Gonzalez, Vinicius Zambaldi, Mateusz Malinowski, Andrea Tacchetti, David Raposo, Adam Santoro, Ryan Faulkner, Caglar Gulcehre, Francis Song, Andrew Ballard, Justin Gilmer, George Dahl, Ashish Vaswani, <strong>Kelsey Allen</strong>, Charles Nash, Victoria Langston, Chris Dyer, Nicolas Heess, Daan Wierstra, Pushmeet Kohli, Matt Botvinick, Oriol Vinyals, Yujia Li, Razvan Pascanu
-              <br>
-              <em>arXiv</em>, 2018
-              <br>
-              [<a href="https://github.com/deepmind/graph_nets">Code</a>]
-              [<a href="https://cbmm.mit.edu/video/principles-and-applications-relational-inductive-biases-deep-learning">Tutorial Video</a>]
-              <p></p>
-              <p>We summarize and provide insights on a large body of literature on Graph Neural Networks (GNNs).</p>
-            </td>
-          </tr>
           </tbody>
           </table>
                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
