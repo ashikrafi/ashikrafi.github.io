@@ -147,8 +147,8 @@
                               <p style="text-align:center">
                               <h2>Md Ashikur Rahman</h2>
                               </p>
-                              <p>
-                                 I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/" target="=_blank">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin" target="=_blank">Dr. Tabin Hasan</a> at AIUB,
+                              <p align="justify">
+                                 I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/" target="=_blank">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin" target="=_blank">Dr. Tabin Hasan</a> at AIUB.
                               </p>
                               <p style="text-align:center">
                                  <a href="mailto:ashik.rafi@hotmail.com" target="=_blank">Email</a> &nbsp;&nbsp;
@@ -168,7 +168,7 @@
                         <tr>
                            <td style="padding:20px;width:100%;vertical-align:middle">
                               <h4>Research Interests</h4>
-                              <p>
+                              <p align="justify">
                                  I am interested in Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
                               <p></p>
                               <strong>Selected Projects for Image Processing</strong>
@@ -193,10 +193,10 @@
                               <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
                               <br>
                               <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(CHAMPION)</strong></font><br>
-                              <font color="green"><strong>QUALIFIED for </strong></font><a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><br>
+                              <a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><font color="green"><strong>(QUALIFIED)</strong></font><br>
                               <br>
                               <p></p>
-                              <p>In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
+                             <p align="justify">In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
                               <br>
                            </td>
                         </tr>
@@ -214,7 +214,7 @@
                               Md Arifur Rahman, <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
                               <br>
                               <p></p>
-                              <p>In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99.15%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
+                              <p align="justify">In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99.15%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
                               <br>
                            </td>
                         </tr>
@@ -231,7 +231,7 @@
                               <br>
                               <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
                               <p></p>
-                              <p>We introduce a deep learning algorithm that learns to find the dominant color and distributes the color ratio over the image matrix. We have shown how this algorithm is able to find the dominant color in an enigmatic palette and distribute the color ratio over the image matrix to recolor. The relational representation achieves the novel performance of this task.</p>
+                             <p align="justify">We introduce a deep learning algorithm that learns to find the dominant color and distributes the color ratio over the image matrix. We have shown how this algorithm is able to find the dominant color in an enigmatic palette and distribute the color ratio over the image matrix to recolor. The relational representation achieves the novel performance of this task.</p>
                               <br>
                            </td>
                         </tr>
@@ -264,7 +264,7 @@
                               [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
                               [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
                               <p></p>
-                              <p>CORD-NER methods are domain-independent that can be applied to corpus in different domains. Regarding "De-identification and Heart Disease Risk Factors", we evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset  (with 7-9% improvements over previous approaches) and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
+                              <p align="justify">CORD-NER methods are domain-independent that can be applied to corpus in different domains. Regarding "De-identification and Heart Disease Risk Factors", we evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset  (with 7-9% improvements over previous approaches) and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
                               <ol>
                                  <li>Pretrained NER on 18 General Entity Types: Spacy</li>
                                  <li>Pretrained NER on 18 Biomedical Entity Types: SciSpacy</li>
@@ -289,13 +289,13 @@
                               [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
                               [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
                               <p></p>
-                              <p>NeuroNER leverages the state-of-the-art prediction capabilities of deep learning and enables the users to create or modify annotations for a new or existing corpus. The NeuroNER engine is based on artificial neural networks (ANNs). Specifically, it relies on a variant of recurrent neural network (RNN) called long short-term memory (LSTM). The NER engine's ANN contains three layers:<strong> (Reference: <a href="http://neuroner.com/" target="_blank">here</a> )</strong></p>
+                             <p align="justify">NeuroNER leverages the state-of-the-art prediction capabilities of deep learning and enables the users to create or modify annotations for a new or existing corpus. The NeuroNER engine is based on artificial neural networks (ANNs). Specifically, it relies on a variant of recurrent neural network (RNN) called long short-term memory (LSTM). The NER engine's ANN contains three layers:<strong> (Reference: <a href="http://neuroner.com/" target="_blank">here</a> )</strong></p>
                               <ol>
                                  <li>Character-enhanced token-embedding layer</li>
                                  <li>Label prediction layer</li>
                                  <li>Label sequence optimization layer</li>
                               </ol>
-                              <p>On the N2C2 Dataset (Obesity Challenge Factors), we have trained the neural network that performs the NER and evaluated the quality of the predictions made by NeuroNER. Also, we have developed an algorithm that converts NeuroNER output to WebAnno input format. However, the performance metrics can be calculated and plotted by comparing the predicted labels with the gold labels. The evaluation can be done at the same time as the training if the test set is provided along with the training and validation sets, or separately after the training.</p>
+                              <p align="justify">On the N2C2 Dataset (Obesity Challenge Factors), we have trained the neural network that performs the NER and evaluated the quality of the predictions made by NeuroNER. Also, we have developed an algorithm that converts NeuroNER output to WebAnno input format. However, the performance metrics can be calculated and plotted by comparing the predicted labels with the gold labels. The evaluation can be done at the same time as the training if the test set is provided along with the training and validation sets, or separately after the training.</p>
                            </td>
                         </tr>
                      </tbody>
@@ -330,7 +330,8 @@
                               [<a href="https://arxiv.org/pdf/1503.00075.pdf" target="_blank">Reference</a>]
                               <br>
                               <p></p>
-                              <p>The only underlying LSTM structure that has been explored so far is the linear chain. However, natural language exhibits syntactic features that combine words naturally into phrases. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences and classification.</p>
+                              <p align="justify">The only underlying LSTM structure that has been explored so far is the linear chain. However, natural language exhibits syntactic features that combine words naturally into phrases. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences and classification.</p>
+                              <br>
                               <br>
                            </td>
                         </tr>
@@ -351,8 +352,31 @@
                               [<a href="https://www.kaggle.com/mdashikrah/notebooke26ea03689/" target="_blank">Notebook</a>]
                               <br>
                               <p></p>
-                              <p>A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common form of brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The presence of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable prognostic factor and a strong predictor of responsiveness to chemotherapy.</p>
-                              <p>We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponds to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
+                              <p align="justify">A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common form of brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The presence of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable prognostic factor and a strong predictor of responsiveness to chemotherapy.</p>
+                              <p align="justify">We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponds to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
+                              <br>
+                              <br>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/ImageClustering.png" width="160" vspace="24"></div>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://github.com/NazminJuli/DeepClustering" target="_blank">
+                                 <papertitle>Image Clustering Using k-Means: Using transfer learning model for feature extraction from the images</papertitle>
+                              </a>
+                              <br>
+                              Nazmin Nahar, <strong>Md Ashikur Rahman</strong>
+                              <br>
+                              [<a href="https://github.com/NazminJuli/DeepClustering" target="_blank">Code</a>]
+                              <br>
+                              <p></p>
+                              <p align="justify">Clustering is an unsupervised machine learning where we group similar features together. It interprets the input data and finds natural groups or clusters in feature space.</p>
+                              <p align="justify">We have used transfer learning model InceptionV3 to extract features from images and use those features for clustering. These images are put in one folder and the features are extracted using transfer learning model.</p>
                            </td>
                         </tr>
                      </tbody>
@@ -361,7 +385,7 @@
                      <tbody>
                         <tr>
                            <td width="100%" valign="middle">
-                              <strong>More cognitive science/neuroscience projects</strong>
+                              <strong>More Projects</strong>
                            </td>
                         </tr>
                      </tbody>
@@ -371,70 +395,43 @@
                         <tr>
                            <td width="25%">
                               <div class="one">
-                                 <div class="two"><img src="./Kelsey Allen_files/cogsci2019_image.png" width="160" vspace="1"></div>
+                                 <div class="two"><img src="Images/DevSkill.jpg" width="160" vspace="1"></div>
+                                 <br>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
-                              <papertitle>Discovering a symbolic planning language from continuous experience</papertitle>
-                              <br>
-                              João Loula, Tom Silver, <strong>Kelsey Allen</strong>, Josh Tenenbaum
-                              <br>
-                              <em>Cognitive Science Society</em>, 2019
-                              <br>
-                              <p></p>
-                              <p>We present a model that starts out with a language of low-level physical constraints and, by  observing expert demonstrations, builds up a library of high-level concepts that afford planning  and action understanding.</p>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="25%">
-                              <div class="one">
-                                 <div class="two"><img src="./Kelsey Allen_files/neural.png" width="160" vspace="1"></div>
-                              </div>
-                           </td>
-                           <td valign="middle" width="75%">
-                              <papertitle>High-dimensional filtering supports context-dependent neural integration</papertitle>
-                              <br>
-                              Jonathan Gill, <strong>Kelsey Allen</strong>, Alexander Williams, Mark Goldman
-                              <br>
-                              <em>Cosyne</em>, 2019
-                              <p></p>
-                              <p>We present a simple method for achieving context-dependent filtering of incoming signals in biologically plausible neural networks. </p>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="25%">
-                              <div class="one">
-                                 <div class="two"><img src="./Kelsey Allen_files/faces.png" width="160" vspace="1"></div>
-                              </div>
-                           </td>
-                           <td valign="middle" width="75%">
-                              <a href="http://cbmm.mit.edu/sites/default/files/publications/allen_5_13.pdf">
-                                 <papertitle>Integrating identification and perception: A case study of familiar and unfamiliar face processing.</papertitle>
+                               <a href="https://devskill.com/" target="_blank">
+                                 <papertitle>Online Contesting Platform for Software Developers - Dev Skill</papertitle>
                               </a>
                               <br>
-                              <strong>Kelsey Allen</strong>, Ilker Yildirim, Joshua B Tenenbaum
+                              <strong>Md Ashikur Rahman, Sheikh Abdullah Al Jubair (PhD Student @ University of Manitoba)</strong>
                               <br>
-                              <em>Cognitive Science Society</em>, 2016  <font color="red"><strong>(Oral Presentation)</strong></font>
+                               [<a href="https://devskill.com/" target="_blank">Website</a>]
                               <p></p>
-                              <p>We present a framework for explaining differences between familiar and unfamiliar face processing which combines feedforward neural networks with non-parametric generative models.</p>
+                              <p align="justify">Contributions: Wrote clean & optimized codes, debugged and troubleshot for solving technical issues</p>
+                              <br>
                            </td>
                         </tr>
                         <tr>
                            <td width="25%">
                               <div class="one">
-                                 <div class="two"><img src="./Kelsey Allen_files/fishing.png" width="160" vspace="1"></div>
+                                 <div class="two"><img src="Images/MicroservicesArchitecture.jpg" width="160" vspace="1"></div>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
-                              <a href="https://compdevlab.yale.edu/docs/allen_cogsci2015.pdf">
-                                 <papertitle>Go fishing! Responsibility judgments when cooperation breaks down.</papertitle>
+                               <a href="#">
+                                 <papertitle>Microservice Architecture for Supply-Chain Management: Large Scale Enterprise Solution</papertitle>
                               </a>
+
                               <br>
-                              <strong>Kelsey Allen</strong>, Julian Jara-Ettinger, Tobias Gerstenberg, Max Kleiman-Weiner, Joshua B Tenenbaum
+                               <strong>Md Ashikur Rahman, </strong>Md Shahnawaz, Nakib Al Hassan
                               <br>
-                              <em>Cognitive Science Society</em>, 2015
-                              <p></p>
-                              <p>We present a coordination game in which three agents must use their knowledge of each others' abilities in order to determine the best action to take. We show that a model which acts to maximize utility under recursive theory of mind, combined with a measure of outcome, best predicts human decisions.</p>
+                              <p>Contributions: </p>
+                               <ol>
+                                 <li>Designed Microservice Architecture for Supply-Chain Management</li>
+                                 <li>Developed the Supply-Chain Management from scratch using .Net Core</li>
+                                 <li>Real Time Large Scale Data Synchronization using ASP.NET MVC 4 & SSMS</li>
+                              </ol>
                            </td>
                         </tr>
                      </tbody>
@@ -463,7 +460,7 @@
                               <br>
                               <strong>Md Ashikur Rahman, Juena Ahmed Noshin (Assistant Professor, Computer Science, AIUB)</strong>
                               <p></p>
-                              <p>In this paper, we represent techniques and approaches that promise to directly enable sentiment-oriented event-seeking systems. If the events associated with sentiments are used to learn an individual's behavior models, the benefits of opinion text mining can reach a  whole new level of superiority. In addition, event extraction can be applied to various types of written texts such as Social networks, RSS feeds, reviews, public pages, etc. Our main approach is to analyze events associated with sentiments from publicly available data and simultaneously extract significant events from it.</p>
+                              <p align="justify">In this paper, we represent techniques and approaches that promise to directly enable sentiment-oriented event-seeking systems. If the events associated with sentiments are used to learn an individual's behavior models, the benefits of opinion text mining can reach a  whole new level of superiority. In addition, event extraction can be applied to various types of written texts such as Social networks, RSS feeds, reviews, public pages, etc. Our main approach is to analyze events associated with sentiments from publicly available data and simultaneously extract significant events from it.</p>
                            </td>
                         </tr>
                      </tbody>
