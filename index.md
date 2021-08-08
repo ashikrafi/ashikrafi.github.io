@@ -483,6 +483,8 @@
                            <td width="25%">
                               <div class="one">
                                  <div class="two"><img src="Images/HackerRankAdvc.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
@@ -501,6 +503,8 @@
                            <td width="25%">
                               <div class="one">
                                  <div class="two"><img src="Images/HackerRankBsc.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
@@ -517,6 +521,8 @@
                            <td width="25%">
                               <div class="one">
                                  <div class="two"><img src="Images/TensorFlowBasic.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
@@ -533,6 +539,8 @@
                            <td width="25%">
                               <div class="one">
                                  <div class="two"><img src="Images/NeuralNetwork.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
                               </div>
                            </td>
                            <td valign="middle" width="75%">
@@ -548,6 +556,72 @@
                   </table>
 
 
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>Awards/Scholarships</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/NationalAward.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                               <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(CHAMPION)</strong></font><br>
+                              <a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><font color="green"><strong>(QUALIFIED)</strong></font>
+
+                              <br>
+                              <strong>Md Ashikur Rahman (Technical Lead)</strong>, Md Arifur Rahman, Kowser Ahmed Nirob @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
+                              <p></p>
+                               <br>
+                               <br>
+                           </td>
+                        </tr>
+
+                     <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/MagnaCumLaude.jpg" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Academic Award (2015), Magna Cum Laude</papertitle>
+                              </a>
+                              <br>
+                              <p></p>
+                           </td>
+                        </tr>
+
+                      <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/MeritScholarship.jpg" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>University Merit Scholarship (2012-2014), AIUB</papertitle>
+                              </a>
+                              <br>
+                              <p></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
                    <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
                      <tbody>
                         <tr>
