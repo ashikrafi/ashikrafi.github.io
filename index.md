@@ -1,656 +1,637 @@
 <html lang="en">
    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="generator" content="Source Themes Academic 4.4.0">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Md Ashikur Rahman</title>
       <meta name="author" content="Md Ashikur Rahman">
-      <meta name="description" content="Machine Learning Engineer">
-      <link rel="alternate" hreflang="en-us" href="/">
-      <meta name="theme-color" content="#33B38D">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
-      <!--  <link rel="stylesheet" href="CSS/academic.min.2794e38b9904b848073ba5a1528256ce.css"> -->
-      <link rel="stylesheet" type="text/css" href="CSS/academic.min.2794e38b9904b848073ba5a1528256ce.css">
-      <link rel="alternate" href="/index.xml" type="application/rss+xml" title="">
-      <link rel="manifest" href="/index.webmanifest">
-      <link rel="icon" type="image/png" href="/img/icon-32.png">
-      <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-      <link rel="canonical" href="/">
-      <meta property="twitter:card" content="summary_large_image">
-      <meta property="twitter:site" content="@niksirbi">
-      <meta property="twitter:creator" content="@niksirbi">
-      <meta property="og:site_name" content="">
-      <meta property="og:url" content="/">
-      <meta property="og:title" content="">
-      <meta property="og:description" content="Machine Learning Engineer">
-      <meta property="og:image" content="img/icon-512.png">
-      <meta property="twitter:image" content="img/icon-512.png">
-      <meta property="og:locale" content="en-us">
-      <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="./Kelsey Allen_files/stylesheet.css">
+      <link rel="icon" type="image/png" href="https://web.mit.edu/krallen/www/images/brain.jpg">
+      <style type="text/css">.__react_component_tooltip {
+         border-radius: 3px;
+         display: inline-block;
+         font-size: 13px;
+         left: -999em;
+         opacity: 0;
+         padding: 8px 21px;
+         position: fixed;
+         pointer-events: none;
+         transition: opacity 0.3s ease-out;
+         top: -999em;
+         visibility: hidden;
+         z-index: 999;
+         }
+         .__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+         pointer-events: auto;
+         }
+         .__react_component_tooltip::before, .__react_component_tooltip::after {
+         content: "";
+         width: 0;
+         height: 0;
+         position: absolute;
+         }
+         .__react_component_tooltip.show {
+         opacity: 0.9;
+         margin-top: 0;
+         margin-left: 0;
+         visibility: visible;
+         }
+         .__react_component_tooltip.place-top::before {
+         border-left: 10px solid transparent;
+         border-right: 10px solid transparent;
+         bottom: -8px;
+         left: 50%;
+         margin-left: -10px;
+         }
+         .__react_component_tooltip.place-bottom::before {
+         border-left: 10px solid transparent;
+         border-right: 10px solid transparent;
+         top: -8px;
+         left: 50%;
+         margin-left: -10px;
+         }
+         .__react_component_tooltip.place-left::before {
+         border-top: 6px solid transparent;
+         border-bottom: 6px solid transparent;
+         right: -8px;
+         top: 50%;
+         margin-top: -5px;
+         }
+         .__react_component_tooltip.place-right::before {
+         border-top: 6px solid transparent;
+         border-bottom: 6px solid transparent;
+         left: -8px;
+         top: 50%;
+         margin-top: -5px;
+         }
+         .__react_component_tooltip .multi-line {
+         display: block;
+         padding: 2px 0;
+         text-align: center;
+         }
+      </style>
+      <style type="text/css">/* add css styles here (optional) */
+         .styles_react-code-input-container__tpiKG {
+         position: relative;
+         }
+         .styles_react-code-input__CRulA > input {
+         border: solid 1px #a8adb7;
+         border-right: none;
+         font-family: 'Lato';
+         font-size: 20px;
+         color: #525461;
+         text-align: center;
+         box-sizing: border-box;
+         border-radius: 0;
+         -webkit-appearance: initial;
+         }
+         .styles_react-code-input__CRulA > input:last-child {
+         border-right: solid 1px #a8adb7;
+         border-top-right-radius: 6px;
+         border-bottom-right-radius: 6px;
+         }
+         .styles_react-code-input__CRulA > input:first-child {
+         border-top-left-radius: 6px;
+         border-bottom-left-radius: 6px;
+         }
+         .styles_react-code-input__CRulA > input:focus {
+         outline: none;
+         border: 1px solid #006fff;
+         caret-color: #006fff;
+         }
+         .styles_react-code-input__CRulA > input:focus + input {
+         border-left: none;
+         }
+         .styles_loading__Z65VQ {
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         text-align: center;
+         }
+         .styles_blur__19vMK {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-color: #fff;
+         opacity: 0.5;
+         filter: blur(0.5px);
+         transition: opacity 0.3s;
+         }
+         .styles_title__1cca0 {
+         margin: 0;
+         height: 20px;
+         padding-bottom: 10px;
+         }
+         .styles_spin__6y_8G {
+         display: inline-block;
+         animation: styles_loadingCircle__293ky 1s infinite linear;
+         }
+         @keyframes styles_loadingCircle__293ky {
+         100% {
+         transform: rotate(360deg);
+         }
+         }
+      </style>
    </head>
-   <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
-      <aside class="search-results" id="search">
-         <div class="container">
-            <section class="search-header">
-               <div class="row no-gutters justify-content-between mb-3">
-                  <div class="col-6">
-                     <h1>Search</h1>
-                  </div>
-                  <div class="col-6 col-search-close">
-                     <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-                  </div>
-               </div>
-               <div id="search-box">
-                  <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-                     autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-               </div>
-            </section>
-            <section class="section-search-results">
-               <div id="search-hits">
-               </div>
-            </section>
-         </div>
-      </aside>
-      <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
-         <div class="container">
-            <a class="navbar-brand" href="/"></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse"
-               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                     <a class="nav-link " href="#about" data-target="#about"><span>Home</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#skills" data-target="#skills"><span>Skills</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#projects" data-target="#projects"><span>Projects</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
-                  </li>
-               </ul>
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <span class="js-widget-page d-none"></span>
-      <section id="about" class="home-section wg-about   "  >
-         <div class="container">
-            <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
-               <div class="col-12 col-lg-4">
-                  <div id="profile">
-                     <img class="portrait" src="Images/ProfilePic.jpg" itemprop="image" alt="Avatar">
-                     <div class="portrait-title">
-                        <h2 itemprop="name">Md Ashikur Rahman</h2>
-                        <h3 itemprop="jobTitle">Machine Learning Engineer</h3>
-                        <h3 itemprop="worksFor" itemscope itemtype="https://cutoutwiz.com/">
-                           <a href="https://cutoutwiz.com/" target="_blank" itemprop="url" rel="noopener">
-                           <span itemprop="name">CutOutWiz</span>
-                           </a>
-                        </h3>
-                     </div>
-                     <link itemprop="url" href="">
-                     <ul class="network-icon" aria-hidden="true">
-                        <li>
-                           <a itemprop="sameAs" href="https://www.linkedin.com/in/mdashikrah/" target="_blank" rel="noopener">
-                           <i class="fab fa-linkedin big-icon"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a itemprop="sameAs" href="https://scholar.google.com/citations?user=Htgw_vEAAAAJ&hl=en&amp;hl=en" target="_blank" rel="noopener">
-                           <i class="ai ai-google-scholar big-icon"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a itemprop="sameAs" href="https://github.com/ashikrafi/" target="_blank" rel="noopener">
-                           <i class="fab fa-github big-icon"></i>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-12 col-lg-8" itemprop="description">
-                  <h1>About me</h1>
-                  <p align="justify" style="font-size: 17px">My name is Md Ashikur Rahman and I am a Machine Learning Engineer at the <a href="https://cutoutwiz.com/" target="_blank">Image Processing Lab</a> in CutOutWiz, Bangladesh. At the Lab, my current project focuses on Deep Network Architectures for Object Detection and Segmentation - a topic that I explore to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”. Apart from this, I have been working on RSNA-MICCAI Brain Tumor Radiogenomic Classification, a Kaggle Competition, that predicts the status of a genetic biomarker important for brain cancer treatment. I am passionate about traveling to beautiful places and am overwhelmed by the beautiful scenery.</p>
-                  <div class="row">
-                     <div class="col-md-5">
-                        <h3>Interests</h3>
-                        <ul class="ul-interests">
-                           <li>Graph Algorithm</li>
-                           <li>Natural Language Understanding</li>
-                           <li>Deep Learning</li>
-                           <li>Machine Learning</li>
-                        </ul>
-                     </div>
-                     <div class="col-md-7">
-                        <h3>Education</h3>
-                        <ul class="ul-edu fa-ul">
-                           <li>
-                              <i class="fa-li fas fa-graduation-cap"></i>
-                              <div class="description">
-                                 <p class="course">BSc in CSE, 2011-2015</p>
-                                 <p class="institution">American International University-Bangladesh (AIUB)</p>
-                                 <p class="institution">CGPA: 3.87 out of 4.00</p>
-                                 <p class="institution">Academic Award (2015), Magna Cum Laude</p>
+   <body data-new-gr-c-s-check-loaded="14.1022.0" data-gr-ext-installed="">
+      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+         <tbody>
+            <tr style="padding:0px">
+               <td style="padding:0px">
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr style="padding:0px">
+                           <td style="padding:2.5%;width:63%;vertical-align:middle">
+                              <p style="text-align:center">
+                              <h2>Md Ashikur Rahman</h2>
+                              </p>
+                              <p align="justify">
+                                 I am currently a Machine Learning Engineer at <a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>. I received my B.Sc. from <a href="https://www.aiub.edu/" target="=_blank">American International University-Bangladesh (AIUB)</a> in CSE and completed my undergraduate thesis under the supervision of <a href="http://cs.aiub.edu/profile/tabin" target="=_blank">Dr. Tabin Hasan</a> at AIUB.
+                              </p>
+                              <p style="text-align:center">
+                                 <a href="mailto:ashik.rafi@hotmail.com" target="=_blank">Email</a> &nbsp;&nbsp;
+                                 <a href="https://www.linkedin.com/in/mdashikrah/" target="=_blank">Linkedin</a> &nbsp;&nbsp;
+                                 <a href="https://github.com/ashikrafi/" target="=_blank">GitHub</a> &nbsp;&nbsp;
+                                 <a href="https://scholar.google.com/citations?user=Htgw_vEAAAAJ&amp;hl=en" target="=_blank">Google Scholar</a> &nbsp;&nbsp;
+                              </p>
+                           </td>
+                           <td style="padding:2.5%;width:30%;max-width:30%">
+                              <a href="Images/ProfilePic.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="Images/ProfilePic.jpg" class="hoverZoomLink"></a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td style="padding:20px;width:100%;vertical-align:middle">
+                              <h4>Research Interests</h4>
+                              <p align="justify">
+                                 My main research interests are Graph Algorithm, Natural Language Processing, Deep Learning, and Machine Learning. Considering my long-term goals, I want a research career. However, I have always been compelled to understand the world around me and to find out how things work.
+                              <p></p>
+                              <strong>Selected Projects for Image Processing</strong>
+                              </p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/IBR.jpg" width="160"></div>
                               </div>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section id="skills" class="home-section wg-featurette">
-         <div class="container">
-            <div class="row featurette">
-               <div class="col-md-12 section-heading">
-                  <h1>Skills</h1>
-               </div>
-               <div class="col-12 col-sm-4">
-                  <div class="featurette-icon"><i class="fa fa-code"></i></div>
-                  <h3>Programming</h3>
-                  <p><strong>Python, </strong>C++, R Scripting</p>
-               </div>
-               <div class="col-12 col-sm-4">
-                  <div class="featurette-icon"><i class="fa fa-brain"></i></div>
-                  <h3>Software & Tools / Framework</h3>
-                  <p align="center">
-                     PyCharm, Google Colab<br>
-                     PyTorch, TensorFlow, TensorBoard<br>
-                     Matplotlib, Seaborn<br>
-                     LaTeX, Amazon S3, Amazon Rekognition<br>
-                     Bitbucket, Git, MS Planner<br>
-                     Linear Algebra, Probability & Statistics<br>
-                  </p>
-               </div>
-               <div class="col-12 col-sm-4">
-                  <div class="featurette-icon"><i class="fa fa-language"></i></div>
-                  <h3>Languages</h3>
-                  <p><strong>English</strong>, Bangla</p>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section id="projects" class="home-section wg-portfolio   "  >
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-12 col-md-4 section-heading">
-                  <h1>Projects</h1>
-               </div>
-               <div class="col-xs-12 col-md-8">
-                  <span class="d-none default-project-filter">*</span>
-                  <div class="project-toolbar">
-                     <div class="project-filters">
-                        <div class="btn-toolbar">
-                           <div class="btn-group flex-wrap">
-                              <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
-                              <a href="#" data-filter=".js-id-research" class="btn btn-primary btn-lg">My research</a>
-                              <a href="#" data-filter=".js-id-side" class="btn btn-primary btn-lg">My side projects</a>
-                              <a href="#" data-filter=".js-id-collaborative" class="btn btn-primary btn-lg">Collaborative</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="isotope projects-container row js-layout-row ">
-                     <div class="col-12 isotope-item js-id-research">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/bs/"  itemprop="url">Deep Network Architectures for Object Detection and Segmentation</a>
-                              </h3>
-                             <br>
-                             <div style="font-size: 15px">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Deep Network Architectures for Object Detection and Segmentation</papertitle>
+                              </a>
+                              <br>
                               <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
                               <br>
                               <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(CHAMPION)</strong></font><br>
                               <a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><font color="green"><strong>(QUALIFIED)</strong></font><br>
-                            </div>
-                             <br>
-                              <div class="article-style" itemprop="articleBody">
-                                <p align="justify">
-                                  In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”. The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.
-                                </p>
+                              <br>
+                              <p></p>
+                             <p align="justify">In this project, we have worked on simple yet powerful deep network architecture, U2-Net, for salient object detection(SOD) and utilized the architecture in order to improve the efficiency of the “Image Background Removal” & “Ghost Mannequin”.  The design has the following advantages: (1) it is able to capture more contextual information while generating image masking from raw images (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks.</p>
+                              <br>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/IR.jpeg" width="160"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/bs/" >
-                              <img src="/project/bs/featured_hu761dfb5056b240b1555477500334aa69_352405_150x0_resize_q90_lanczos.jpg" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Automatic Image Resizing from Masking</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-collaborative">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/rhemap/"  itemprop="url">RheMAP</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 Non-linear warps between common rhesus macaque brain templates.
+                              <br>
+                              Md Arifur Rahman, <strong>Md Ashikur Rahman </strong>@<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
+                              <br>
+                              <p></p>
+                              <p align="justify">In this project, we have created a simple yet powerful algorithm (accuracy: ~ 99.15%) that can join all the curves of all the uninterrupted points on the edge and use the U2-Net architecture to automatically resize the image from image masking. The algorithm has the following advantages: (1) it is able to remove unwanted objects, leaving desired objects in the image (2) it is able to automatically margin objects.</p>
+                              <br>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/IRC.jpg" width="160"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/PRIME-RE/RheMAP" target="_blank" rel="noopener">
-                                 <i class="fab fa-github mr-1"></i>
-                                 Code
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zenodo.org/record/3668510" target="_blank" rel="noopener">
-                                 Data
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/rhemap/" >
-                              <img src="/project/rhemap/featured_huc47a6ce07f37edb5114cbafd1a2e4859_291811_150x0_resize_lanczos_2.png" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Translucent Image Recoloring through Dominant Color Estimation & Proportionate Color Distribution</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-research">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/medetomidine/"  itemprop="url">Temporal stability of fMRI in medetomidine-anesthetized rats</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 Work done for my MSc thesis and during the early stages of my PhD.
+                              <br>
+                              <strong>Md Ashikur Rahman</strong>, Md Arifur Rahman @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
+                              <p></p>
+                             <p align="justify">We introduce a deep learning algorithm that learns to find the dominant color and distributes the color ratio over the image matrix. We have shown how this algorithm is able to find the dominant color in an enigmatic palette and distribute the color ratio over the image matrix to recolor. The relational representation achieves the novel performance of this task.</p>
+                              <br>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>Selected Projects Named-Entity Recognition</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/CNER.png" width="160"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.nature.com/articles/s41598-019-53144-y" target="_blank" rel="noopener">
-                                 Publication
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openneuro.org/datasets/ds001981/versions/1.0.3" target="_blank" rel="noopener">
-                                 Data
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/medetomidine/" >
-                              <img src="/project/medetomidine/featured_huc8cbc4cb0ffa5fcb3216a004db3bf9ca_118606_150x0_resize_q90_lanczos.jpg" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Comprehensive Named Entity Recognition (NER) on De-identification and Heart Disease Risk Factors with Distant Supervision</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-side">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/pyrat/"  itemprop="url">PyRat fMRI</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 A GUI app made with python&rsquo;s tkinter for a quick-and-dirty computation of fMRI activation maps.
+                              <br>
+                              <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
+                              <br>
+                              [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
+                              [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
+                              <p></p>
+                              <p align="justify">CORD-NER methods are domain-independent that can be applied to corpus in different domains. Regarding "De-identification and Heart Disease Risk Factors", we evaluated NER performance comparison between SciSpacy and our annotation results on the N2C2 Dataset  (with 7-9% improvements over previous approaches) and visualized the results on TensorBoard. CORD-NER annotation is a combination from 4 sources:<strong> (Reference: <a href="https://xuanwang91.github.io/2020-03-20-cord19-ner/" target="_blank">here</a> )</strong></p>
+                              <ol>
+                                 <li>Pretrained NER on 18 General Entity Types: Spacy</li>
+                                 <li>Pretrained NER on 18 Biomedical Entity Types: SciSpacy</li>
+                                 <li>Knowledge Base (KB)-Guided NER on 127 Biomedical Entity Types</li>
+                                 <li>Seed-Guided NER on 9 New Entity Types</li>
+                              </ol>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/NeuroNER.JPG" width="160" vspace="24"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/niksirbi/PyRat_fMRI" target="_blank" rel="noopener">
-                                 <i class="fab fa-github mr-1"></i>
-                                 Code
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/pyrat/" >
-                              <img src="/project/pyrat/featured_huf452b931a27e554bc6f0cb43c3a9cd59_40438_150x0_resize_q90_lanczos.jpg" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Named Entity Recognition (NER) on the N2C2 Dataset: Obesity Challenge Factors</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-collaborative">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/prime-re/"  itemprop="url">PRIME-RE</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 PRIME-RE (PRIMEatE Resource Exchange) aims to be the primary exchange platform for non-human primate neuroimaging data resources.
+                              <br>
+                              <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
+                              <br>
+                              [<a href="https://github.com/LanguageAndIntelligence/Visualization-Annotation/" target="_blank">Code</a>]
+                              [<a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/" TARGET="_blank">Dataset</a>]
+                              <p></p>
+                             <p align="justify">NeuroNER leverages the state-of-the-art prediction capabilities of deep learning and enables the users to create or modify annotations for a new or existing corpus. The NeuroNER engine is based on artificial neural networks (ANNs). Specifically, it relies on a variant of recurrent neural network (RNN) called long short-term memory (LSTM). The NER engine's ANN contains three layers:<strong> (Reference: <a href="http://neuroner.com/" target="_blank">here</a> )</strong></p>
+                              <ol>
+                                 <li>Character-enhanced token-embedding layer</li>
+                                 <li>Label prediction layer</li>
+                                 <li>Label sequence optimization layer</li>
+                              </ol>
+                              <p align="justify">On the N2C2 Dataset (Obesity Challenge Factors), we have trained the neural network that performs the NER and evaluated the quality of the predictions made by NeuroNER. Also, we have developed an algorithm that converts NeuroNER output to WebAnno input format. However, the performance metrics can be calculated and plotted by comparing the predicted labels with the gold labels. The evaluation can be done at the same time as the training if the test set is provided along with the training and validation sets, or separately after the training.</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <br>
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <br>
+                              <strong>More AI/ML projects</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/TLSTM.png" width="160"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://prime-re.github.io/" target="_blank" rel="noopener">
-                                 Website
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/PRIME-RE/prime-re.github.io" target="_blank" rel="noopener">
-                                 <i class="fab fa-github mr-1"></i>
-                                 Code
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://twitter.com/PRIMatE_RE" target="_blank" rel="noopener">
-                                 <i class="fab fa-twitter mr-1"></i>
-                                 Twitter
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/prime-re/" >
-                              <img src="/project/prime-re/featured_hu278f2b0bd64fccafdf66c4479b540df0_147897_150x0_resize_lanczos_2.png" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://github.com/LanguageAndIntelligence/Tree-LSTM" target="_blank">
+                                 <papertitle>Tree LSTM implementation on Molecular Property using PyTorch</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-collaborative">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/scl/"  itemprop="url">Summa cum Liesel</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 Summa cum Liesel is a blog for sharing PhD experiences, advice, and science. I am responsible for the blog&rsquo;s web design.
+                              <br>
+                              <strong>Md Ashikur Rahman, Thanh Thieu (Assistant Professor, Computer Science, OSU)</strong>
+                              <br>
+                              [<a href="https://github.com/LanguageAndIntelligence/Tree-LSTM" target="_blank">Code</a>]
+                              [<a href="https://arxiv.org/pdf/1503.00075.pdf" target="_blank">Reference</a>]
+                              <br>
+                              <p></p>
+                              <p align="justify">The only underlying LSTM structure that has been explored so far is the linear chain. However, natural language exhibits syntactic features that combine words naturally into phrases. Tree-LSTMs outperform all existing systems and strong LSTM baselines on two tasks: predicting the semantic relatedness of two sentences and classification.</p>
+                              <br>
+                              <br>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/BrainTumor.jpg" width="160" vspace="24"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.summacumliesel.com" target="_blank" rel="noopener">
-                                 Website
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.facebook.com/summacumliesel/" target="_blank" rel="noopener">
-                                 <i class="fab fa-facebook mr-1"></i>
-                                 Facebook
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/scl/" >
-                              <img src="/project/scl/featured_huf841be645f11b8e69b30e673018f6fca_33103_150x0_resize_q90_lanczos.jpg" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification" target="_blank">
+                                 <papertitle>RSNA-MICCAI Brain Tumor Radiogenomic Classification: Predict the status of a genetic biomarker important for brain cancer treatment</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 isotope-item js-id-collaborative">
-                        <div class="media stream-item" itemscope itemtype="http://schema.org/CreativeWork">
-                           <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                 <a href="/project/neurizons/"  itemprop="url">Neurizons</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody">
-                                 Neurizons is a biennial neuroscience conference organized by students of the IMPRS for Neurosciences in Göttingen, Germany.
+                              <br>
+                              <strong>Md Ashikur Rahman</strong>
+                              <br>
+                              [<a href="https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification" target="_blank">Kaggle Competition</a>]
+                              [<a href="https://www.kaggle.com/mdashikrah/notebooke26ea03689/" target="_blank">Notebook</a>]
+                              <br>
+                              <p></p>
+                              <p align="justify">A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common form of brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The presence of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable prognostic factor and a strong predictor of responsiveness to chemotherapy.</p>
+                              <p align="justify">We utilize a novel convolutional neural network architecture that optimizes both accuracy and efficiency (FLOPS) on the dataset folders where each of the folders corresponds to each of the structural multi-parametric MRI (mpMRI) scans, in DICOM format.</p>
+                              <br>
+                              <br>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/ImageClustering.png" width="160" vspace="24"></div>
                               </div>
-                              <div class="stream-meta article-metadata">
-                              </div>
-                              <div class="btn-links">
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://prime-re.github.io/" target="_blank" rel="noopener">
-                                 Website
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.twitter.com/Neurizons" target="_blank" rel="noopener">
-                                 <i class="fab fa-twitter mr-1"></i>
-                                 Twitter
-                                 </a>
-                                 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.facebook.com/Neurizons/" target="_blank" rel="noopener">
-                                 <i class="fab fa-facebook mr-1"></i>
-                                 Facebook
-                                 </a>
-                              </div>
-                           </div>
-                           <div class="ml-3">
-                              <a href="/project/neurizons/" >
-                              <img src="/project/neurizons/featured_hu5db33b70bfe147d24ac0fad5850893bc_679610_150x0_resize_q90_lanczos.jpg" itemprop="image">
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://github.com/NazminJuli/DeepClustering" target="_blank">
+                                 <papertitle>Image Clustering Using k-Means: Using transfer learning model for feature extraction from the images</papertitle>
                               </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section id="publications" class="home-section wg-pages   "  >
-         <div class="container">
-            <div class="row">
-               <div class="col-12 col-lg-4 section-heading">
-                  <h1>Recent Publications</h1>
-               </div>
-               <div class="col-12 col-lg-8">
-                  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                     <div class="media-body">
-                        <h3 class="article-title mb-0 mt-0" itemprop="name">
-                           <a href="/publication/reeler/"  itemprop="url">Increased Callosal Connectivity in Reeler Mice Revealed by Brain-Wide Input Mapping of VIP Neurons in Barrel Cortex</a>
-                        </h3>
-                        <div class="article-style" itemprop="articleBody">
-                           The neocortex is composed of layers. Whether layers constitute an essential framework for the formation of functional circuits is not …
-                        </div>
-                        <div class="stream-meta article-metadata">
-                           <div itemprop="author">
-                              <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/georg-hafner/">Georg Hafner</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/julien-guy/">Julien Guy</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/mirko-witte/">Mirko Witte</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/pavel-truschow/">Pavel Truschow</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/alina-ruppel/">Alina Rüppel</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Nikoloz Sirmpilatze</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/rakshit-dadarwal/">Rakshit Dadarwal</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/susann-boretius/">Susann Boretius</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jochen-f-staiger/">Jochen F Staiger</a></span>
-                           </div>
-                        </div>
-                        <div class="btn-links">
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/academic.oup.com/cercor/advance-article-pdf/doi/10.1093/cercor/bhaa280/34141603/bhaa280.pdf" target="_blank" rel="noopener">
-                           PDF
-                           </a>
-                           <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-                              data-filename="/publication/reeler/cite.bib">
-                           Cite
-                           </button>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1093/cercor/bhaa280" target="_blank" rel="noopener">
-                           DOI
-                           </a>
-                        </div>
-                     </div>
-                     <div class="ml-3">
-                        <a href="/publication/reeler/" >
-                        <img src="/publication/reeler/featured_hu03bff3130fa67b3679c00fcf40b9f6ef_186350_150x0_resize_q90_lanczos.jpg" itemprop="image">
-                        </a>
-                     </div>
-                  </div>
-                  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                     <div class="media-body">
-                        <h3 class="article-title mb-0 mt-0" itemprop="name">
-                           <a href="/publication/prime-re/"  itemprop="url">A collaborative resource platform for non-human primate neuroimaging</a>
-                        </h3>
-                        <div class="article-style" itemprop="articleBody">
-                           Neuroimaging non-human primates (NHPs) is a growing, yet highly specialized field of neuroscience. Resources that were primarily …
-                        </div>
-                        <div class="stream-meta article-metadata">
-                           <div itemprop="author">
-                              <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/adam-messinger/">Adam Messinger</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Md Ashikur Rahman</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/katja-heuer/">Katja Heuer</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/kep-kee-loh/">Kep Kee Loh</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/rogier-b.-mars/">Rogier B. Mars</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/julien-sein/">Julien Sein</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/ting-xu/">Ting Xu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/daniel-glen/">Daniel Glen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/benjamin-jung/">Benjamin Jung</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jakob-seidlitz/">Jakob Seidlitz</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/paul-taylor/">Paul Taylor</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/roberto-toro/">Roberto Toro</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/eduardo-a.-garza-villarreal/">Eduardo A. Garza-Villarreal</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/caleb-sponheim/">Caleb Sponheim</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xindi-wang/">Xindi Wang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/r.-austin-benn/">R. Austin Benn</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/bastien-cagna/">Bastien Cagna</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/rakshit-dadarwal/">Rakshit Dadarwal</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/henry-c.-evrard/">Henry C. Evrard</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/pamela-garcia-saldivar/">Pamela Garcia-Saldivar</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/steven-giavasis/">Steven Giavasis</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/renee-hartig/">Renee Hartig</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/claude-lepage/">Claude Lepage</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/cirong-liu/">Cirong Liu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/piotr-majka/">Piotr Majka</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hugo-merchant/">Hugo Merchant</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/michael-p.-milham/">Michael P. Milham</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/marcello-g.p.-rosa/">Marcello G.P. Rosa</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jordy-tasserie/">Jordy Tasserie</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/lynn-uhrig/">Lynn Uhrig</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/daniel-s.-margulies/">Daniel S. Margulies</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/p.-christiaan-klink/">P. Christiaan Klink</a></span>
-                           </div>
-                        </div>
-                        <div class="btn-links">
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/www.biorxiv.org/content/10.1101/2020.07.31.230185v1.full.pdf" target="_blank" rel="noopener">
-                           PDF
-                           </a>
-                           <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-                              data-filename="/publication/prime-re/cite.bib">
-                           Cite
-                           </button>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/github.com/PRIME-RE/prime-re.github.io" target="_blank" rel="noopener">
-                           Code
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/prime-re/">
-                           Project
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/2020.07.31.230185%20" target="_blank" rel="noopener">
-                           DOI
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/10.1101/2020.07.31.230185v1" target="_blank" rel="noopener">
-                           View on bioRxiv
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://prime-re.github.io/" target="_blank" rel="noopener">
-                           Website
-                           </a>
-                        </div>
-                     </div>
-                     <div class="ml-3">
-                        <a href="/publication/prime-re/" >
-                        <img src="/publication/prime-re/featured_hu63e116ddb8b7d567d078cc321e4d7736_147373_150x0_resize_lanczos_2.png" itemprop="image">
-                        </a>
-                     </div>
-                  </div>
-                  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                     <div class="media-body">
-                        <h3 class="article-title mb-0 mt-0" itemprop="name">
-                           <a href="/publication/prime-de/"  itemprop="url">Accelerating the Evolution of Nonhuman Primate Neuroimaging</a>
-                        </h3>
-                        <div class="article-style" itemprop="articleBody">
-                           Nonhuman primate neuroimaging is on the cusp of a transformation, much in the same way its human counterpart was in 2010, when the …
-                        </div>
-                        <div class="stream-meta article-metadata">
-                           <div itemprop="author">
-                              <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/the-primate-data-exchange-prime-de-global-collaboration-workshop-and-consortium/">The PRIMatE Data Exchange (PRIME-DE) Global Collaboration Workshop and Consortium</a></span>
-                           </div>
-                        </div>
-                        <div class="btn-links">
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/www.sciencedirect.com/science/article/pii/S089662731931089X" target="_blank" rel="noopener">
-                           PDF
-                           </a>
-                           <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-                              data-filename="/publication/prime-de/cite.bib">
-                           Cite
-                           </button>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1016/j.neuron.2019.12.023" target="_blank" rel="noopener">
-                           DOI
-                           </a>
-                        </div>
-                     </div>
-                     <div class="ml-3">
-                        <a href="/publication/prime-de/" >
-                        <img src="/publication/prime-de/featured_hu525bc050eedce72811d88cc644f0a1e0_37712_150x0_resize_lanczos_2.png" itemprop="image">
-                        </a>
-                     </div>
-                  </div>
-                  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                     <div class="media-body">
-                        <h3 class="article-title mb-0 mt-0" itemprop="name">
-                           <a href="/publication/medetomidine/"  itemprop="url">Temporal stability of fMRI in medetomidine-anesthetized rats</a>
-                        </h3>
-                        <div class="article-style" itemprop="articleBody">
-                           Medetomidine has become a popular choice for anesthetizing rats during long-lasting sessions of blood-oxygen-level dependent (BOLD) …
-                        </div>
-                        <div class="stream-meta article-metadata">
-                           <div itemprop="author">
-                              <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">Md Ashikur Rahman</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/juergen-baudewig/">Juergen Baudewig</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/susann-boretius/">Susann Boretius</a></span>
-                           </div>
-                        </div>
-                        <div class="btn-links">
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/www.nature.com/articles/s41598-019-53144-y.pdf" target="_blank" rel="noopener">
-                           PDF
-                           </a>
-                           <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-                              data-filename="/publication/medetomidine/cite.bib">
-                           Cite
-                           </button>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/openneuro.org/datasets/ds001981/versions/1.0.3" target="_blank" rel="noopener">
-                           Dataset
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/medetomidine/">
-                           Project
-                           </a>
-                           <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41598-019-53144-y" target="_blank" rel="noopener">
-                           DOI
-                           </a>
-                        </div>
-                     </div>
-                     <div class="ml-3">
-                        <a href="/publication/medetomidine/" >
-                        <img src="/publication/medetomidine/featured_huc8cbc4cb0ffa5fcb3216a004db3bf9ca_118606_150x0_resize_q90_lanczos.jpg" itemprop="image">
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
-      <script>
-         const search_index_filename = "/index.json";
-         const i18n = {
-           'placeholder': "Search...",
-           'results': "results found",
-           'no_results': "No results found"
-         };
-         const content_type = {
-           'post': "Posts",
-           'project': "Projects",
-           'publication' : "Publications",
-           'talk' : "Talks"
-           };
-      </script>
-      <script id="search-hit-fuse-template" type="text/x-template">
-         <div class="search-hit" id="summary-{{key}}">
-         <div class="search-hit-content">
-           <div class="search-hit-name">
-             <a href="{{relpermalink}}">{{title}}</a>
-             <div class="article-metadata search-hit-type">{{type}}</div>
-             <p class="search-hit-description">{{snippet}}</p>
-           </div>
-         </div>
-         </div>
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      <!--  <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script> -->
-      <script src="js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
-      <div class="container">
-         <footer class="site-footer">
-            <p class="powered-by">
-               Powered by the
-               <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-               <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-               <span class="float-right" aria-hidden="true">
-               <a href="#" id="back_to_top">
-               <span class="button_icon">
-               <i class="fas fa-chevron-up fa-2x"></i>
-               </span>
-               </a>
-               </span>
-            </p>
-         </footer>
+                              <br>
+                              Nazmin Nahar, <strong>Md Ashikur Rahman</strong>
+                              <br>
+                              [<a href="https://github.com/NazminJuli/DeepClustering" target="_blank">Code</a>]
+                              <br>
+                              <p></p>
+                              <p align="justify">Clustering is an unsupervised machine learning where we group similar features together. It interprets the input data and finds natural groups or clusters in feature space.</p>
+                              <p align="justify">We have used transfer learning model InceptionV3 to extract features from images and use those features for clustering. These images are put in one folder and the features are extracted using transfer learning model.</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>More Projects</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/DevSkill.jpg" width="160" vspace="1"></div>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                               <a href="https://devskill.com/" target="_blank">
+                                 <papertitle>Online Contesting Platform for Software Developers - Dev Skill</papertitle>
+                              </a>
+                              <br>
+                              <strong>Md Ashikur Rahman, Sheikh Abdullah Al Jubair (PhD Student @ University of Manitoba)</strong>
+                              <br>
+                               [<a href="https://devskill.com/" target="_blank">Website</a>]
+                              <p></p>
+                              <p align="justify">Contributions: Wrote clean & optimized codes, debugged and troubleshot for solving technical issues</p>
+                              <br>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/MicroservicesArchitecture.jpg" width="160" vspace="1"></div>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                               <a href="#">
+                                 <papertitle>Microservice Architecture for Supply-Chain Management: Large Scale Enterprise Solution</papertitle>
+                              </a>
+
+                              <br>
+                               <strong>Md Ashikur Rahman, </strong>Md Shahnawaz, Nakib Al Hassan
+                              <br>
+                              <p>Contributions: </p>
+                               <ol>
+                                 <li>Designed Microservice Architecture for Supply-Chain Management</li>
+                                 <li>Developed the Supply-Chain Management from scratch using .Net Core</li>
+                                 <li>Real Time Large Scale Data Synchronization using ASP.NET MVC 4 & SSMS</li>
+                              </ol>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>From My Undergraduate Days</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/EventExtraction.png" width="160" vspace="1"></div>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Analysis of Sentiment and Extraction ofEvents from RSS Feeds <strong>(Thesis Paper)</strong></papertitle>
+                              </a>
+                              <br>
+                              <strong>Md Ashikur Rahman, Juena Ahmed Noshin (Assistant Professor, Computer Science, AIUB)</strong>
+                              <p></p>
+                              <p align="justify">In this paper, we represent techniques and approaches that promise to directly enable sentiment-oriented event-seeking systems. If the events associated with sentiments are used to learn an individual's behavior models, the benefits of opinion text mining can reach a  whole new level of superiority. In addition, event extraction can be applied to various types of written texts such as Social networks, RSS feeds, reviews, public pages, etc. Our main approach is to analyze events associated with sentiments from publicly available data and simultaneously extract significant events from it.</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>Online Courses & Certifications</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/HackerRankAdvc.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://www.hackerrank.com/certificates/3b0b3b242727" target="_blank">
+                                 <papertitle>Problem Solving (Advanced) – HackerRank</papertitle>
+                              </a>
+                              <br>
+                                [<a href="https://www.hackerrank.com/certificates/3b0b3b242727" target="_blank">Credential</a>]
+                              <p></p>
+                               <br>
+                               <br>
+                           </td>
+                        </tr>
+
+                     <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/HackerRankBsc.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://www.hackerrank.com/certificates/6a10e7796880" target="_blank">
+                                 <papertitle>Problem Solving (Basic) – HackerRank</papertitle>
+                              </a>
+                              <br>
+                                [<a href="https://www.hackerrank.com/certificates/6a10e7796880" target="_blank">Credential</a>]
+                              <p></p>
+                           </td>
+                        </tr>
+
+                      <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/TensorFlowBasic.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://www.coursera.org/account/accomplishments/certificate/6ZWUQF5GTNXB" target="_blank">
+                                 <papertitle>Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</papertitle>
+                              </a>
+                              <br>
+                                [<a href="https://www.coursera.org/account/accomplishments/certificate/6ZWUQF5GTNXB" target="_blank">Credential</a>]
+                              <p></p>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/NeuralNetwork.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="https://www.linkedin.com/learning/neural-networks-and-convolutional-neural-networks-essential-training" target="_blank">
+                                 <papertitle>Neural Networks and Convolutional Neural Networks Essential Training</papertitle>
+                              </a>
+                              <br>
+                                [<a href="https://www.linkedin.com/learning/neural-networks-and-convolutional-neural-networks-essential-training" target="_blank">Credential</a>]
+                              <p></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+
+                   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                     <tbody>
+                        <tr>
+                           <td width="100%" valign="middle">
+                              <strong>Awards/Scholarships</strong>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                     <tbody>
+                        <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/NationalAward.JPG" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                               <a href="https://bnia.basis.org.bd/" target="_blank">BASIS NATIONAL ICT AWARDS-2020</a><font color="red"><strong>(CHAMPION)</strong></font><br>
+                              <a href="https://apicta.org/" target="_blank">APICTA 2021 - The Asia Pacific ICT Alliance Award-2021</a><font color="green"><strong>(QUALIFIED)</strong></font>
+
+                              <br>
+                              <strong>Md Ashikur Rahman (Technical Lead)</strong>, Md Arifur Rahman, Kowser Ahmed Nirob @<a href="https://cutoutwiz.com/" target="=_blank">CutOutWiz</a>
+                              <p></p>
+                               <br>
+                               <br>
+                           </td>
+                        </tr>
+
+                     <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/MagnaCumLaude.jpg" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>Academic Award (2015), Magna Cum Laude</papertitle>
+                              </a>
+                              <br>
+                              <p></p>
+                           </td>
+                        </tr>
+
+                      <tr>
+                           <td width="25%">
+                              <div class="one">
+                                 <div class="two"><img src="Images/MeritScholarship.jpg" width="160" vspace="1"></div>
+                                 <br>
+                                 <br>
+                              </div>
+                           </td>
+                           <td valign="middle" width="75%">
+                              <a href="#">
+                                 <papertitle>University Merit Scholarship (2012-2014), AIUB</papertitle>
+                              </a>
+                              <br>
+                              <p></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                   <table width="100%" cellspacing="0" cellpadding="20" border="0" align="center">
+                     <tbody>
+                        <tr>
+                           <td>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div id="footer-container">
+         <!-- #footer -->
       </div>
-      <div id="modal" class="modal fade" role="dialog">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title">Cite</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <pre><code class="tex hljs"></code></pre>
-               </div>
-               <div class="modal-footer">
-                  <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-                  <i class="fas fa-copy"></i> Copy
-                  </a>
-                  <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-                  <i class="fas fa-download"></i> Download
-                  </a>
-                  <div id="modal-error"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+      <!-- #footer-container -->
