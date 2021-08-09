@@ -32,7 +32,6 @@
       <meta property="twitter:image" content="img/icon-512.png">
       <meta property="og:locale" content="en-us">
       <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
-      <title></title>
    </head>
    <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
       <aside class="search-results" id="search">
