@@ -61,17 +61,27 @@
   function animateCount(el) {
     var target = parseFloat(el.getAttribute('data-count'));
     var suffix = el.getAttribute('data-suffix') || '';
+    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
     var duration = 1200;
     var start = null;
+
+    function formatValue(value) {
+      if (decimals > 0) {
+        return value.toFixed(decimals) + suffix;
+      }
+      return Math.round(value) + suffix;
+    }
 
     function step(timestamp) {
       if (!start) start = timestamp;
       var progress = Math.min((timestamp - start) / duration, 1);
       var eased = 1 - Math.pow(1 - progress, 3);
-      var current = Math.round(target * eased);
-      el.textContent = current + suffix;
+      var current = target * eased;
+      el.textContent = formatValue(current);
       if (progress < 1) {
         requestAnimationFrame(step);
+      } else {
+        el.textContent = formatValue(target);
       }
     }
 
