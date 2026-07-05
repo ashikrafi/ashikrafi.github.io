@@ -7,7 +7,6 @@
     var profileFields = {
       name: profileCard.querySelector('[data-profile="name"]'),
       title: profileCard.querySelector('[data-profile="title"]'),
-      org: profileCard.querySelector('[data-profile="org"] a'),
       location: profileCard.getAttribute('data-profile-location')
     };
 
@@ -15,9 +14,6 @@
       var key = el.getAttribute('data-profile-sync');
       if (key === 'location' && profileFields.location) {
         el.textContent = profileFields.location;
-      } else if (key === 'org-link' && profileFields.org) {
-        el.textContent = profileFields.org.textContent.trim();
-        el.setAttribute('href', profileFields.org.getAttribute('href'));
       } else if (profileFields[key]) {
         el.textContent = profileFields[key].textContent.trim();
       }
