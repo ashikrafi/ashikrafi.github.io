@@ -1,9 +1,32 @@
 (function () {
   'use strict';
 
-  // Mobile nav toggle
+  // Sync page copy from canonical sidebar profile (single source of truth)
+  var profileCard = document.getElementById('profile-card');
+  if (profileCard) {
+    var profileFields = {
+      name: profileCard.querySelector('[data-profile="name"]'),
+      title: profileCard.querySelector('[data-profile="title"]'),
+      org: profileCard.querySelector('[data-profile="org"] a'),
+      location: profileCard.getAttribute('data-profile-location')
+    };
+
+    document.querySelectorAll('[data-profile-sync]').forEach(function (el) {
+      var key = el.getAttribute('data-profile-sync');
+      if (key === 'location' && profileFields.location) {
+        el.textContent = profileFields.location;
+      } else if (key === 'org-link' && profileFields.org) {
+        el.textContent = profileFields.org.textContent.trim();
+        el.setAttribute('href', profileFields.org.getAttribute('href'));
+      } else if (profileFields[key]) {
+        el.textContent = profileFields[key].textContent.trim();
+      }
+    });
+  }
+
+  // Mobile nav toggle (sidebar navigation)
   var toggle = document.getElementById('navToggle');
-  var menu = document.querySelector('.masthead__menu');
+  var menu = document.querySelector('.sidebar-nav');
 
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
@@ -23,10 +46,10 @@
 
   // Highlight active nav link on scroll
   var sections = document.querySelectorAll('.page__content[id], #contact');
-  var navLinks = document.querySelectorAll('.masthead__menu a');
+  var navLinks = document.querySelectorAll('.sidebar-nav a');
 
   function setActiveNav() {
-    var scrollY = window.scrollY + 80;
+    var scrollY = window.scrollY + 100;
     var current = '';
 
     sections.forEach(function (section) {
@@ -51,101 +74,6 @@
   if (printCv) {
     printCv.addEventListener('click', function () {
       window.open('resume.html?print=1', '_blank', 'noopener');
-    });
-  }
-
-  // Count-up animation for metrics strip
-  var metricNums = document.querySelectorAll('.metric__num[data-count]');
-  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function animateCount(el) {
-    var target = parseFloat(el.getAttribute('data-count'));
-    var suffix = el.getAttribute('data-suffix') || '';
-    var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
-    var duration = 1200;
-    var start = null;
-
-    function formatValue(value) {
-      if (decimals > 0) {
-        return value.toFixed(decimals) + suffix;
-      }
-      return Math.round(value) + suffix;
-    }
-
-    function step(timestamp) {
-      if (!start) start = timestamp;
-      var progress = Math.min((timestamp - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
-      var current = target * eased;
-      el.textContent = formatValue(current);
-      if (progress < 1) {
-        requestAnimationFrame(step);
-      } else {
-        el.textContent = formatValue(target);
-      }
-    }
-
-    requestAnimationFrame(step);
-  }
-
-  if (metricNums.length && !prefersReducedMotion) {
-    var metricsStrip = document.querySelector('.metrics-strip');
-    if (metricsStrip && 'IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            metricNums.forEach(function (el) {
-              if (!el.dataset.animated) {
-                el.dataset.animated = 'true';
-                el.textContent = '0' + (el.getAttribute('data-suffix') || '');
-                animateCount(el);
-              }
-            });
-            observer.disconnect();
-          }
-        });
-      }, { threshold: 0.3 });
-      observer.observe(metricsStrip);
-    }
-  }
-
-  // Scroll-reveal animations
-  var revealTargets = [];
-  document.querySelectorAll('#main > .page__content').forEach(function (section) {
-    var heading = section.querySelector(':scope > h2');
-    if (heading) revealTargets.push(heading);
-
-    var groups = section.querySelectorAll(
-      ':scope > .exp-block, :scope > .metrics-section, :scope > .intro, ' +
-      ':scope > .edu-card, :scope > .profile_box, :scope > .pub-list, ' +
-      ':scope > .pub-more, ' +
-      ':scope > .skills-list, :scope > .awards-list, :scope > p'
-    );
-    groups.forEach(function (el) {
-      revealTargets.push(el);
-    });
-  });
-
-  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-    revealTargets.forEach(function (el) {
-      el.classList.add('is-visible');
-    });
-  } else {
-    revealTargets.forEach(function (el) {
-      el.classList.add('reveal');
-    });
-
-    var revealObserver = new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-
-    revealTargets.forEach(function (el) {
-      revealObserver.observe(el);
     });
   }
 })();
