@@ -117,8 +117,8 @@
 
     var groups = section.querySelectorAll(
       ':scope > .exp-block, :scope > .metrics-section, :scope > .intro, ' +
-      ':scope > .edu-card, :scope > .profile_box, :scope > .pub-title, ' +
-      ':scope > .pub-authors, :scope > .pub-group, :scope > .pub-more, ' +
+      ':scope > .edu-card, :scope > .profile_box, :scope > .pub-list, ' +
+      ':scope > .pub-more, ' +
       ':scope > .skills-list, :scope > .awards-list, :scope > p'
     );
     groups.forEach(function (el) {

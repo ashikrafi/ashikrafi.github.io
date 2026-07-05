@@ -870,26 +870,44 @@ a.metric:hover {
 }
 
 /* ── Publications ── */
-.pub-title {
-  margin: 1.1em 0 0.15em;
-  font-weight: 700;
-  color: var(--text-strong);
-  line-height: 1.45;
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
 }
 
-.pub-title:first-of-type {
-  margin-top: 0;
+.pub-entry {
+  margin: 0;
+}
+
+.pub-title {
+  margin: 0;
+  font-size: 0.96em;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.38;
+}
+
+.pub-venue {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.pub-link {
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .pub-authors {
-  margin: 0 0 0.5em;
-  font-size: 0.95em;
+  margin: 0.1em 0 0;
+  font-size: 0.84em;
+  line-height: 1.35;
   color: var(--text-muted);
 }
 
 .pub-group {
-  margin: 1.75em 0 0;
-  font-size: 0.8em;
+  margin: 0.65em 0 0;
+  font-size: 0.72em;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -897,8 +915,8 @@ a.metric:hover {
 }
 
 .pub-more {
-  margin: 1.25em 0 0;
-  font-size: 0.9em;
+  margin: 0.85em 0 0;
+  font-size: 0.88em;
 }
 
 /* ── Experience ── */
