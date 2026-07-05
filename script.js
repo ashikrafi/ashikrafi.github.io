@@ -24,9 +24,9 @@
     });
   }
 
-  // Mobile nav toggle (sidebar navigation)
+  // Mobile nav toggle
   var toggle = document.getElementById('navToggle');
-  var menu = document.querySelector('.sidebar-nav');
+  var menu = document.querySelector('.site-nav__menu');
 
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
@@ -46,10 +46,10 @@
 
   // Highlight active nav link on scroll
   var sections = document.querySelectorAll('.page__content[id], #contact');
-  var navLinks = document.querySelectorAll('.sidebar-nav a');
+  var navLinks = document.querySelectorAll('.site-nav__menu a');
 
   function setActiveNav() {
-    var scrollY = window.scrollY + 100;
+    var scrollY = window.scrollY + 120;
     var current = '';
 
     sections.forEach(function (section) {
