@@ -73,14 +73,13 @@
     });
   }
 
-  // Re-decode profile photo when tab becomes visible (Chrome downscales in background tabs)
+  // Keep profile photo sharp after tab switches (browser may downscale in background)
   var profileImg = document.querySelector('.profile_card__img');
   if (profileImg) {
     function refreshProfileImage() {
       if (document.visibilityState !== 'visible') return;
       var src = profileImg.currentSrc || profileImg.getAttribute('src');
       if (!src) return;
-      profileImg.src = '';
       profileImg.src = src;
     }
 
