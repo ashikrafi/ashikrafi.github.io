@@ -59,7 +59,7 @@ em {
 
 /* ── Site header (UMich faculty style) ── */
 .site-header {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .site-header__brand {
@@ -67,7 +67,7 @@ em {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem 2rem;
+  gap: 0.75rem 2rem;
   background: var(--navy);
   color: #fff;
   padding: 1.15rem 2rem;
@@ -75,7 +75,7 @@ em {
 
 .site-header__identity {
   flex: 1;
-  min-width: 200px;
+  min-width: 0;
 }
 
 .site-header__name {
@@ -206,7 +206,7 @@ em {
   gap: 2.75rem;
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: 0 2rem 3rem;
+  padding: 2rem 2rem 3rem;
 }
 
 .content {
@@ -217,7 +217,7 @@ em {
   max-width: var(--content-max);
 }
 
-/* ── Sidebar (photo + contact only) ── */
+/* ── Sidebar profile card ── */
 .sidebar {
   position: relative;
 }
@@ -623,13 +623,12 @@ em {
 /* ── Responsive ── */
 @media (max-width: 860px) {
   .site-header__brand {
-    padding: 1rem 1.25rem 1rem 1.25rem;
+    padding: 1rem 1.25rem;
     padding-right: 4rem;
   }
 
   .site-header__org {
-    max-width: 100%;
-    text-align: left;
+    display: none;
   }
 
   .site-nav {
@@ -646,6 +645,7 @@ em {
     align-items: stretch;
     gap: 0;
     padding: 0;
+    max-width: none;
   }
 
   .site-nav__menu.open {
@@ -655,38 +655,56 @@ em {
   .site-nav__menu a {
     padding: 0.65rem 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
   }
 
   .page {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1.25rem 2rem;
+    gap: 0;
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.75rem;
   }
 
   .sidebar__inner {
     position: static;
-  }
-
-  .profile_card {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 1.25rem;
-    align-items: start;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
   }
 
   .profile_card__photo {
-    margin-bottom: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .profile_card__img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .sidebar-social {
+    border-top: none;
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
   }
 }
 
 @media (max-width: 520px) {
-  .page {
-    padding: 0 1rem 2rem;
+  .site-header__brand {
+    padding: 0.9rem 1rem;
+    padding-right: 3.5rem;
   }
 
-  .profile_card {
-    grid-template-columns: 1fr;
-    max-width: 200px;
+  .page {
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .profile_card__img {
+    max-width: 240px;
   }
 
   .skills-list {
