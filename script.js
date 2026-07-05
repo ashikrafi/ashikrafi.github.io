@@ -72,4 +72,19 @@
       window.open('resume.html?print=1', '_blank', 'noopener');
     });
   }
+
+  // Re-decode profile photo when tab becomes visible (Chrome downscales in background tabs)
+  var profileImg = document.querySelector('.profile_card__img');
+  if (profileImg) {
+    function refreshProfileImage() {
+      if (document.visibilityState !== 'visible') return;
+      var src = profileImg.currentSrc || profileImg.getAttribute('src');
+      if (!src) return;
+      profileImg.src = '';
+      profileImg.src = src;
+    }
+
+    document.addEventListener('visibilitychange', refreshProfileImage);
+    window.addEventListener('pageshow', refreshProfileImage);
+  }
 })();
