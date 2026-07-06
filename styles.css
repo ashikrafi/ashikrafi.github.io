@@ -103,7 +103,7 @@ em {
   color: #fff;
 }
 
-/* Horizontal nav bar — sticks to top once header scrolls away */
+/* Horizontal nav bar - sticks to top once header scrolls away */
 .site-nav {
   position: sticky;
   top: 0;
