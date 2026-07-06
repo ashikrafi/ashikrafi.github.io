@@ -38,6 +38,8 @@ body {
   background: #fff;
   overflow-x: clip;
   min-width: 0;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .resume {
@@ -375,6 +377,11 @@ body {
     padding: 0;
   }
 
+  * {
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+  }
+
   .resume {
     max-width: none;
     padding: 0;
@@ -413,6 +420,8 @@ body {
 
   .resume__entry-title {
     font-size: 9.5pt;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .resume__entry-dates {
@@ -421,25 +430,39 @@ body {
 
   .resume__bullets li {
     margin-bottom: 0.03em;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .resume__summary {
     font-size: 9pt;
     line-height: 1.24;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .resume__pub-list li {
     margin-bottom: 0.05em;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .resume__skills-line {
     font-size: 9pt;
     line-height: 1.22;
     margin-bottom: 0.08em;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .resume__bullets--tight li {
     margin-bottom: 0.02em;
+  }
+
+  .resume__pub-title,
+  .resume__contact {
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 }
 

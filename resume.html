@@ -10,7 +10,7 @@
 <body>
 
   <div class="resume-toolbar">
-    <span class="resume-toolbar__hint">Turn off <em>Headers and footers</em> in the print dialog for a clean PDF.</span>
+    <span class="resume-toolbar__hint">Before saving PDF: open <em>More settings</em> in the print dialog and turn off <em>Headers and footers</em>.</span>
     <a href="index.html">&larr; Back to site</a>
     <button type="button" id="printResume">Print / Save PDF</button>
   </div>
@@ -45,10 +45,10 @@
           <span class="resume__entry-dates">Jan 2023 - Present</span>
         </div>
         <ul class="resume__bullets">
-          <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development; maintained 90–95% on-time delivery across AI engineering projects.</li>
-          <li>Build production vision-language and LLM systems across virtual try-on, image and video generation, 3D reconstruction, site audit, and audio QA platforms.</li>
+          <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development; maintain 90–95% on-time delivery across AI engineering projects.</li>
+          <li>Build production vision-language and LLM systems across virtual try-on, image and video generation, 3D reconstruction, catalog audit and image-QA, and audio QA platforms.</li>
           <li>Lead applied research on AI hallucination, prompt safety, visual grounding, and video understanding.</li>
-          <li>Developed production segmentation and image-processing systems including Retouched.ai; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
+          <li>Develop production segmentation and image-processing systems, including Retouched.ai; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
         </ul>
       </div>
 
@@ -59,7 +59,7 @@
         </div>
         <ul class="resume__bullets">
           <li>Improved object detection and segmentation performance by 20-35% across internal evaluation benchmarks; advanced production models later deployed through Retouched.ai.</li>
-          <li>Led 6+ client ML engagements from business requirements to technical delivery; built evaluation and A/B testing frameworks for offline and production model validation.</li>
+          <li>Led 6+ client ML engagements from business requirements to technical delivery; built offline evaluation pipelines and production A/B testing workflows to validate model quality, performance, and deployment impact.</li>
         </ul>
       </div>
 
@@ -121,11 +121,11 @@
 
       <div class="resume__entry">
         <div class="resume__entry-header">
-          <span class="resume__entry-title">Enterprise AI Site Audit Platform</span>
+          <span class="resume__entry-title">Enterprise AI Catalog Audit and Image-QA Platform</span>
           <span class="resume__entry-dates">Lead AI Engineer | In Development</span>
         </div>
         <ul class="resume__bullets">
-          <li>Leading AI site-audit platform for a major US retail client, automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM/CMS workflows (computer vision, NLP, PyTorch, FastAPI).</li>
+          <li>Leading AI catalog-audit and image-QA platform for a major US retail client, automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM/CMS workflows (computer vision, NLP, PyTorch, FastAPI).</li>
         </ul>
       </div>
 
@@ -135,7 +135,7 @@
           <span class="resume__entry-dates">Lead AI Engineer | Production</span>
         </div>
         <ul class="resume__bullets">
-          <li>Co-designed architecture and production APIs for prompt-based image and video generation with multi-model selection, reference-image conditioning, and background processing; onboarded 200+ brands for creative and product-image workflows using Llama for prompt understanding/routing, with PyTorch-based generative model APIs and FastAPI services.</li>
+          <li>Co-designed architecture and production APIs for prompt-based image and video generation with multi-model selection, reference-image conditioning, background processing, and Llama-based prompt classification, intent routing, and model-selection workflows; onboarded 200+ brands for creative and product-image workflows.</li>
         </ul>
       </div>
 
@@ -145,7 +145,7 @@
           <span class="resume__entry-dates">Lead AI Engineer</span>
         </div>
         <ul class="resume__bullets">
-          <li>Built pipeline converting 360&deg; video and multi-view images into textured 3D assets (GLB/OBJ) via pose estimation, structure-from-motion, multi-view stereo, NeRF-style reconstruction, 3D Gaussian Splatting optimization, COLMAP, and Open3D.</li>
+          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
         </ul>
       </div>
 
@@ -155,7 +155,7 @@
           <span class="resume__entry-dates">Lead AI Engineer | Production</span>
         </div>
         <ul class="resume__bullets">
-          <li>Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, and supported images up to 257&nbsp;MB with 2.27s average processing time per image.</li>
+          <li>Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads.</li>
           <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers using PyTorch, U&sup2;-Net-inspired salient-object segmentation architecture, FastAPI, and GCP.</li>
         </ul>
       </div>
@@ -213,11 +213,12 @@
     <section class="resume__section resume__section--last">
       <h2 class="resume__section-title">Skills</h2>
       <div class="resume__skills">
-        <p class="resume__skills-line"><strong>Core AI:</strong> Python, PyTorch, Vision-Language Models, Large Language Models, Computer Vision, Multimodal Learning, LoRA-based Adaptation, LoRA/QLoRA Fine-tuning</p>
-        <p class="resume__skills-line"><strong>Generative AI:</strong> Qwen, Llama, Diffusion Models, Prompt Safety, Hallucination Evaluation, Visual Grounding</p>
+        <p class="resume__skills-line"><strong>Core AI:</strong> Python, PyTorch, Vision-Language Models, Large Language Models, Computer Vision, Multimodal Learning</p>
+        <p class="resume__skills-line"><strong>LLMs:</strong> Llama, Qwen, Prompt Safety, Hallucination Evaluation, Visual Grounding</p>
+        <p class="resume__skills-line"><strong>Generative AI:</strong> Diffusion Models, LoRA/QLoRA Fine-tuning and Adaptation, Prompt-Guided Image Editing</p>
         <p class="resume__skills-line"><strong>Computer Vision and 3D:</strong> Object Detection, Segmentation, Pose Estimation, Multi-View Stereo, NeRF-style Reconstruction, 3D Gaussian Splatting, COLMAP, Open3D</p>
         <p class="resume__skills-line"><strong>Backend and Cloud:</strong> FastAPI, Docker, Nginx, Redis, CI/CD, Model Serving, Google Cloud Platform, Google Cloud Storage, Amazon S3, DynamoDB, SQL Server</p>
-        <p class="resume__skills-line"><strong>Research and Evaluation:</strong> Offline and Production Evaluation, A/B Testing, Model Evaluation, Dataset Design, Weights &amp; Biases</p>
+        <p class="resume__skills-line"><strong>Research and Evaluation:</strong> Offline Evaluation, Production A/B Testing, Model Evaluation, Dataset Design, Weights &amp; Biases</p>
         <p class="resume__skills-line"><strong>Audio and NLP:</strong> SeamlessM4T-based Speech Transcription/Translation, Llama 2</p>
       </div>
     </section>
@@ -237,15 +238,17 @@
         document.title = savedTitle;
       }
 
+      function printResume() {
+        preparePrint();
+        window.print();
+        setTimeout(restorePrint, 500);
+      }
+
       window.addEventListener('beforeprint', preparePrint);
       window.addEventListener('afterprint', restorePrint);
 
       if (btn) {
-        btn.addEventListener('click', function () {
-          preparePrint();
-          window.print();
-          setTimeout(restorePrint, 500);
-        });
+        btn.addEventListener('click', printResume);
       }
       window.scrollTo(0, 0);
     })();

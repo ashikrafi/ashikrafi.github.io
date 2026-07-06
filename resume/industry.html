@@ -10,6 +10,7 @@
 <body>
 
   <div class="toolbar">
+    <span class="toolbar__hint">Before saving PDF: open <em>More settings</em> and turn off <em>Headers and footers</em>.</span>
     <span class="toolbar__spacer">Industry Résumé</span>
     <a href="../index.html">&larr; Site</a>
     <a href="cv.html">Academic CV</a>
@@ -52,8 +53,8 @@
         </div>
         <p class="entry__role">Dhaka, Bangladesh</p>
         <ul class="bullets">
-          <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development; maintained 90–95% on-time delivery across AI engineering projects.</li>
-          <li>Build production vision-language and LLM systems spanning virtual try-on, image and video generation, 3D reconstruction, site audit, and audio QA platforms.</li>
+          <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development; maintain 90–95% on-time delivery across AI engineering projects.</li>
+          <li>Build production vision-language and LLM systems spanning virtual try-on, image and video generation, 3D reconstruction, catalog audit and image-QA, and audio QA platforms.</li>
           <li>Lead applied research on hallucination, prompt safety, visual grounding, and video understanding; ICDAR 2026 accepted author; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
           <li>Define engineering standards and system-design reviews covering scalability, reliability, and maintainability; mentor junior ML engineers.</li>
         </ul>
@@ -67,7 +68,7 @@
         <p class="entry__role">Dhaka, Bangladesh</p>
         <ul class="bullets">
           <li>Improved object detection and segmentation performance by 20-35% across internal evaluation benchmarks; advanced production models later deployed through Retouched.ai.</li>
-          <li>Led 6+ client ML engagements from business requirements to technical delivery; built evaluation and A/B testing frameworks for offline and production model validation.</li>
+          <li>Led 6+ client ML engagements from business requirements to technical delivery; built offline evaluation pipelines and production A/B testing workflows to validate model quality, performance, and deployment impact.</li>
         </ul>
       </div>
 
@@ -137,7 +138,7 @@
           <span class="entry__dates">Production</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Developed production salient-object segmentation; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, and supported images up to 257 MB with 2.27s average processing time per image.</li>
+          <li>Developed production salient-object segmentation; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads.</li>
           <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers (PyTorch, U&sup2;-Net-inspired salient-object segmentation architecture, FastAPI, GCP).</li>
         </ul>
       </div>
@@ -148,17 +149,17 @@
           <span class="entry__dates">2023 -2024</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Built a 3D asset pipeline converting 360&deg; video and multi-view images into textured assets using pose estimation, structure-from-motion, multi-view stereo, NeRF-style reconstruction, 3D Gaussian Splatting optimization, COLMAP, and Open3D.</li>
+          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry__head">
-          <span class="entry__title">Enterprise AI Site Audit Platform</span>
+          <span class="entry__title">Enterprise AI Catalog Audit and Image-QA Platform</span>
           <span class="entry__dates">2024 -Present</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Leading an AI site-audit platform for a major US retail client, automating image, catalog, and backend content quality checks with computer vision, NLP, PyTorch, and FastAPI.</li>
+          <li>Leading an AI catalog-audit and image-QA platform for a major US retail client, automating image, catalog, and backend content quality checks with computer vision, NLP, PyTorch, and FastAPI.</li>
         </ul>
       </div>
     </section>
@@ -179,11 +180,12 @@
     <section class="section">
       <h2 class="section__title">Technical Skills</h2>
       <div class="skills">
-        <p class="skills-line"><strong>Core AI:</strong> Python, PyTorch, Vision-Language Models, Large Language Models, Computer Vision, Multimodal Learning, LoRA-based Adaptation, LoRA/QLoRA Fine-tuning</p>
-        <p class="skills-line"><strong>Generative AI:</strong> Qwen, Llama, Diffusion Models, Prompt Safety, Hallucination Evaluation, Visual Grounding</p>
+        <p class="skills-line"><strong>Core AI:</strong> Python, PyTorch, Vision-Language Models, Large Language Models, Computer Vision, Multimodal Learning</p>
+        <p class="skills-line"><strong>LLMs:</strong> Llama, Qwen, Prompt Safety, Hallucination Evaluation, Visual Grounding</p>
+        <p class="skills-line"><strong>Generative AI:</strong> Diffusion Models, LoRA/QLoRA Fine-tuning and Adaptation, Prompt-Guided Image Editing</p>
         <p class="skills-line"><strong>Computer Vision and 3D:</strong> Object Detection, Segmentation, Pose Estimation, Multi-View Stereo, NeRF-style Reconstruction, 3D Gaussian Splatting, COLMAP, Open3D</p>
         <p class="skills-line"><strong>Backend and Cloud:</strong> FastAPI, Docker, Nginx, Redis, CI/CD, Model Serving, Google Cloud Platform, Google Cloud Storage, Amazon S3, DynamoDB, SQL Server</p>
-        <p class="skills-line"><strong>Research and Evaluation:</strong> Offline and Production Evaluation, A/B Testing, Model Evaluation, Dataset Design, Weights &amp; Biases</p>
+        <p class="skills-line"><strong>Research and Evaluation:</strong> Offline Evaluation, Production A/B Testing, Model Evaluation, Dataset Design, Weights &amp; Biases</p>
         <p class="skills-line"><strong>Audio and NLP:</strong> SeamlessM4T-based Speech Transcription/Translation, Llama 2</p>
       </div>
     </section>
@@ -203,7 +205,26 @@
   <script>
     (function () {
       var btn = document.getElementById('printDoc');
-      if (btn) { btn.addEventListener('click', function () { window.print(); }); }
+      var savedTitle = document.title;
+
+      function preparePrint() {
+        document.title = '\u00A0';
+      }
+
+      function restorePrint() {
+        document.title = savedTitle;
+      }
+
+      window.addEventListener('beforeprint', preparePrint);
+      window.addEventListener('afterprint', restorePrint);
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          preparePrint();
+          window.print();
+          setTimeout(restorePrint, 500);
+        });
+      }
       window.scrollTo(0, 0);
     })();
   </script>

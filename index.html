@@ -244,7 +244,7 @@
 
       <div class="exp-block" id="project-audit">
         <div class="exp-header">
-          <span class="exp-org">Enterprise AI Site Audit Platform</span>
+          <span class="exp-org">Enterprise AI Catalog Audit and Image-QA Platform</span>
           <span class="exp-location">AI-Powered Catalog, Image, and Content Quality Audit System</span>
         </div>
         <div class="exp-role">
@@ -252,7 +252,7 @@
           <span class="exp-dates">Major US Retail Client · In Development</span>
         </div>
         <ul>
-          <li>Leading development of an AI site-audit platform for a major US retail client, automating quality checks across product imagery, catalog data, and backend content health.</li>
+          <li>Leading development of an AI catalog-audit and image-QA platform for a major US retail client, automating quality checks across product imagery, catalog data, and backend content health.</li>
           <li>Built image-audit workflows to detect inappropriate content, sheer-garment visibility, offensive tattoos, vulgar copy, crop inconsistencies, retouching defects, face-crop issues, and duplicate or near-duplicate images.</li>
           <li>Developed data-audit capabilities to validate product copy, color and style attribution, product-type metadata, image origination tags, and DAM/CMS integration requirements.</li>
           <li>Designed backend audit checks for inventory gaps, broken image and swatch links, alt-text quality, and pages requiring updates or removal.</li>
@@ -282,13 +282,13 @@
           <li>Helped design the technical pipeline for prompt-based generation, reference-image conditioning, image editing, video generation, background processing, asset handling, and downstream platform integration.</li>
           <li>Enabled users to select from multiple state-of-the-art generation models, including Gemini Nano Banana, Kimi Krea, and other image/video generation models.</li>
           <li>Built production APIs and backend workflows for generation requests, background processing, and delivery to downstream systems.</li>
-          <li>Used Llama for prompt understanding and routing alongside PyTorch-based generative model APIs and FastAPI services.</li>
+          <li>Built Llama-based prompt classification, intent routing, and model-selection workflows alongside PyTorch-based generative model APIs and FastAPI services.</li>
           <li>Supported onboarding and usage across 200+ brands using the platform for creative and product-image workflows.</li>
         </ul>
         <div class="exp-stack">
           <span class="exp-stack__label">Stack</span>
           <ul class="chip-list">
-            <li class="chip">Llama (Prompt Routing)</li>
+            <li class="chip">Llama (Prompt Classification)</li>
             <li class="chip">PyTorch</li>
             <li class="chip">FastAPI</li>
           </ul>
@@ -304,9 +304,7 @@
           <span class="exp-title">Lead AI Engineer</span>
         </div>
         <ul>
-          <li>Built a 3D asset pipeline that converts 360° video, multi-view image sequences, and reference images into textured 3D assets.</li>
-          <li>Implemented camera pose estimation, structure-from-motion, and multi-view geometry workflows for automated 3D reconstruction.</li>
-          <li>Explored multi-view stereo, NeRF-style reconstruction, and 3D Gaussian Splatting optimization using sparse 3D latent representations and multi-format decoding.</li>
+          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
           <li>Optimized reconstruction quality and processing efficiency to reduce manual 3D cleanup and editing effort.</li>
         </ul>
         <div class="exp-stack">
@@ -338,7 +336,7 @@
         <ul>
           <li>Developed and optimized deep-learning models for salient object detection and image segmentation in automated background-removal workflows.</li>
           <li>Improved segmentation quality by 17% on internal benchmarks and reduced processing time by 30% over the previous production baseline.</li>
-          <li>Supported images up to 257 MB with 2.27s average processing time per image under production inference conditions using a U²-Net-inspired salient-object segmentation architecture and advanced pooling.</li>
+          <li>Supported uploads up to 257 MB and achieved 2.27s average processing time across standard production workloads using a U²-Net-inspired salient-object segmentation architecture and advanced pooling.</li>
           <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers worldwide.</li>
         </ul>
         <div class="exp-stack">
@@ -431,7 +429,7 @@
               <p class="exp-group">Leadership &amp; Management</p>
               <ul class="exp-list">
                 <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development.</li>
-                <li>Maintained 90–95% on-time delivery across AI engineering projects.</li>
+                <li>Maintain 90–95% on-time delivery across AI engineering projects.</li>
                 <li>Review ML and software engineering work for correctness, scalability, reliability, and maintainability.</li>
                 <li>Mentor junior ML engineers and researchers on research methods, model development, evaluation, and production standards.</li>
               </ul>
@@ -459,7 +457,7 @@
             <div class="exp-role-body">
               <ul class="exp-list">
                 <li>Improved object detection and segmentation performance by 20-35% across internal evaluation benchmarks; advanced production models later deployed through Retouched.ai.</li>
-                <li>Led 6+ client ML engagements from business requirements to technical delivery; built evaluation and A/B testing frameworks for offline and production model validation.</li>
+                <li>Led 6+ client ML engagements from business requirements to technical delivery; built offline evaluation pipelines and production A/B testing workflows to validate model quality, performance, and deployment impact.</li>
                 <li>Delivered customer segmentation and territory mapping models, contributing to measurable marketing strategy improvements.</li>
               </ul>
             </div>
@@ -546,16 +544,19 @@
 
       <dl class="skills-list skills-list--inline">
         <dt>Core AI</dt>
-        <dd>PyTorch · Vision-Language Models · Large Language Models · Computer Vision · Multimodal Learning · Video Understanding · LoRA-based Adaptation · LoRA/QLoRA Fine-tuning · AI Interpretability · 3D Reconstruction</dd>
+        <dd>PyTorch · Vision-Language Models · Large Language Models · Computer Vision · Multimodal Learning · Video Understanding · LoRA/QLoRA Fine-tuning and Adaptation · AI Interpretability · 3D Reconstruction</dd>
 
-        <dt>Generative AI &amp; VLMs</dt>
-        <dd>Qwen / Qwen-VL · Qwen-Image-Edit · Llama / Llama 2 · Diffusion Models · Diffusers · Image &amp; Video Generation · Multi-Reference Image Conditioning · Prompt Safety · Hallucination Evaluation · Visual Grounding · ComfyUI</dd>
+        <dt>LLMs</dt>
+        <dd>Llama / Llama 2 · Qwen / Qwen-VL · Prompt Safety · Hallucination Evaluation · Visual Grounding</dd>
+
+        <dt>Generative AI</dt>
+        <dd>Diffusion Models · Diffusers · Qwen-Image-Edit · Image &amp; Video Generation · Multi-Reference Image Conditioning · Prompt-Guided Image Editing · ComfyUI</dd>
 
         <dt>Computer Vision &amp; 3D</dt>
         <dd>Object Detection · Semantic / Instance Segmentation · Salient Object Detection · U²-Net-inspired Salient-Object Segmentation · Pose Estimation · Multi-View Geometry · Multi-View Stereo · NeRF-style Reconstruction · Structure-from-Motion · 3D Gaussian Splatting · COLMAP · Open3D · Mesh Processing</dd>
 
         <dt>Audio, NLP &amp; Evaluation</dt>
-        <dd>SeamlessM4T-based Speech Transcription/Translation · NLP · Contextual Key-Phrase Extraction · Fine-tuning Pipelines · Offline and Production Evaluation · A/B Testing · Model Evaluation · Dataset Design · Weights &amp; Biases</dd>
+        <dd>SeamlessM4T-based Speech Transcription/Translation · NLP · Contextual Key-Phrase Extraction · Fine-tuning Pipelines · Offline Evaluation · Production A/B Testing · Model Evaluation · Dataset Design · Weights &amp; Biases</dd>
 
         <dt>Backend, MLOps &amp; Cloud</dt>
         <dd>FastAPI · Docker · Nginx · Redis · CI/CD · Model Serving · Google Cloud Platform · Google Cloud Storage · Amazon S3 · DynamoDB · TensorFlow</dd>
