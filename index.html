@@ -186,6 +186,39 @@
 
       <div class="exp-block">
         <div class="exp-header">
+          <span class="exp-org">CogniX</span>
+          <span class="exp-location">Exploratory Multi-Reference Image Fusion and Editing R&amp;D</span>
+        </div>
+        <div class="exp-role">
+          <span class="exp-title">Lead AI Engineer</span>
+          <span class="exp-dates">Active R&amp;D / In Development</span>
+        </div>
+        <ul>
+          <li>Initiated CogniX as an early-stage R&amp;D effort to explore generalized multi-reference image fusion and prompt-guided image editing.</li>
+          <li>Exploring architecture options for generating a coherent output image from a prompt and 1-3 reference images.</li>
+          <li>Evaluating Qwen-Image-Edit-2509 and related multi-image conditioning approaches for tasks such as product visualization, garment replacement, scene composition, style transfer, and object-level image editing.</li>
+          <li>Experimenting with LoRA/QLoRA fine-tuning strategies, 4-bit NF4 quantization, and PyTorch/Diffusers-based training workflows.</li>
+          <li>Investigating dataset design for variable-length multi-reference inputs, semantic instructions, attribute-rich prompts, and preservation constraints.</li>
+          <li>Testing ComfyUI-based inference workflows for multi-image upload, graph-based execution, VRAM control, and LoRA-enabled generation.</li>
+        </ul>
+        <div class="exp-stack">
+          <span class="exp-stack__label">Stack</span>
+          <ul class="chip-list">
+            <li class="chip">Qwen-Image-Edit-2509</li>
+            <li class="chip">Qwen2.5-VL</li>
+            <li class="chip">MMDiT</li>
+            <li class="chip">QLoRA</li>
+            <li class="chip">LoRA</li>
+            <li class="chip">NF4 Quantization</li>
+            <li class="chip">PyTorch</li>
+            <li class="chip">Diffusers</li>
+            <li class="chip">ComfyUI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-header">
           <span class="exp-org"><a href="https://vto-rose.vercel.app/" target="_blank" rel="noopener">The Fitting Room</a></span>
           <span class="exp-location">Unified Cross-Brand Virtual Try-On Platform</span>
         </div>
@@ -219,6 +252,32 @@
 
       <div class="exp-block">
         <div class="exp-header">
+          <span class="exp-org"><a href="https://omnimage.ai" target="_blank" rel="noopener">Omnimage.ai</a></span>
+          <span class="exp-location">AI Image and Video Generation Platform</span>
+        </div>
+        <div class="exp-role">
+          <span class="exp-title">Lead AI Engineer</span>
+          <span class="exp-dates">The KOW Company</span>
+        </div>
+        <ul>
+          <li>Co-participated in the system design and architecture of Omnimage.ai, an AI platform for generating images and videos from text prompts and reference images.</li>
+          <li>Helped design the technical pipeline for prompt-based generation, reference-image conditioning, image editing, video generation, background processing, asset handling, and downstream platform integration.</li>
+          <li>Enabled users to select from multiple state-of-the-art generation models, including Gemini Nano Banana, Kimi Krea, and other image/video generation models.</li>
+          <li>Built production APIs and backend workflows for generation requests, background processing, and delivery to downstream systems.</li>
+          <li>Supported onboarding and usage across 200+ brands using the platform for creative and product-image workflows.</li>
+        </ul>
+        <div class="exp-stack">
+          <span class="exp-stack__label">Stack</span>
+          <ul class="chip-list">
+            <li class="chip">LLaMA</li>
+            <li class="chip">PyTorch</li>
+            <li class="chip">FastAPI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-header">
           <span class="exp-org"><a href="https://retouched.ai" target="_blank" rel="noopener">Retouched.ai</a></span>
           <span class="exp-location">Object Detection and Segmentation Platform</span>
         </div>
@@ -242,70 +301,6 @@
             <li class="chip">Redis</li>
             <li class="chip">Docker</li>
             <li class="chip">GCP</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-block">
-        <div class="exp-header">
-          <span class="exp-org">Cognix</span>
-          <span class="exp-location">Generalized Multi-Reference Image Fusion and Editing System</span>
-        </div>
-        <div class="exp-role">
-          <span class="exp-title">Lead AI Engineer</span>
-          <span class="exp-dates">Active R&amp;D / In Development</span>
-        </div>
-        <ul>
-          <li>Started and architected Cognix, an ongoing generalized image fusion and editing system that takes a prompt and 1-3 reference images to generate a single coherent output image.</li>
-          <li>Designed the system for prompt-guided multi-image conditioning tasks such as product visualization, identity-preserving edits, scene composition, style transfer, garment replacement, and object-level image manipulation.</li>
-          <li>Building the model strategy around Qwen-Image-Edit-2509, using its native multi-image input, Qwen2.5-VL encoder for image understanding, MMDiT transformer for image generation and fusion, and frozen VAE for decoding.</li>
-          <li>Implemented a config-driven fine-tuning pipeline using QLoRA with 4-bit NF4 quantization, enabling a ~20B model to train on a 24 GB RTX 4090, with bf16/H100 support through configuration changes.</li>
-          <li>Developed variable-length multi-reference dataset support for 1, 2, and 3 reference images, using semantic instructions, attribute-rich prompts, and preservation clauses.</li>
-          <li>Built training, validation, evaluation, and inference workflows, including dataset validation, model loading, LoRA training, checkpoint evaluation, and prompt-based generation.</li>
-          <li>Verified end-to-end training on an RTX 4090 with a successful micro-train run, 94M trainable LoRA parameters, and checkpoint generation.</li>
-          <li>Integrated inference through ComfyUI using FP8 model execution, API-based graph submission, multi-image upload, VRAM controls, and LoRA-enabled generation.</li>
-          <li>Currently evaluating base-model behavior across multi-reference editing tasks before building the full fine-tuning dataset.</li>
-        </ul>
-        <div class="exp-stack">
-          <span class="exp-stack__label">Stack</span>
-          <ul class="chip-list">
-            <li class="chip">Qwen-Image-Edit-2509</li>
-            <li class="chip">Qwen2.5-VL</li>
-            <li class="chip">MMDiT</li>
-            <li class="chip">QLoRA</li>
-            <li class="chip">LoRA</li>
-            <li class="chip">NF4 Quantization</li>
-            <li class="chip">PyTorch</li>
-            <li class="chip">Diffusers</li>
-            <li class="chip">ComfyUI</li>
-            <li class="chip">FP8 Inference</li>
-            <li class="chip">RTX 4090</li>
-            <li class="chip">H100 Config Support</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="exp-block">
-        <div class="exp-header">
-          <span class="exp-org"><a href="https://omnimage.ai" target="_blank" rel="noopener">Omnimage.ai</a></span>
-          <span class="exp-location">AI Image Generation and Editing Engine</span>
-        </div>
-        <div class="exp-role">
-          <span class="exp-title">Lead AI Engineer</span>
-          <span class="exp-dates">The KOW Company</span>
-        </div>
-        <ul>
-          <li>Led development of Omnimage.ai, an AI-powered image generation and editing engine for scalable product-image workflows.</li>
-          <li>Fine-tuned LLaMA-based components to support high-volume image-processing requests with 10K+ daily requests and sub-18-second inference latency.</li>
-          <li>Built production inference APIs for image editing, background processing, and integration with downstream platforms.</li>
-          <li>Integrated Omnimage.ai into automated image-processing workflows, including background removal and enhancement tasks used by enterprise e-commerce operations.</li>
-        </ul>
-        <div class="exp-stack">
-          <span class="exp-stack__label">Stack</span>
-          <ul class="chip-list">
-            <li class="chip">LLaMA</li>
-            <li class="chip">PyTorch</li>
-            <li class="chip">FastAPI</li>
           </ul>
         </div>
       </div>
