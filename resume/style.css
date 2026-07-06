@@ -262,6 +262,21 @@ body {
   color: var(--ink);
 }
 
+.skills-line {
+  margin: 0 0 0.14em;
+  font-size: 9.75pt;
+  line-height: 1.28;
+  color: var(--ink);
+}
+
+.skills-line:last-child {
+  margin-bottom: 0;
+}
+
+.skills-line strong {
+  color: var(--navy);
+}
+
 /* Two-column simple lists (awards, languages) */
 .stack-list {
   margin: 0;
@@ -373,7 +388,10 @@ body {
 /* Long links / words wrap instead of overflowing */
 .entry__title,
 .pub-title,
+.doc__entry-title,
+.doc__pub-title,
 .doc__contact,
+.skills-line,
 .skills__val {
   overflow-wrap: anywhere;
   word-break: break-word;
