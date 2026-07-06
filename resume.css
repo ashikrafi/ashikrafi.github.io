@@ -278,24 +278,37 @@ body {
   outline-offset: 2px;
 }
 
-.resume-toolbar button {
+.resume-toolbar button#downloadPdf {
   background: linear-gradient(180deg, #b32038 0%, var(--resume-maroon) 100%);
   border-color: var(--resume-maroon-hover);
   color: #fff;
   box-shadow: 0 1px 4px rgba(155, 27, 48, 0.22);
 }
 
-.resume-toolbar button:hover {
+.resume-toolbar button#downloadPdf:hover {
   background: linear-gradient(180deg, var(--resume-maroon) 0%, var(--resume-maroon-hover) 100%);
   box-shadow: 0 2px 8px rgba(155, 27, 48, 0.28);
+}
+
+.resume-toolbar button#printResume {
+  background: #fff;
+  border-color: var(--resume-line);
+  color: var(--resume-navy);
+  box-shadow: none;
+}
+
+.resume-toolbar button#printResume:hover {
+  background: var(--resume-bg);
+  border-color: #d5dee4;
+  box-shadow: none;
 }
 
 .resume__entry-title,
 .resume__pub-title,
 .resume__contact,
 .resume__skills-line {
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 @media screen and (max-width: 640px) {

@@ -11,11 +11,12 @@
 <body>
 
   <div class="toolbar">
-    <span class="toolbar__hint">Before saving PDF: open <em>More settings</em> and turn off <em>Headers and footers</em>.</span>
+    <span class="toolbar__hint">Use <em>Download PDF</em> for a clean file. If printing, turn off <em>Headers and footers</em>.</span>
     <span class="toolbar__spacer">Curriculum Vitae</span>
     <a href="../index.html">&larr; Site</a>
     <a href="industry.html">Industry résumé</a>
-    <button type="button" class="btn-print" id="printDoc">Print / Save PDF</button>
+    <button type="button" class="btn-download" id="downloadDoc">Download PDF</button>
+    <button type="button" class="btn-print" id="printDoc">Print</button>
   </div>
 
   <article class="doc" id="cv">
@@ -63,7 +64,7 @@
         <li>
           <span class="authors"><span class="todo-fill">[co-authors]</span>, <span class="me">M. A. Rahman</span> (Corresponding author).</span>
           <span class="pub-title">Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding.</span>
-          <span class="pub-venue">International Conference on Document Analysis and Recognition (ICDAR), 2026. Accepted.</span>
+          <span class="pub-venue">International Conference on Document Analysis and Recognition (ICDAR), 2026.</span>
           <br /><a href="https://github.com/tkcl-research/LogicBench1k" target="_blank" rel="noopener">Dataset: LogicBench-1K</a>
         </li>
         <li>
@@ -155,7 +156,27 @@
           <span class="entry__dates">2024 - Present</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Conceived and co-led a unified cross-brand virtual try-on platform across 170+ brands; architected Dockerized FastAPI/Nginx backend with SQL Server, Google Cloud Storage, Redis, and 2D try-on pipelines.</li>
+          <li>Conceived and co-led a unified cross-brand virtual try-on platform across 170+ brands; architected Dockerized FastAPI/Nginx backend with SQL Server, Google Cloud Storage, Redis, recommendation workflows, and 2D try-on pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">Enterprise AI Catalog Audit and Image-QA Platform</span>
+          <span class="entry__dates">2024 - Present</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Leading AI catalog-audit and image-QA platform for a major US retail client, automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM/CMS workflows (computer vision, NLP, PyTorch, FastAPI).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">Omnimage.ai, AI Image and Video Generation</span>
+          <span class="entry__dates">Production</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Co-designed architecture and production APIs for prompt-based image and video generation with multi-model selection, reference-image conditioning, background processing, and Llama-based prompt classification, intent routing, and model-selection workflows; onboarded 200+ brands for creative and product-image workflows.</li>
         </ul>
       </div>
 
@@ -165,7 +186,7 @@
           <span class="entry__dates">2023 -2024</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Built a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
+          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
         </ul>
       </div>
 
@@ -175,7 +196,27 @@
           <span class="entry__dates">2020 -2023</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Developed salient object detection and segmentation models (U&sup2;-Net-inspired salient-object segmentation architecture); improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, and scaled production pipeline to 4.5M+ images globally.</li>
+          <li>Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads; scaled production pipeline to 4.5M+ images globally using U&sup2;-Net-inspired salient-object segmentation architecture.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">KTM, Order Management and Image Processing</span>
+          <span class="entry__dates">System Optimization Contributor</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Optimized .NET/SQL Server workflow for a leading European luxury resale marketplace; integrated Omnimage.ai and Retouched.ai across FTP ingestion, QC validation, and automated delivery; ~17K images/day, ~65-minute average batch turnaround.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">Contextual Key-Phrase Spotting from Audio</span>
+          <span class="entry__dates">Technical Lead</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Built customer-service QA workflow with a SeamlessM4T-based speech transcription/translation pipeline and Llama 2-based contextual key-phrase extraction; automated transcription, validation, and review pipelines via FastAPI, reducing manual audio review effort.</li>
         </ul>
       </div>
     </section>
@@ -217,9 +258,11 @@
 
   </article>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     (function () {
-      var btn = document.getElementById('printDoc');
+      var printBtn = document.getElementById('printDoc');
+      var downloadBtn = document.getElementById('downloadDoc');
       var savedTitle = document.title;
 
       function preparePrint() {
@@ -233,13 +276,39 @@
       window.addEventListener('beforeprint', preparePrint);
       window.addEventListener('afterprint', restorePrint);
 
-      if (btn) {
-        btn.addEventListener('click', function () {
+      if (printBtn) {
+        printBtn.addEventListener('click', function () {
           preparePrint();
           window.print();
           setTimeout(restorePrint, 500);
         });
       }
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+          var element = document.querySelector('.doc');
+          if (!element || typeof html2pdf === 'undefined') {
+            window.alert('PDF export is unavailable. Use Print and turn off Headers and footers under More settings.');
+            return;
+          }
+
+          downloadBtn.disabled = true;
+          downloadBtn.textContent = 'Generating…';
+
+          html2pdf().set({
+            margin: [0.45, 0.55, 0.45, 0.55],
+            filename: 'Md_Ashikur_Rahman_CV.pdf',
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: { scale: 2, logging: false, scrollY: 0, useCORS: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'], avoid: ['.entry', '.section', '.pub-list li'] }
+          }).from(element).save().finally(function () {
+            downloadBtn.disabled = false;
+            downloadBtn.textContent = 'Download PDF';
+          });
+        });
+      }
+
       window.scrollTo(0, 0);
     })();
   </script>

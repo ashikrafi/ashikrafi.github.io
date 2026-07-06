@@ -141,7 +141,7 @@
 
           <h3>Recent Highlights</h3>
           <ul class="news-list">
-            <li>Paper accepted at <a href="#publications">ICDAR 2026</a> on diagram understanding with <a href="https://github.com/tkcl-research/LogicBench1k" target="_blank" rel="noopener">LogicBench-1K</a>.</li>
+            <li>Paper at <a href="#publications">ICDAR 2026</a> on diagram understanding with <a href="https://github.com/tkcl-research/LogicBench1k" target="_blank" rel="noopener">LogicBench-1K</a>.</li>
             <li>New manuscript submitted to a peer-reviewed venue; two prior manuscripts currently under review.</li>
             <li><a href="https://vto-rose.vercel.app/" target="_blank" rel="noopener">The Fitting Room</a> approaching public launch with 170+ global brands onboarded.</li>
             <li><a href="#projects">CogniX</a> early-stage R&amp;D underway for a proprietary multimodal image-generation and editing initiative.</li>
@@ -160,7 +160,7 @@
 
       <div class="pub-list">
         <article class="pub-entry" id="pub-icdar2026">
-          <p class="pub-title">Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding<span class="pub-meta"> · Accepted at ICDAR 2026 · Corresponding author · <a href="https://github.com/tkcl-research/LogicBench1k" class="pub-link" target="_blank" rel="noopener">LogicBench-1K</a></span></p>
+          <p class="pub-title">Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding<span class="pub-meta"> · ICDAR 2026 · Corresponding author · <a href="https://github.com/tkcl-research/LogicBench1k" class="pub-link" target="_blank" rel="noopener">LogicBench-1K</a></span></p>
         </article>
 
         <article class="pub-entry">
@@ -194,8 +194,7 @@
         </div>
         <ul>
           <li>Leading early-stage R&amp;D for CogniX, a proprietary multimodal image-generation and editing initiative for product visualization workflows, aimed at reducing reliance on third-party model providers.</li>
-          <li>Exploring multi-reference fusion and prompt-guided image editing for garment replacement, scene composition, product visualization, and style transfer.</li>
-          <li>Experimenting with LoRA-based adaptation, quantized fine-tuning experiments, PyTorch/Diffusers-based training workflows, and ComfyUI workflows.</li>
+          <li>Exploring multi-reference fusion and prompt-guided image editing for garment replacement, scene composition, product visualization, and style transfer using LoRA-based adaptation, quantized fine-tuning experiments, PyTorch/Diffusers, and ComfyUI workflows.</li>
           <li>Investigating dataset design for variable-length multi-reference inputs, semantic instructions, attribute-rich prompts, and preservation constraints.</li>
         </ul>
         <div class="exp-stack">
@@ -252,7 +251,7 @@
           <span class="exp-dates">Major US Retail Client · In Development</span>
         </div>
         <ul>
-          <li>Leading development of an AI catalog-audit and image-QA platform for a major US retail client, automating quality checks across product imagery, catalog data, and backend content health.</li>
+          <li>Leading AI catalog-audit and image-QA platform for a major US retail client, automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM/CMS workflows.</li>
           <li>Built image-audit workflows to detect inappropriate content, sheer-garment visibility, offensive tattoos, vulgar copy, crop inconsistencies, retouching defects, face-crop issues, and duplicate or near-duplicate images.</li>
           <li>Developed data-audit capabilities to validate product copy, color and style attribution, product-type metadata, image origination tags, and DAM/CMS integration requirements.</li>
           <li>Designed backend audit checks for inventory gaps, broken image and swatch links, alt-text quality, and pages requiring updates or removal.</li>
@@ -278,12 +277,9 @@
           <span class="exp-dates">Production</span>
         </div>
         <ul>
-          <li>Co-participated in the system design and architecture of Omnimage.ai, an AI platform for generating images and videos from text prompts and reference images.</li>
-          <li>Helped design the technical pipeline for prompt-based generation, reference-image conditioning, image editing, video generation, background processing, asset handling, and downstream platform integration.</li>
-          <li>Enabled users to select from multiple state-of-the-art generation models, including Gemini Nano Banana, Kimi Krea, and other image/video generation models.</li>
+          <li>Co-designed architecture and production APIs for prompt-based image and video generation with multi-model selection, reference-image conditioning, background processing, and Llama-based prompt classification, intent routing, and model-selection workflows; onboarded 200+ brands for creative and product-image workflows.</li>
           <li>Built production APIs and backend workflows for generation requests, background processing, and delivery to downstream systems.</li>
-          <li>Built Llama-based prompt classification, intent routing, and model-selection workflows alongside PyTorch-based generative model APIs and FastAPI services.</li>
-          <li>Supported onboarding and usage across 200+ brands using the platform for creative and product-image workflows.</li>
+          <li>Enabled users to select from multiple state-of-the-art generation models for image and video creative workflows.</li>
         </ul>
         <div class="exp-stack">
           <span class="exp-stack__label">Stack</span>
@@ -334,10 +330,8 @@
           <span class="exp-dates">Production</span>
         </div>
         <ul>
-          <li>Developed and optimized deep-learning models for salient object detection and image segmentation in automated background-removal workflows.</li>
-          <li>Improved segmentation quality by 17% on internal benchmarks and reduced processing time by 30% over the previous production baseline.</li>
-          <li>Supported uploads up to 257 MB and achieved 2.27s average processing time across standard production workloads using a U²-Net-inspired salient-object segmentation architecture and advanced pooling.</li>
-          <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers worldwide.</li>
+          <li>Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads.</li>
+          <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers using PyTorch, U²-Net-inspired salient-object segmentation architecture, FastAPI, and GCP.</li>
         </ul>
         <div class="exp-stack">
           <span class="exp-stack__label">Stack</span>
@@ -363,11 +357,7 @@
         </div>
         <p class="exp-subtext">Production client: leading European luxury resale marketplace</p>
         <ul>
-          <li>Helped optimize a .NET and SQL Server workflow platform for high-volume image-processing operations.</li>
-          <li>Improved backend flows across FTP ingestion, order management, editor assignment, AI processing, QC validation, and automated delivery.</li>
-          <li>Worked on job routing, batch processing, status tracking, and handoff automation to reduce manual work across the production pipeline.</li>
-          <li>Supported integration of Omnimage.ai and Retouched.ai for AI-assisted background removal, image enhancement, and asset preparation.</li>
-          <li>Helped the team support production throughput of about 17K images per day, with average batch turnaround of about 65 minutes.</li>
+          <li>Optimized .NET/SQL Server workflow for a leading European luxury resale marketplace; integrated Omnimage.ai and Retouched.ai across FTP ingestion, QC validation, and automated delivery; ~17K images/day, ~65-minute average batch turnaround.</li>
         </ul>
         <div class="exp-stack">
           <span class="exp-stack__label">Stack</span>
@@ -390,11 +380,7 @@
           <span class="exp-title">Technical Lead</span>
         </div>
         <ul>
-          <li>Built an audio intelligence workflow for customer-service QA using speech transcription and LLM-based phrase extraction.</li>
-          <li>Built a SeamlessM4T-based speech transcription/translation pipeline for customer-service conversations.</li>
-          <li>Built Llama 2-based contextual key-phrase extraction from transcribed calls for QA review and downstream analysis.</li>
-          <li>Built API workflows for transcription, phrase extraction, result validation, and integration with QA systems.</li>
-          <li>Reduced manual review effort by automating transcription and key-phrase spotting across customer-service audio.</li>
+          <li>Built customer-service QA workflow with a SeamlessM4T-based speech transcription/translation pipeline and Llama 2-based contextual key-phrase extraction; automated transcription, validation, and review pipelines via FastAPI, reducing manual audio review effort.</li>
         </ul>
         <div class="exp-stack">
           <span class="exp-stack__label">Stack</span>
@@ -440,10 +426,10 @@
               </ul>
               <p class="exp-group">Research &amp; Technical</p>
               <ul class="exp-list">
-                <li>Lead applied research on AI hallucination, prompt safety, vision-language model reliability, and video understanding; corresponding author on paper accepted at ICDAR 2026.</li>
+                <li>Build production vision-language and LLM systems across virtual try-on, image and video generation, 3D reconstruction, catalog audit and image-QA, and audio QA platforms.</li>
+                <li>Lead applied research on AI hallucination, prompt safety, visual grounding, and video understanding; corresponding author on ICDAR 2026 paper.</li>
+                <li>Develop production segmentation and image-processing systems, including Retouched.ai; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
                 <li>Develop evaluation frameworks and experimental pipelines for hallucination, grounding, safety, and multimodal model evaluation.</li>
-                <li>Build AI systems using vision-language models, LLM fine-tuning, 3D reconstruction, and pose estimation.</li>
-                <li>Publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
                 <li>Collaborate with East West University faculty on linear algebra and differential geometry for AI research.</li>
               </ul>
             </div>
@@ -544,25 +530,25 @@
 
       <dl class="skills-list skills-list--inline">
         <dt>Core AI</dt>
-        <dd>PyTorch · Vision-Language Models · Large Language Models · Computer Vision · Multimodal Learning · Video Understanding · LoRA/QLoRA Fine-tuning and Adaptation · AI Interpretability · 3D Reconstruction</dd>
+        <dd>Python · PyTorch · Vision-Language Models · Large Language Models · Computer Vision · Multimodal Learning</dd>
 
         <dt>LLMs</dt>
-        <dd>Llama / Llama 2 · Qwen / Qwen-VL · Prompt Safety · Hallucination Evaluation · Visual Grounding</dd>
+        <dd>Llama · Qwen · Prompt Safety · Hallucination Evaluation · Visual Grounding</dd>
 
         <dt>Generative AI</dt>
-        <dd>Diffusion Models · Diffusers · Qwen-Image-Edit · Image &amp; Video Generation · Multi-Reference Image Conditioning · Prompt-Guided Image Editing · ComfyUI</dd>
+        <dd>Diffusion Models · LoRA/QLoRA Fine-tuning and Adaptation · Prompt-Guided Image Editing</dd>
 
         <dt>Computer Vision &amp; 3D</dt>
-        <dd>Object Detection · Semantic / Instance Segmentation · Salient Object Detection · U²-Net-inspired Salient-Object Segmentation · Pose Estimation · Multi-View Geometry · Multi-View Stereo · NeRF-style Reconstruction · Structure-from-Motion · 3D Gaussian Splatting · COLMAP · Open3D · Mesh Processing</dd>
+        <dd>Object Detection · Segmentation · Pose Estimation · Multi-View Stereo · NeRF-style Reconstruction · 3D Gaussian Splatting · COLMAP · Open3D</dd>
 
-        <dt>Audio, NLP &amp; Evaluation</dt>
-        <dd>SeamlessM4T-based Speech Transcription/Translation · NLP · Contextual Key-Phrase Extraction · Fine-tuning Pipelines · Offline Evaluation · Production A/B Testing · Model Evaluation · Dataset Design · Weights &amp; Biases</dd>
+        <dt>Research &amp; Evaluation</dt>
+        <dd>Offline Evaluation · Production A/B Testing · Model Evaluation · Dataset Design · Weights &amp; Biases</dd>
 
-        <dt>Backend, MLOps &amp; Cloud</dt>
-        <dd>FastAPI · Docker · Nginx · Redis · CI/CD · Model Serving · Google Cloud Platform · Google Cloud Storage · Amazon S3 · DynamoDB · TensorFlow</dd>
+        <dt>Audio &amp; NLP</dt>
+        <dd>SeamlessM4T-based Speech Transcription/Translation · Llama 2</dd>
 
-        <dt>Software &amp; Data</dt>
-        <dd>Python · SQL Server · FTP</dd>
+        <dt>Backend &amp; Cloud</dt>
+        <dd>FastAPI · Docker · Nginx · Redis · CI/CD · Model Serving · Google Cloud Platform · Google Cloud Storage · Amazon S3 · DynamoDB · SQL Server</dd>
       </dl>
     </section>
 

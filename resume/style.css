@@ -50,6 +50,8 @@ body {
   background: #fff;
   overflow-x: clip;
   min-width: 0;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .doc {
@@ -386,16 +388,29 @@ body {
   outline-offset: 2px;
 }
 
-.toolbar .btn-print {
+.toolbar .btn-download {
   background: linear-gradient(180deg, #b32038 0%, var(--accent) 100%);
   border-color: var(--accent-hover);
   color: #fff;
   box-shadow: 0 1px 4px rgba(155, 27, 48, 0.22);
 }
 
-.toolbar .btn-print:hover {
+.toolbar .btn-download:hover {
   background: linear-gradient(180deg, var(--accent) 0%, var(--accent-hover) 100%);
   box-shadow: 0 2px 8px rgba(155, 27, 48, 0.28);
+}
+
+.toolbar .btn-print {
+  background: #fff;
+  border-color: var(--rule-soft);
+  color: var(--navy);
+  box-shadow: none;
+}
+
+.toolbar .btn-print:hover {
+  background: var(--bg);
+  border-color: #d5dee4;
+  box-shadow: none;
 }
 
 /* Long links / words wrap instead of overflowing */
@@ -406,8 +421,8 @@ body {
 .doc__contact,
 .skills-line,
 .skills__val {
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 /* =====================================================================

@@ -10,9 +10,10 @@
 <body>
 
   <div class="resume-toolbar">
-    <span class="resume-toolbar__hint">Before saving PDF: open <em>More settings</em> in the print dialog and turn off <em>Headers and footers</em>.</span>
+    <span class="resume-toolbar__hint">Use <em>Download PDF</em> for a clean file. If printing, turn off <em>Headers and footers</em> under <em>More settings</em>.</span>
     <a href="index.html">&larr; Back to site</a>
-    <button type="button" id="printResume">Print / Save PDF</button>
+    <button type="button" id="downloadPdf">Download PDF</button>
+    <button type="button" id="printResume">Print</button>
   </div>
 
   <article class="resume">
@@ -184,7 +185,7 @@
     <section class="resume__section">
       <h2 class="resume__section-title">Publications</h2>
       <ul class="resume__pub-list">
-        <li><span class="resume__pub-title">Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding</span>, accepted at ICDAR 2026. Corresponding author.</li>
+        <li><span class="resume__pub-title">Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding</span>, ICDAR 2026. Corresponding author.</li>
         <li><span class="resume__pub-title">Automated Detection of Diabetic Retinopathy using Deep Residual Learning</span>, IJCA, 2020</li>
         <li><span class="resume__pub-title">Step-Level Visual Grounding Faithfulness Predicts Out-of-Distribution Generalization in Long-Horizon Vision-Language Models</span>, arXiv preprint, 2026. Under review.</li>
         <li><span class="resume__pub-title">Beyond Dominant Patches: Spatial Credit Redistribution for Grounded Vision-Language Models</span>, arXiv preprint, 2026. Under review.</li>
@@ -225,9 +226,11 @@
 
   </article>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     (function () {
-      var btn = document.getElementById('printResume');
+      var printBtn = document.getElementById('printResume');
+      var downloadBtn = document.getElementById('downloadPdf');
       var savedTitle = document.title;
 
       function preparePrint() {
@@ -244,12 +247,46 @@
         setTimeout(restorePrint, 500);
       }
 
+      function downloadPdf() {
+        var element = document.querySelector('.resume');
+        if (!element || typeof html2pdf === 'undefined') {
+          window.alert('PDF export is unavailable. Use Print and turn off Headers and footers under More settings.');
+          return;
+        }
+
+        if (downloadBtn) {
+          downloadBtn.disabled = true;
+          downloadBtn.textContent = 'Generating…';
+        }
+
+        var opt = {
+          margin: [0.45, 0.55, 0.45, 0.55],
+          filename: 'Md_Ashikur_Rahman_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.95 },
+          html2canvas: { scale: 2, logging: false, scrollY: 0, useCORS: true },
+          jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+          pagebreak: { mode: ['css', 'legacy'], avoid: ['.resume__entry', '.resume__section'] }
+        };
+
+        html2pdf().set(opt).from(element).save().finally(function () {
+          if (downloadBtn) {
+            downloadBtn.disabled = false;
+            downloadBtn.textContent = 'Download PDF';
+          }
+        });
+      }
+
       window.addEventListener('beforeprint', preparePrint);
       window.addEventListener('afterprint', restorePrint);
 
-      if (btn) {
-        btn.addEventListener('click', printResume);
+      if (printBtn) {
+        printBtn.addEventListener('click', printResume);
       }
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', downloadPdf);
+      }
+
       window.scrollTo(0, 0);
     })();
   </script>

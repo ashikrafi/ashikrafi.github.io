@@ -10,11 +10,12 @@
 <body>
 
   <div class="toolbar">
-    <span class="toolbar__hint">Before saving PDF: open <em>More settings</em> and turn off <em>Headers and footers</em>.</span>
+    <span class="toolbar__hint">Use <em>Download PDF</em> for a clean file. If printing, turn off <em>Headers and footers</em>.</span>
     <span class="toolbar__spacer">Industry Résumé</span>
     <a href="../index.html">&larr; Site</a>
     <a href="cv.html">Academic CV</a>
-    <button type="button" class="btn-print" id="printDoc">Print / Save PDF</button>
+    <button type="button" class="btn-download" id="downloadDoc">Download PDF</button>
+    <button type="button" class="btn-print" id="printDoc">Print</button>
   </div>
 
   <article class="doc" id="resume">
@@ -37,7 +38,7 @@
       <p class="summary">
         Lead AI Engineer with 6+ years building production multimodal AI, vision-language, generative image, LLM, and computer-vision systems from
         research prototype to deployment. Leads 15+ engineers and researchers;
-        shipped models processing 4.5M+ images globally. ICDAR 2026 accepted author in VLM reliability and visual
+        shipped models processing 4.5M+ images globally. ICDAR 2026 author in VLM reliability and visual
         grounding. Strong across PyTorch, generative AI, MLOps, and cloud.
       </p>
     </section>
@@ -55,7 +56,8 @@
         <ul class="bullets">
           <li>Lead 15+ engineers and researchers across enterprise delivery, applied research, and product development; maintain 90–95% on-time delivery across AI engineering projects.</li>
           <li>Build production vision-language and LLM systems spanning virtual try-on, image and video generation, 3D reconstruction, catalog audit and image-QA, and audio QA platforms.</li>
-          <li>Lead applied research on hallucination, prompt safety, visual grounding, and video understanding; ICDAR 2026 accepted author; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
+          <li>Lead applied research on AI hallucination, prompt safety, visual grounding, and video understanding.</li>
+          <li>Develop production segmentation and image-processing systems, including Retouched.ai; publish reproducible code, datasets, and models on GitHub and Hugging Face.</li>
           <li>Define engineering standards and system-design reviews covering scalability, reliability, and maintainability; mentor junior ML engineers.</li>
         </ul>
       </div>
@@ -128,7 +130,37 @@
           <span class="entry__dates">In Development</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Conceived and co-led a unified cross-brand virtual try-on platform across 170+ brands; architected Dockerized FastAPI/Nginx backend with SQL Server, Google Cloud Storage, Redis, and 2D try-on pipelines.</li>
+          <li>Conceived and co-led a unified cross-brand virtual try-on platform across 170+ brands; architected Dockerized FastAPI/Nginx backend with SQL Server, Google Cloud Storage, Redis, recommendation workflows, and 2D try-on pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">Enterprise AI Catalog Audit and Image-QA Platform</span>
+          <span class="entry__dates">In Development</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Leading AI catalog-audit and image-QA platform for a major US retail client, automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM/CMS workflows (computer vision, NLP, PyTorch, FastAPI).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">Omnimage.ai, AI Image and Video Generation</span>
+          <span class="entry__dates">Production</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Co-designed architecture and production APIs for prompt-based image and video generation with multi-model selection, reference-image conditioning, background processing, and Llama-based prompt classification, intent routing, and model-selection workflows; onboarded 200+ brands for creative and product-image workflows.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <span class="entry__title">HoloSnap.ai, Multi-View 3D Reconstruction</span>
+          <span class="entry__dates">2023 - 2024</span>
+        </div>
+        <ul class="bullets bullets--tight">
+          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
         </ul>
       </div>
 
@@ -138,28 +170,28 @@
           <span class="entry__dates">Production</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Developed production salient-object segmentation; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads.</li>
-          <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers (PyTorch, U&sup2;-Net-inspired salient-object segmentation architecture, FastAPI, GCP).</li>
+          <li>Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved 2.27s average processing time across standard production workloads.</li>
+          <li>Scaled Retouched.ai to 4.5M+ images processed globally across hundreds of customers using PyTorch, U&sup2;-Net-inspired salient-object segmentation architecture, FastAPI, and GCP.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry__head">
-          <span class="entry__title">HoloSnap.ai, Multi-View 3D Reconstruction</span>
-          <span class="entry__dates">2023 -2024</span>
+          <span class="entry__title">KTM, Order Management and Image Processing</span>
+          <span class="entry__dates">System Optimization Contributor</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Designed a multi-view 3D reconstruction pipeline for generating textured GLB/OBJ assets from 360&deg; video and image sequences, combining COLMAP-based camera pose estimation and structure-from-motion, multi-view stereo reconstruction, Open3D mesh processing, and experimental NeRF/3D Gaussian Splatting refinement.</li>
+          <li>Optimized .NET/SQL Server workflow for a leading European luxury resale marketplace; integrated Omnimage.ai and Retouched.ai across FTP ingestion, QC validation, and automated delivery; ~17K images/day, ~65-minute average batch turnaround.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry__head">
-          <span class="entry__title">Enterprise AI Catalog Audit and Image-QA Platform</span>
-          <span class="entry__dates">2024 -Present</span>
+          <span class="entry__title">Contextual Key-Phrase Spotting from Audio</span>
+          <span class="entry__dates">Technical Lead</span>
         </div>
         <ul class="bullets bullets--tight">
-          <li>Leading an AI catalog-audit and image-QA platform for a major US retail client, automating image, catalog, and backend content quality checks with computer vision, NLP, PyTorch, and FastAPI.</li>
+          <li>Built customer-service QA workflow with a SeamlessM4T-based speech transcription/translation pipeline and Llama 2-based contextual key-phrase extraction; automated transcription, validation, and review pipelines via FastAPI, reducing manual audio review effort.</li>
         </ul>
       </div>
     </section>
@@ -194,7 +226,7 @@
     <section class="section">
       <h2 class="section__title">Publications, Awards and Languages</h2>
       <ul class="stack-list">
-        <li><strong>Publications:</strong> Author on ICDAR 2026 (accepted) and three further works on vision-language reliability and grounding (2020-2026). Full list on <a href="https://scholar.google.com/citations?user=Htgw_vEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</li>
+        <li><strong>Publications:</strong> Author on ICDAR 2026 and three further works on vision-language reliability and grounding (2020-2026). Full list on <a href="https://scholar.google.com/citations?user=Htgw_vEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</li>
         <li><strong>Awards:</strong> Champion, BASIS National ICT Awards 2020 (Retouched.ai); Finalist, APICTA 2021; Magna Cum Laude, AIUB (Top 3%).</li>
         <li><strong>Languages:</strong> Bengali (Native); English (Professional working proficiency).</li>
       </ul>
@@ -202,9 +234,11 @@
 
   </article>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     (function () {
-      var btn = document.getElementById('printDoc');
+      var printBtn = document.getElementById('printDoc');
+      var downloadBtn = document.getElementById('downloadDoc');
       var savedTitle = document.title;
 
       function preparePrint() {
@@ -218,13 +252,39 @@
       window.addEventListener('beforeprint', preparePrint);
       window.addEventListener('afterprint', restorePrint);
 
-      if (btn) {
-        btn.addEventListener('click', function () {
+      if (printBtn) {
+        printBtn.addEventListener('click', function () {
           preparePrint();
           window.print();
           setTimeout(restorePrint, 500);
         });
       }
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+          var element = document.querySelector('.doc');
+          if (!element || typeof html2pdf === 'undefined') {
+            window.alert('PDF export is unavailable. Use Print and turn off Headers and footers under More settings.');
+            return;
+          }
+
+          downloadBtn.disabled = true;
+          downloadBtn.textContent = 'Generating…';
+
+          html2pdf().set({
+            margin: [0.45, 0.55, 0.45, 0.55],
+            filename: 'Md_Ashikur_Rahman_Resume.pdf',
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: { scale: 2, logging: false, scrollY: 0, useCORS: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'], avoid: ['.entry', '.section'] }
+          }).from(element).save().finally(function () {
+            downloadBtn.disabled = false;
+            downloadBtn.textContent = 'Download PDF';
+          });
+        });
+      }
+
       window.scrollTo(0, 0);
     })();
   </script>
