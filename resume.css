@@ -14,6 +14,9 @@
 html {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -24,6 +27,8 @@ body {
   line-height: 1.32;
   color: #222;
   background: #fff;
+  overflow-x: clip;
+  min-width: 0;
 }
 
 .resume {
@@ -199,6 +204,70 @@ body {
 .resume-toolbar a:hover,
 .resume-toolbar button:hover {
   opacity: 0.9;
+}
+
+.resume__entry-title,
+.resume__pub-title,
+.resume__contact,
+.resume__skills {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding-top: calc(3.25rem + env(safe-area-inset-top, 0px));
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  .resume-toolbar {
+    padding: max(0.65em, env(safe-area-inset-top, 0px)) max(0.75em, env(safe-area-inset-right, 0px));
+    padding-left: max(0.75em, env(safe-area-inset-left, 0px));
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 0.5em;
+  }
+
+  .resume-toolbar a,
+  .resume-toolbar button {
+    flex: 1 1 calc(50% - 0.25em);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    touch-action: manipulation;
+  }
+
+  .resume {
+    margin-left: max(0.5rem, env(safe-area-inset-left, 0px));
+    margin-right: max(0.5rem, env(safe-area-inset-right, 0px));
+    padding: 0.35in max(0.85rem, env(safe-area-inset-right, 0px)) 0.4in;
+    padding-left: max(0.85rem, env(safe-area-inset-left, 0px));
+  }
+
+  .resume__name {
+    font-size: clamp(1.25rem, 6vw, 22pt);
+  }
+
+  .resume__contact {
+    font-size: clamp(0.8rem, 3.2vw, 9.5pt);
+  }
+
+  .resume__entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15em;
+  }
+
+  .resume__entry-dates {
+    white-space: normal;
+  }
+
+  .resume__skills {
+    text-align: left;
+  }
 }
 
 @media print {

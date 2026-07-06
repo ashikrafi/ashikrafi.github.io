@@ -28,6 +28,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
   color-scheme: light;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -39,6 +42,13 @@ body {
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  min-width: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -74,7 +84,8 @@ em {
   align-items: center;
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: 1.15rem var(--page-gutter);
+  padding: max(1.15rem, env(safe-area-inset-top, 0px)) max(var(--page-gutter), env(safe-area-inset-right, 0px)) 1.15rem;
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left, 0px));
 }
 
 .site-header__identity {
@@ -148,20 +159,24 @@ em {
 .nav-toggle {
   display: none;
   position: absolute;
-  top: 0.65rem;
-  right: 1rem;
+  top: 50%;
+  right: max(1rem, env(safe-area-inset-right));
+  transform: translateY(-50%);
   z-index: 25;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 3px;
   cursor: pointer;
   padding: 0;
   align-items: center;
+  touch-action: manipulation;
 }
 
 .nav-toggle span {
@@ -192,7 +207,8 @@ em {
   gap: var(--page-gap);
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: 2rem var(--page-gutter) 3rem;
+  padding: 2rem max(var(--page-gutter), env(safe-area-inset-right)) 3rem;
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left));
 }
 
 .content {
@@ -483,6 +499,17 @@ em {
   color: var(--navy);
 }
 
+.exp-org,
+.exp-location,
+.exp-title,
+.pub-title,
+.news-list li,
+.page__content p,
+.page__content li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .exp-location {
   font-family: var(--font-sans);
   font-size: 0.88em;
@@ -685,12 +712,18 @@ em {
 @media (max-width: 860px) {
   .site-header__brand {
     display: block;
-    padding: 1rem 1.25rem;
-    padding-right: 4rem;
+    padding: max(1rem, env(safe-area-inset-top, 0px)) max(1.25rem, env(safe-area-inset-right, 0px)) 1rem;
+    padding-left: max(1.25rem, env(safe-area-inset-left, 0px));
   }
 
   .site-header__identity {
     grid-column: auto;
+  }
+
+  .site-nav {
+    position: sticky;
+    min-height: 3rem;
+    padding-right: calc(44px + 1.25rem + env(safe-area-inset-right, 0px));
   }
 
   .nav-toggle {
@@ -711,15 +744,21 @@ em {
   }
 
   .site-nav__menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
     padding: 0.65rem 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
+    white-space: normal;
   }
 
   .page {
     grid-template-columns: 1fr;
     gap: 0;
-    padding: 1.5rem 1.25rem 2rem;
+    padding: 1.5rem max(1.25rem, env(safe-area-inset-right)) 2rem;
+    padding-left: max(1.25rem, env(safe-area-inset-left));
   }
 
   .sidebar {
@@ -735,35 +774,21 @@ em {
     text-align: center;
   }
 
-  .profile_card__photo {
-    width: 220px;
-    height: 220px;
-  }
-
+  .profile_card__photo,
   .profile_card__img {
-    width: 220px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 520px) {
-  .site-header__brand {
-    padding: 0.9rem 1rem;
-    padding-right: 3.5rem;
+    width: min(220px, calc(100vw - 2.5rem));
+    height: min(220px, calc(100vw - 2.5rem));
   }
 
-  .page {
-    padding: 1.25rem 1rem 2rem;
+  .exp-header,
+  .exp-role {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15em;
   }
 
-  .profile_card__photo {
-    width: 200px;
-    height: 200px;
-  }
-
-  .profile_card__img {
-    width: 200px;
-    height: 200px;
+  .exp-dates {
+    white-space: normal;
   }
 
   .skills-list {
@@ -774,16 +799,62 @@ em {
   .skills-list dt {
     margin-top: 0.75rem;
     padding-top: 0;
+    white-space: normal;
   }
 
   .skills-list dt:first-child {
     margin-top: 0;
   }
 
-  #experience .exp-role {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.15em;
+  .chip {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header__brand {
+    padding: max(0.9rem, env(safe-area-inset-top, 0px)) max(1rem, env(safe-area-inset-right, 0px)) 0.9rem;
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  }
+
+  .page {
+    padding: 1.25rem max(1rem, env(safe-area-inset-right)) 2rem;
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+
+  .page__content > h2 {
+    font-size: clamp(1.15rem, 5vw, 1.35rem);
+  }
+
+  .profile_card__photo,
+  .profile_card__img {
+    width: min(200px, calc(100vw - 2rem));
+    height: min(200px, calc(100vw - 2rem));
+  }
+
+  .profile_card__cv {
+    min-height: 44px;
+  }
+
+  .pub-title {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    font-size: 15px;
+  }
+
+  .site-nav__menu a {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page {
+    padding-left: max(0.85rem, env(safe-area-inset-left));
+    padding-right: max(0.85rem, env(safe-area-inset-right));
   }
 }
 
