@@ -20,10 +20,9 @@ html {
 }
 
 :root {
-  --resume-teal: #1a8aaa;
-  --resume-teal-soft: #e8f4f7;
-  --resume-teal-border: #c5e3ea;
-  --resume-navy: #1a3d5c;
+  --resume-navy: #00274c;
+  --resume-maroon: #9b1b30;
+  --resume-maroon-hover: #7a1526;
   --resume-muted: #5f6b75;
   --resume-line: #e4eaee;
   --resume-bg: #f6f8fa;
@@ -54,7 +53,7 @@ body {
   font-size: 21pt;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #1a8aaa;
+  color: var(--resume-navy);
 }
 
 .resume__headline {
@@ -70,19 +69,19 @@ body {
   margin: 0 0 0.4em;
   text-align: center;
   font-size: 9.5pt;
-  color: #1a8aaa;
+  color: var(--resume-navy);
 }
 
 .resume__contact a {
-  color: inherit;
+  color: var(--resume-maroon);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .resume__contact a:hover {
-  color: var(--resume-navy);
-  border-bottom-color: rgba(26, 61, 92, 0.35);
+  color: var(--resume-maroon-hover);
+  border-bottom-color: rgba(155, 27, 48, 0.35);
 }
 
 /* ── Sections ── */
@@ -101,7 +100,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #1a8aaa;
+  color: var(--resume-navy);
   border-bottom: 1px solid #bbb;
 }
 
@@ -110,7 +109,7 @@ body {
   margin: 0 0 0.12em;
   font-size: 10.5pt;
   font-weight: 700;
-  color: #1a3d5c;
+  color: var(--resume-navy);
 }
 
 .resume__edu-meta {
@@ -144,7 +143,7 @@ body {
 .resume__entry-title {
   font-size: 10pt;
   font-weight: 700;
-  color: #1a3d5c;
+  color: var(--resume-navy);
   line-height: 1.28;
 }
 
@@ -203,7 +202,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--resume-line);
-  box-shadow: 0 1px 12px rgba(26, 61, 92, 0.06);
+  box-shadow: 0 1px 12px rgba(0, 39, 76, 0.06);
 }
 
 .resume-toolbar a,
@@ -226,16 +225,22 @@ body {
   border-color: #d5dee4;
 }
 
+.resume-toolbar a:focus-visible,
+.resume-toolbar button:focus-visible {
+  outline: 2px solid var(--resume-maroon);
+  outline-offset: 2px;
+}
+
 .resume-toolbar button {
-  background: linear-gradient(180deg, #1f96b5 0%, var(--resume-teal) 100%);
-  border-color: #16839f;
+  background: linear-gradient(180deg, #b32038 0%, var(--resume-maroon) 100%);
+  border-color: var(--resume-maroon-hover);
   color: #fff;
-  box-shadow: 0 1px 4px rgba(26, 138, 170, 0.22);
+  box-shadow: 0 1px 4px rgba(155, 27, 48, 0.22);
 }
 
 .resume-toolbar button:hover {
-  background: linear-gradient(180deg, #1a8aaa 0%, #147a94 100%);
-  box-shadow: 0 2px 8px rgba(26, 138, 170, 0.28);
+  background: linear-gradient(180deg, var(--resume-maroon) 0%, var(--resume-maroon-hover) 100%);
+  box-shadow: 0 2px 8px rgba(155, 27, 48, 0.28);
 }
 
 .resume__entry-title,
@@ -354,6 +359,6 @@ body {
     background: #fff;
     border: 1px solid #e8edf1;
     border-radius: 4px;
-    box-shadow: 0 4px 24px rgba(26, 61, 92, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 39, 76, 0.08);
   }
 }

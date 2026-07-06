@@ -56,8 +56,10 @@
 
     navLinks.forEach(function (link) {
       link.classList.remove('active');
+      link.removeAttribute('aria-current');
       if (link.getAttribute('href') === '#' + current) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'true');
       }
     });
   }
@@ -65,7 +67,7 @@
   window.addEventListener('scroll', setActiveNav, { passive: true });
   setActiveNav();
 
-  // Download CV: open formatted resume with toolbar at top
+  // View CV: open formatted resume with toolbar at top
   var printCv = document.getElementById('printCv');
   if (printCv) {
     printCv.addEventListener('click', function () {

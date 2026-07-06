@@ -61,6 +61,33 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--maroon);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: max(var(--page-gutter), env(safe-area-inset-left, 0px));
+  z-index: 100;
+  padding: 0.6em 1em;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--navy);
+  border-radius: 0 0 3px 3px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--maroon);
+  outline-offset: 2px;
+}
+
 strong {
   font-weight: 700;
   color: var(--text-strong);
@@ -362,9 +389,6 @@ em {
 
 .page__content p {
   margin: 0 0 1.1rem;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
 }
 
 .page-lead {
@@ -648,9 +672,6 @@ em {
 
 #experience .exp-list li {
   margin-bottom: 0.45rem;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
 }
 
 /* ── Skills ── */
@@ -688,6 +709,23 @@ em {
 .awards-list li {
   margin-bottom: 0.45rem;
   line-height: 1.6;
+}
+
+/* ── Contact ── */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.contact-list a {
+  font-weight: 600;
 }
 
 .page__content ul.awards-list {
