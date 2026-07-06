@@ -384,7 +384,7 @@ em {
 
 .pub-entry {
   margin: 0;
-  padding: 0.45rem 0;
+  padding: 0.5rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -400,65 +400,33 @@ em {
   font-size: 0.94em;
   font-weight: 700;
   color: var(--text-strong);
-  line-height: 1.38;
+  line-height: 1.4;
 }
 
-.pub-title a {
+.pub-title a:not(.pub-link) {
   color: inherit;
   text-decoration: none;
 }
 
-.pub-title a.pub-link {
-  font-size: 0.92em;
-  font-weight: 600;
-  color: var(--maroon);
-}
-
-.pub-title a:hover {
+.pub-title a:not(.pub-link):hover {
   color: var(--maroon);
   text-decoration: underline;
 }
 
-.pub-title .pub-venue {
+.pub-meta {
   font-weight: 500;
   color: var(--text-muted);
 }
 
-.pub-title__sep {
-  font-weight: 400;
-  color: var(--text-muted);
-}
-
-.pub-authors {
-  margin: 0.12rem 0 0;
-  font-size: 0.86em;
-  line-height: 1.35;
-  color: var(--text-muted);
-}
-
-.pub-venue {
-  font-weight: 500;
-  color: var(--text-muted);
-}
-
-.pub-link {
+.pub-title .pub-link {
   font-weight: 600;
   color: var(--maroon);
   text-decoration: none;
-  white-space: nowrap;
 }
 
-.pub-link:hover {
+.pub-title .pub-link:hover {
   color: var(--maroon-hover);
   text-decoration: underline;
-}
-
-.pub-note {
-  margin: 0.12rem 0 0;
-  font-size: 0.86em;
-  line-height: 1.35;
-  color: var(--text-muted);
-  font-style: italic;
 }
 
 .pub-group {
