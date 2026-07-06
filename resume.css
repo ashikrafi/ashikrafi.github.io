@@ -376,6 +376,86 @@ body {
   }
 }
 
+/* html2pdf uses screen rendering — mirror print compaction during export */
+body.is-pdf-export {
+  padding-top: 0 !important;
+  background: #fff !important;
+  font-size: 9pt;
+  line-height: 1.24;
+}
+
+body.is-pdf-export .resume-toolbar {
+  display: none !important;
+}
+
+body.is-pdf-export .resume {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.is-pdf-export .resume__name {
+  font-size: 19pt;
+  margin-bottom: 0.1em;
+}
+
+body.is-pdf-export .resume__contact {
+  margin-bottom: 0.3em;
+  font-size: 8.5pt;
+}
+
+body.is-pdf-export .resume__section {
+  margin-bottom: 0.32em;
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+body.is-pdf-export .resume__section-title {
+  font-size: 9.5pt;
+  margin-bottom: 0.16em;
+  padding-bottom: 0.08em;
+}
+
+body.is-pdf-export .resume__entry {
+  margin-bottom: 0.16em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+body.is-pdf-export .resume__entry-title {
+  font-size: 9.5pt;
+}
+
+body.is-pdf-export .resume__entry-dates {
+  font-size: 9pt;
+}
+
+body.is-pdf-export .resume__bullets li {
+  margin-bottom: 0.03em;
+}
+
+body.is-pdf-export .resume__summary {
+  font-size: 9pt;
+  line-height: 1.24;
+}
+
+body.is-pdf-export .resume__pub-list li {
+  margin-bottom: 0.05em;
+}
+
+body.is-pdf-export .resume__skills-line {
+  font-size: 9pt;
+  line-height: 1.22;
+  margin-bottom: 0.08em;
+}
+
+body.is-pdf-export .resume__bullets--tight li {
+  margin-bottom: 0.02em;
+}
+
 @media print {
   .resume-toolbar {
     display: none !important;
