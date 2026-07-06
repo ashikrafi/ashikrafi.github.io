@@ -71,7 +71,7 @@
   var printCv = document.getElementById('printCv');
   if (printCv) {
     printCv.addEventListener('click', function () {
-      window.open('resume.html', '_blank', 'noopener');
+      window.open('cv.html', '_blank', 'noopener');
     });
   }
 
