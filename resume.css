@@ -236,6 +236,20 @@ body {
   box-shadow: 0 1px 12px rgba(0, 39, 76, 0.06);
 }
 
+.resume-toolbar__hint {
+  margin-right: auto;
+  font-size: 0.78rem;
+  color: var(--resume-muted);
+  line-height: 1.3;
+  max-width: 14rem;
+}
+
+.resume-toolbar__hint em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--resume-navy);
+}
+
 .resume-toolbar a,
 .resume-toolbar button {
   font: inherit;
@@ -297,6 +311,14 @@ body {
     gap: 0.5em;
   }
 
+  .resume-toolbar__hint {
+    flex: 1 1 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
   .resume-toolbar a,
   .resume-toolbar button {
     flex: 1 1 calc(50% - 0.25em);
@@ -342,6 +364,15 @@ body {
 @media print {
   .resume-toolbar {
     display: none !important;
+  }
+
+  @page {
+    margin: 0.4in 0.5in;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
   }
 
   .resume {
