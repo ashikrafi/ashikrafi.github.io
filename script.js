@@ -65,11 +65,11 @@
   window.addEventListener('scroll', setActiveNav, { passive: true });
   setActiveNav();
 
-  // Download CV: open formatted resume and trigger print (Save as PDF)
+  // Download CV: open formatted resume with toolbar at top
   var printCv = document.getElementById('printCv');
   if (printCv) {
     printCv.addEventListener('click', function () {
-      window.open('resume.html?print=1', '_blank', 'noopener');
+      window.open('resume.html', '_blank', 'noopener');
     });
   }
 

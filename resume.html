@@ -140,9 +140,7 @@
       if (btn) {
         btn.addEventListener('click', function () { window.print(); });
       }
-      if (new URLSearchParams(location.search).has('print')) {
-        window.addEventListener('load', function () { window.print(); });
-      }
+      window.scrollTo(0, 0);
     })();
   </script>
 </body>

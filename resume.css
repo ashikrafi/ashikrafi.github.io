@@ -160,15 +160,18 @@ body {
   text-align: justify;
 }
 
-/* ── Print toolbar (screen only) ── */
+/* Print toolbar (screen only) */
 .resume-toolbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   gap: 0.75em;
-  padding: 0.65em 1em;
+  padding: 0.65em 1.25em;
   background: #f4f6f8;
   border-bottom: 1px solid #ddd;
 }
@@ -221,6 +224,7 @@ body {
 @media screen {
   body {
     background: #e8eaed;
+    padding-top: 3.25rem;
   }
 
   .resume {
