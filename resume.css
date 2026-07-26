@@ -425,6 +425,11 @@ body.is-pdf-export .resume__entry {
   page-break-inside: avoid;
 }
 
+body.is-pdf-export .resume__section--page-break {
+  break-before: page;
+  page-break-before: always;
+}
+
 body.is-pdf-export .resume__entry-title {
   font-size: 9.5pt;
 }
@@ -459,6 +464,11 @@ body.is-pdf-export .resume__bullets--tight li {
 @media print {
   .resume-toolbar {
     display: none !important;
+  }
+
+  .resume__section--page-break {
+    break-before: page;
+    page-break-before: always;
   }
 
   @page {
