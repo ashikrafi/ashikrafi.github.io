@@ -361,8 +361,6 @@ def build_pdf():
         )
     )
 
-    story.append(PageBreak())
-
     story.append(Paragraph("RESEARCH MENTORING", styles["SectionTitle"]))
     story.append(section_rule())
     story.extend(
@@ -389,6 +387,7 @@ def build_pdf():
         )
     )
 
+    story.append(PageBreak())
     story.append(Paragraph("PRIOR EXPERIENCE", styles["SectionTitle"]))
     story.append(section_rule())
     story.append(
