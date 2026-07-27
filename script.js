@@ -67,14 +67,6 @@
   window.addEventListener('scroll', setActiveNav, { passive: true });
   setActiveNav();
 
-  // View CV: open formatted resume with toolbar at top
-  var printCv = document.getElementById('printCv');
-  if (printCv) {
-    printCv.addEventListener('click', function () {
-      window.open('cv.html', '_blank', 'noopener');
-    });
-  }
-
   // Keep profile photo sharp after tab switches (browser may downscale in background)
   var profileImg = document.querySelector('.profile_card__img');
   if (profileImg) {

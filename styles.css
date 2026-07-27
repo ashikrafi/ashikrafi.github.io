@@ -343,27 +343,6 @@ em {
   display: block;
 }
 
-.profile_card__cv {
-  width: 100%;
-  margin: 0.15rem 0 0;
-  padding: 0.5em 0.85em;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--maroon);
-  background: transparent;
-  border: 1px solid rgba(155, 27, 48, 0.35);
-  border-radius: 999px;
-  cursor: pointer;
-  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease;
-}
-
-.profile_card__cv:hover {
-  color: #fff;
-  background: var(--maroon);
-  border-color: var(--maroon);
-}
-
 /* ── Main content ── */
 .page__content {
   margin-bottom: 2.5rem;
@@ -870,10 +849,6 @@ em {
     height: min(200px, calc(100vw - 2rem));
   }
 
-  .profile_card__cv {
-    min-height: 44px;
-  }
-
   .pub-title {
     font-size: 0.9em;
   }
@@ -900,7 +875,6 @@ em {
 @media print {
   .site-header,
   .profile_card__social,
-  .profile_card__cv,
   .nav-toggle,
   .site-footer,
   .pub-more {
