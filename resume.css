@@ -21,8 +21,10 @@ html {
 
 :root {
   --resume-navy: #00274c;
-  --resume-maroon: #9b1b30;
-  --resume-maroon-hover: #7a1526;
+  --resume-link: #00274c;
+  --resume-link-hover: #001a33;
+  --resume-maroon: #00274c;
+  --resume-maroon-hover: #001a33;
   --resume-muted: #5f6b75;
   --resume-line: #e4eaee;
   --resume-bg: #f6f8fa;
@@ -50,11 +52,11 @@ body {
 
 /* ── Header ── */
 .resume__name {
-  margin: 0 0 0.08em;
+  margin: 0 0 0.06em;
   text-align: center;
-  font-size: 21pt;
+  font-size: 17pt;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: var(--resume-navy);
 }
 
@@ -68,27 +70,27 @@ body {
 }
 
 .resume__contact {
-  margin: 0 0 0.4em;
+  margin: 0 0 0.28em;
   text-align: center;
   font-size: 9.5pt;
   color: var(--resume-navy);
 }
 
 .resume__contact a {
-  color: var(--resume-maroon);
+  color: var(--resume-link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .resume__contact a:hover {
-  color: var(--resume-maroon-hover);
-  border-bottom-color: rgba(155, 27, 48, 0.35);
+  color: var(--resume-link-hover);
+  border-bottom-color: rgba(0, 39, 76, 0.35);
 }
 
 /* ── Sections ── */
 .resume__section {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
 }
 
 .resume__section--last {
@@ -112,6 +114,24 @@ body {
   font-size: 10.5pt;
   font-weight: 700;
   color: var(--resume-navy);
+}
+
+.resume__company {
+  margin: 0.35em 0 0.12em;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: var(--resume-navy);
+}
+
+.resume__company:first-child {
+  margin-top: 0;
+}
+
+.resume__subhead {
+  margin: 0.18em 0 0.04em;
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #333;
 }
 
 .resume__edu-meta {
@@ -183,18 +203,39 @@ body {
 /* ── Publications ── */
 .resume__pub-list {
   margin: 0;
-  padding-left: 1.15em;
-  list-style: disc;
+  padding-left: 0;
+  list-style: none;
+}
+
+.resume__pub-list--numbered {
+  padding-left: 0;
 }
 
 .resume__pub-list li {
-  margin-bottom: 0.12em;
+  margin-bottom: 0.18em;
   color: #222;
+}
+
+.resume__pub-id {
+  font-weight: 700;
+  color: var(--resume-navy);
+  margin-right: 0.25em;
 }
 
 .resume__pub-title {
   font-weight: 600;
   color: var(--resume-navy);
+}
+
+.resume a {
+  color: var(--resume-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+.resume a:hover {
+  color: var(--resume-link-hover);
 }
 
 /* ── Skills ── */
