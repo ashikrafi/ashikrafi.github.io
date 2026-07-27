@@ -46,18 +46,41 @@ body {
 
 .resume {
   max-width: 7.5in;
+  width: 100%;
   margin: 0 auto;
-  padding: 0.3in 0.4in 0.35in;
+  padding: 0.3in 0.5in 0.35in;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.resume__section,
+.resume__entry,
+.resume__summary,
+.resume__skills,
+.resume__skills-line,
+.resume__bullets,
+.resume__pub-list,
+.resume__entry-header,
+.resume__entry-title,
+.resume__contact,
+.resume__degree,
+.resume__subhead {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
 }
 
 /* ── Header ── */
 .resume__name {
-  margin: 0 0 0.06em;
+  margin: 0 0 0.1em;
   text-align: center;
-  font-size: 17pt;
+  font-size: 16.5pt;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--resume-navy);
+  text-transform: none;
 }
 
 .resume__headline {
@@ -70,10 +93,20 @@ body {
 }
 
 .resume__contact {
-  margin: 0 0 0.28em;
+  margin: 0 0 0.18em;
   text-align: center;
   font-size: 9.5pt;
   color: var(--resume-navy);
+}
+
+.resume__contact--links {
+  margin-bottom: 0.45em;
+  line-height: 1.45;
+}
+
+.resume__sep {
+  margin: 0 0.28em;
+  color: #8a949c;
 }
 
 .resume__contact a {
@@ -97,15 +130,31 @@ body {
   margin-bottom: 0;
 }
 
+/* Shared left edge: section titles, body text, and job titles must align */
+.resume__section-title,
+.resume__summary,
+.resume__entry-header,
+.resume__entry-title,
+.resume__degree,
+.resume__company,
+.resume__subhead,
+.resume__edu-meta,
+.resume__skills-line,
+.resume__pub-list {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
 .resume__section-title {
-  margin: 0 0 0.28em;
-  padding-bottom: 0.12em;
-  font-size: 10.5pt;
+  margin: 0 0 0.32em;
+  padding: 0 0 0.14em;
+  font-size: 10pt;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--resume-navy);
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #c5cdd3;
 }
 
 /* ── Education ── */
@@ -128,9 +177,10 @@ body {
 }
 
 .resume__subhead {
-  margin: 0.18em 0 0.04em;
+  margin: 0.22em 0 0.06em;
   font-size: 9.5pt;
   font-weight: 700;
+  font-style: italic;
   color: #333;
 }
 
@@ -142,19 +192,34 @@ body {
 
 .resume__summary {
   margin: 0;
+  padding: 0;
   font-size: 10pt;
-  line-height: 1.28;
+  line-height: 1.35;
   color: #222;
-  text-align: justify;
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .resume__bullets {
   margin: 0.08em 0 0;
-  padding-left: 1.15em;
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .resume__bullets li {
-  margin-bottom: 0.08em;
+  margin: 0 0 0.08em;
+  padding: 0;
+  text-indent: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.resume__bullets li::before {
+  content: "• ";
 }
 
 .resume__bullets--tight {
@@ -172,70 +237,97 @@ body {
 /* ── Experience ── */
 .resume__entry {
   margin-bottom: 0.28em;
+  margin-left: 0;
+  padding-left: 0;
 }
 
+/* Classic resume header: date floated first so title stays on shared left edge */
 .resume__entry-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 0.5em;
-  margin-bottom: 0.04em;
-}
-
-.resume__entry-title {
-  font-size: 10pt;
-  font-weight: 700;
-  color: var(--resume-navy);
-  line-height: 1.28;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0.04em;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .resume__entry-dates {
-  flex-shrink: 0;
+  float: right;
+  margin: 0 0 0 0.75em;
+  padding: 0;
   font-size: 9.5pt;
   color: #666;
   white-space: nowrap;
 }
 
+.resume__entry-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--resume-navy);
+  line-height: 1.28;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .resume__entry .resume__bullets {
   margin-bottom: 0;
+  clear: both;
 }
 
-/* ── Publications ── */
+/* ── Publications: flush left, wrap to same left edge ── */
 .resume__pub-list {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
+  max-width: 100%;
 }
 
-.resume__pub-list--numbered {
+.resume__pub-list--numbered,
+.resume__pub-list li {
+  margin-left: 0;
   padding-left: 0;
+  text-indent: 0;
 }
 
 .resume__pub-list li {
-  margin-bottom: 0.18em;
+  position: static;
+  margin-bottom: 0.28em;
   color: #222;
+  font-size: 9.75pt;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.resume__pub-list li::before {
+  content: none;
 }
 
 .resume__pub-id {
+  display: inline;
   font-weight: 700;
   color: var(--resume-navy);
-  margin-right: 0.25em;
+  margin-right: 0.35em;
 }
 
 .resume__pub-title {
   font-weight: 600;
-  color: var(--resume-navy);
+  color: #222;
 }
 
 .resume a {
   color: var(--resume-link);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 39, 76, 0.28);
 }
 
 .resume a:hover {
   color: var(--resume-link-hover);
+  border-bottom-color: rgba(0, 39, 76, 0.55);
 }
 
 /* ── Skills ── */
@@ -402,12 +494,13 @@ body {
   }
 
   .resume__entry-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.15em;
+    display: block;
   }
 
   .resume__entry-dates {
+    float: none;
+    display: block;
+    margin: 0 0 0.05em;
     white-space: normal;
   }
 
@@ -431,11 +524,32 @@ body.is-pdf-export .resume-toolbar {
 
 body.is-pdf-export .resume {
   max-width: none;
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 8px 0 0;
   border: none;
   border-radius: 0;
   box-shadow: none;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body.is-pdf-export .resume__summary,
+body.is-pdf-export .resume__bullets,
+body.is-pdf-export .resume__pub-list,
+body.is-pdf-export .resume__skills-line,
+body.is-pdf-export .resume__entry,
+body.is-pdf-export .resume__entry-title {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+body.is-pdf-export .resume__pub-list li,
+body.is-pdf-export .resume__bullets li {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
 }
 
 body.is-pdf-export .resume__name {
@@ -528,7 +642,28 @@ body.is-pdf-export .resume__bullets--tight li {
 
   .resume {
     max-width: none;
+    width: 100%;
     padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .resume__summary,
+  .resume__bullets,
+  .resume__pub-list,
+  .resume__skills-line,
+  .resume__entry,
+  .resume__entry-title {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .resume__pub-list li,
+  .resume__bullets li {
+    padding-left: 0 !important;
+    text-indent: 0 !important;
+    margin-left: 0 !important;
   }
 
   body {

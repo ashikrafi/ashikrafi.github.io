@@ -14,14 +14,13 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.platypus import (
+    Flowable,
     HRFlowable,
     KeepTogether,
     PageBreak,
     Paragraph,
     SimpleDocTemplate,
     Spacer,
-    Table,
-    TableStyle,
 )
 
 OUT_DIR = Path(__file__).resolve().parent
@@ -135,21 +134,34 @@ PROJECTS = [
 ]
 
 PEER_REVIEWED = [
-    "Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against Topology Hallucination in Diagram Understanding. Accepted for oral presentation at ICDAR 2026; Corresponding Author.",
-    "Automated Detection of Diabetic Retinopathy using Deep Residual Learning. IJCA, 2020.",
+    '[P1] Abdullah Ibne Hanif Arean, Niamul Hassan Samin, Md Arifur Rahman, Renu Akter Sweety, '
+    'Juena Ahmed Noshin, <b>Md Ashikur Rahman</b>*. '
+    '&ldquo;Stroke-Level Connectivity Verification: Grounding Vision-Language Models Against '
+    'Topology Hallucination in Diagram Understanding.&rdquo; '
+    '<i>International Conference on Document Analysis and Recognition (ICDAR)</i>, 2026. '
+    'Accepted for oral presentation. *Corresponding author. '
+    '<link href="https://github.com/tkcl-research/LogicBench1k" color="#9b1b30"><u>[Code]</u></link>',
+]
+
+ADDITIONAL_PUBLICATION = [
+    '[A1] &ldquo;Automated Detection of Diabetic Retinopathy Using Deep Residual Learning.&rdquo; '
+    '<i>International Journal of Computer Applications</i>, 2020.',
 ]
 
 PREPRINTS = [
-    (
-        "Step-Level Visual Grounding Faithfulness Predicts Out-of-Distribution Generalization in Long-Horizon Vision-Language Models. arXiv preprint, 2026. Under review.",
-        "arxiv.org/pdf/2603.06828",
-        "https://arxiv.org/pdf/2603.06828",
-    ),
-    (
-        "Beyond Dominant Patches: Spatial Credit Redistribution for Grounded Vision-Language Models. arXiv preprint, 2026. Under review.",
-        "arxiv.org/pdf/2602.22469",
-        "https://arxiv.org/pdf/2602.22469",
-    ),
+    '[M1] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Niamul Hassan Samin, Khandaker Rifah Tasnia, '
+    'Sifat Rahman Ahona, Juena Ahmed Noshin. '
+    '&ldquo;Beyond Aggregate Risk: Role-Stratified Conformal Risk Control for LLM Tool Calls.&rdquo; '
+    'Manuscript under review, 2026.',
+    '[M2] <b>Md Ashikur Rahman</b>, Juena Ahmed Noshin, Niamul Hassan Samin, Abdullah Ibne Hanif Arean, '
+    'Md Hasibul Amin, Md Arifur Rahman. '
+    '&ldquo;When Detector-Based Grounding Metrics Measure Vocabulary: A Cautionary Audit of Entity '
+    'Claims in Video-QA Reasoning Traces.&rdquo; '
+    'Manuscript under review, 2026.',
+    '[M3] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Nusrat Jahan Trisna, Juena Ahmed Noshin. '
+    '&ldquo;Math-Encoded Jailbreaks Across Provider-Matched Models and Inference-Time Reasoning '
+    'Configurations.&rdquo; '
+    'Manuscript under review, 2026.',
 ]
 
 SKILLS = [
@@ -224,6 +236,8 @@ def build_pdf_styles():
             textColor=NAVY,
             spaceBefore=5,
             spaceAfter=2,
+            leftIndent=0,
+            firstLineIndent=0,
         )
     )
     styles.add(
@@ -235,6 +249,8 @@ def build_pdf_styles():
             alignment=TA_LEFT,
             textColor=BODY,
             spaceAfter=2,
+            leftIndent=0,
+            firstLineIndent=0,
         )
     )
     styles.add(
@@ -244,6 +260,8 @@ def build_pdf_styles():
             fontSize=9,
             leading=11.5,
             textColor=BODY,
+            leftIndent=0,
+            firstLineIndent=0,
         )
     )
     styles.add(
@@ -263,8 +281,8 @@ def build_pdf_styles():
             fontSize=8.5,
             leading=11,
             textColor=BODY,
-            leftIndent=10,
-            bulletIndent=0,
+            leftIndent=0,
+            firstLineIndent=0,
         )
     )
     styles.add(
@@ -294,9 +312,9 @@ def build_pdf_styles():
             fontSize=8.5,
             leading=11,
             textColor=BODY,
-            leftIndent=10,
-            bulletIndent=0,
-            spaceAfter=1,
+            leftIndent=0,
+            firstLineIndent=0,
+            spaceAfter=2,
         )
     )
     styles.add(
@@ -312,31 +330,38 @@ def build_pdf_styles():
     return styles
 
 
-def entry_header_table(title: str, dates: str, styles) -> Table:
-    if dates:
-        data = [
-            [
-                Paragraph(_escape(title), styles["EntryTitle"]),
-                Paragraph(_escape(dates), styles["EntryDates"]),
-            ]
-        ]
-        col_widths = [5.2 * inch, 2.3 * inch]
-    else:
-        data = [[Paragraph(_escape(title), styles["EntryTitle"])]]
-        col_widths = [7.5 * inch]
-    table = Table(data, colWidths=col_widths)
-    table.setStyle(
-        TableStyle(
-            [
-                ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("LEFTPADDING", (0, 0), (-1, -1), 0),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-                ("TOPPADDING", (0, 0), (-1, -1), 0),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 1),
-            ]
-        )
-    )
-    return table
+class EntryHeader(Flowable):
+    """Title at frame left edge; date right-aligned on the same line (no Table overhang)."""
+
+    def __init__(self, title: str, dates: str, styles, date_width=1.55 * inch):
+        Flowable.__init__(self)
+        self._title = Paragraph(_escape(title), styles["EntryTitle"])
+        self._dates = Paragraph(_escape(dates), styles["EntryDates"]) if dates else None
+        self._date_width = date_width
+        self._title_h = 0
+        self._dates_h = 0
+
+    def wrap(self, availWidth, availHeight):
+        self.width = availWidth
+        gap = 6 if self._dates else 0
+        title_w = availWidth - (self._date_width + gap if self._dates else 0)
+        _, self._title_h = self._title.wrap(title_w, availHeight)
+        self._dates_h = 0
+        if self._dates:
+            _, self._dates_h = self._dates.wrap(self._date_width, availHeight)
+        self.height = max(self._title_h, self._dates_h) + 1
+        return self.width, self.height
+
+    def draw(self):
+        y_title = self.height - self._title_h
+        self._title.drawOn(self.canv, 0, y_title)
+        if self._dates:
+            y_dates = self.height - self._dates_h
+            self._dates.drawOn(self.canv, self.width - self._date_width, y_dates)
+
+
+def entry_header_table(title: str, dates: str, styles) -> Flowable:
+    return EntryHeader(title, dates, styles)
 
 
 def bullets(items: list[str], styles) -> list:
@@ -403,21 +428,24 @@ def build_pdf():
         section_rule(),
     ]
     for pub in PEER_REVIEWED:
-        pub_block.append(Paragraph(f"• {_escape(pub)}", styles["PubItem"]))
+        pub_block.append(Paragraph(pub, styles["PubItem"]))
     story.append(KeepTogether(pub_block))
 
     preprint_block = [
         Paragraph("Preprints and Manuscripts Under Review", styles["SectionTitle"]),
         section_rule(),
     ]
-    for text, label, url in PREPRINTS:
-        preprint_block.append(
-            Paragraph(
-                f'• {_escape(text)} <link href="{url}" color="#9b1b30"><u>{_escape(label)}</u></link>',
-                styles["PubItem"],
-            )
-        )
+    for text in PREPRINTS:
+        preprint_block.append(Paragraph(text, styles["PubItem"]))
     story.append(KeepTogether(preprint_block))
+
+    addl_block = [
+        Paragraph("Additional Publication", styles["SectionTitle"]),
+        section_rule(),
+    ]
+    for pub in ADDITIONAL_PUBLICATION:
+        addl_block.append(Paragraph(pub, styles["PubItem"]))
+    story.append(KeepTogether(addl_block))
 
     story.append(Paragraph("Education", styles["SectionTitle"]))
     story.append(section_rule())
@@ -497,6 +525,8 @@ def add_bottom_border(paragraph):
 def add_section_heading(doc, text):
     p = doc.add_paragraph()
     set_paragraph_spacing(p, before=8, after=2, line=1.1)
+    p.paragraph_format.left_indent = Inches(0)
+    p.paragraph_format.first_line_indent = Inches(0)
     run = p.add_run(text)
     set_run_font(run, size=11, bold=True, color=NAVY_RGB)
     add_bottom_border(p)
@@ -506,6 +536,8 @@ def add_section_heading(doc, text):
 def add_entry_header(doc, title, dates=""):
     p = doc.add_paragraph()
     set_paragraph_spacing(p, before=4, after=1, line=1.1)
+    p.paragraph_format.left_indent = Inches(0)
+    p.paragraph_format.first_line_indent = Inches(0)
     if dates:
         tab_stops = p.paragraph_format.tab_stops
         tab_stops.add_tab_stop(Inches(7.0), WD_TAB_ALIGNMENT.RIGHT)
@@ -521,10 +553,12 @@ def add_entry_header(doc, title, dates=""):
 
 
 def add_bullet(doc, text):
-    p = doc.add_paragraph(style="List Bullet")
+    p = doc.add_paragraph()
     set_paragraph_spacing(p, before=0, after=1, line=1.15)
-    p.paragraph_format.left_indent = Inches(0.2)
-    run = p.add_run(text)
+    # Keep bullets indented from the shared left edge (same as section titles / job titles)
+    p.paragraph_format.left_indent = Inches(0.18)
+    p.paragraph_format.first_line_indent = Inches(0)
+    run = p.add_run("• " + text)
     set_run_font(run, size=9.5, bold=False, color=BODY_RGB)
     return p
 
@@ -603,6 +637,8 @@ def build_docx():
     summary = doc.add_paragraph()
     set_paragraph_spacing(summary, before=2, after=4, line=1.15)
     summary.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    summary.paragraph_format.left_indent = Inches(0)
+    summary.paragraph_format.first_line_indent = Inches(0)
     run = summary.add_run(SUMMARY)
     set_run_font(run, size=9.5, color=BODY_RGB)
 
@@ -622,12 +658,54 @@ def build_docx():
 
     add_section_heading(doc, "Peer-Reviewed Publications")
     for pub in PEER_REVIEWED:
-        add_bullet(doc, pub)
+        plain = (
+            pub.replace("<i>", "")
+            .replace("</i>", "")
+            .replace("<b>", "")
+            .replace("</b>", "")
+            .replace("&ldquo;", '"')
+            .replace("&rdquo;", '"')
+            .replace(
+                '<link href="https://github.com/tkcl-research/LogicBench1k" color="#9b1b30"><u>[Code]</u></link>',
+                "[Code]",
+            )
+        )
+        p = doc.add_paragraph()
+        set_paragraph_spacing(p, before=0, after=2, line=1.15)
+        p.paragraph_format.left_indent = Inches(0)
+        p.paragraph_format.first_line_indent = Inches(0)
+        run = p.add_run(plain)
+        set_run_font(run, size=9.5, bold=False, color=BODY_RGB)
 
     add_section_heading(doc, "Preprints and Manuscripts Under Review")
-    for text, label, url in PREPRINTS:
-        p = add_bullet(doc, text + " ")
-        add_hyperlink(p, label, url)
+    for text in PREPRINTS:
+        plain = (
+            text.replace("<b>", "")
+            .replace("</b>", "")
+            .replace("&ldquo;", '"')
+            .replace("&rdquo;", '"')
+        )
+        p = doc.add_paragraph()
+        set_paragraph_spacing(p, before=0, after=2, line=1.15)
+        p.paragraph_format.left_indent = Inches(0)
+        p.paragraph_format.first_line_indent = Inches(0)
+        run = p.add_run(plain)
+        set_run_font(run, size=9.5, bold=False, color=BODY_RGB)
+
+    add_section_heading(doc, "Additional Publication")
+    for pub in ADDITIONAL_PUBLICATION:
+        plain = (
+            pub.replace("<i>", "")
+            .replace("</i>", "")
+            .replace("&ldquo;", '"')
+            .replace("&rdquo;", '"')
+        )
+        p = doc.add_paragraph()
+        set_paragraph_spacing(p, before=0, after=2, line=1.15)
+        p.paragraph_format.left_indent = Inches(0)
+        p.paragraph_format.first_line_indent = Inches(0)
+        run = p.add_run(plain)
+        set_run_font(run, size=9.5, bold=False, color=BODY_RGB)
 
     add_section_heading(doc, "Education")
     degree = doc.add_paragraph()
