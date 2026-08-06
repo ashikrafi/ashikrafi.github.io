@@ -18,7 +18,7 @@ from reportlab.platypus import (
     Spacer,
 )
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 PDF_PATH = ROOT / "Md_Ashikur_Rahman_Academic_CV.pdf"
 
 NAVY = HexColor("#00274c")
