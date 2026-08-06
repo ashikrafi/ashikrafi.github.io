@@ -37,14 +37,13 @@ BODY_RGB = RGBColor(0x22, 0x22, 0x22)
 MUTED_RGB = RGBColor(0x5F, 0x6B, 0x75)
 MAROON_RGB = RGBColor(0x9B, 0x1B, 0x30)
 
-HEADLINE = "Lead AI Engineer | Multimodal AI, Generative AI, and Production Computer Vision"
+HEADLINE = "Lead AI Engineer | Multimodal AI, Generative AI & Applied Computer Vision"
 
 SUMMARY = (
     "Lead AI Engineer specializing in multimodal AI, vision-language systems, generative AI, "
-    "and production computer vision. Lead 15+ engineers and researchers across applied research, "
-    "product development, and enterprise delivery. Built and scaled production AI systems "
-    "supporting 200+ brands, including computer-vision platforms that have processed 4.5M+ images "
-    "globally."
+    "and applied computer vision. Currently lead a multidisciplinary team of 15+ engineers and "
+    "researchers and deliver enterprise AI products used by 200+ brands. Architected "
+    "computer-vision systems that have processed more than 4.5 million images globally."
 )
 
 EXPERIENCE = [
@@ -52,25 +51,25 @@ EXPERIENCE = [
         "Lead AI Engineer, The KOW Company",
         "Jan 2023-Present",
         [
-            "Lead a multidisciplinary team of 15+ ML engineers, software engineers, and researchers across architecture, planning, code review, and delivery; maintain 90-95% on-time delivery across AI engineering projects.",
-            "Oversee development of production AI systems across virtual try-on, generative media, 3D reconstruction, catalog audit, and audio QA.",
-            "Direct applied research on AI hallucination, prompt safety, visual grounding, and video understanding.",
-            "Develop and scale production segmentation and image-processing systems, including Retouched.ai; publish reproducible research code, datasets, and model artifacts on GitHub and Hugging Face.",
+            "Lead a multidisciplinary team of 15+ ML engineers, software engineers, and junior researchers, driving technical strategy, system architecture, engineering execution, quality standards, and cross-functional delivery.",
+            "Lead the design, development, and deployment of scalable AI systems, translating product requirements into robust machine learning solutions.",
+            "Direct applied research on AI hallucination, prompt safety, visual grounding, and video understanding, operationalizing research into production-ready models and evaluation frameworks.",
+            "Develop and deploy deep learning–based computer vision and image-processing systems; publish reproducible code, datasets, and model checkpoints on GitHub and Hugging Face.",
         ],
     ),
     (
         "Senior Machine Learning Engineer, The KOW Company",
         "Jul 2021-Dec 2022",
         [
-            "Improved object detection and segmentation performance by 20-35% across internal evaluation benchmarks; the resulting models were later deployed through Retouched.ai.",
-            "Led 6+ client ML engagements from business requirements to technical delivery; built offline evaluation pipelines and production A/B testing workflows to validate model quality, inference performance, and production outcomes.",
+            "Improved object detection and segmentation performance by 20-35% across internal evaluation benchmarks; the resulting models were later deployed in Retouched.ai.",
+            "Led 6+ client ML engagements from requirements gathering through production delivery; built offline evaluation pipelines and A/B testing workflows to validate model quality, inference performance, and business and operational outcomes.",
         ],
     ),
     (
         "Machine Learning Engineer, The KOW Company",
         "Jul 2020-Jun 2021",
         [
-            "Built deep learning models for production object recognition, image segmentation, and background-removal workflows; developed scalable preprocessing, training, and A/B testing pipelines.",
+            "Built deep learning models for object recognition, image segmentation, and background-removal workflows; developed scalable preprocessing, training, and A/B testing pipelines.",
         ],
     ),
     (
@@ -92,43 +91,43 @@ EXPERIENCE = [
 
 PROJECTS = [
     (
-        "Retouched.ai - Object Detection and Segmentation",
+        '<link href="https://retouched.ai" color="#9b1b30"><u>Retouched.ai</u></link> - Object Detection and Segmentation',
         "Production",
         [
-            "Developed production salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, supported uploads up to 257 MB, and achieved a 2.27-second average processing time across standard production workloads.",
+            "Developed salient-object segmentation for background removal; improved segmentation quality by 17% on internal benchmarks, reduced processing time by 30%, enabled uploads of up to 257 MB, and achieved a 2.27-second average processing time across standard workloads.",
             "Scaled Retouched.ai to process 4.5M+ images globally for hundreds of customers using PyTorch, U²-Net-inspired salient-object segmentation, FastAPI, and Google Cloud Platform.",
         ],
     ),
     (
-        "Omnimage.ai - AI Image and Video Generation",
+        '<link href="https://omnimage.ai" color="#9b1b30"><u>Omnimage.ai</u></link> - AI Image and Video Generation',
         "Production",
         [
-            "Co-designed and launched production image- and video-generation APIs used across 200+ brands for creative and product-image workflows.",
-            "Built workflows for reference-image conditioning, asynchronous processing, prompt classification, intent routing, and automated model selection.",
+            "Co-designed and launched image- and video-generation APIs used by 200+ brands for creative and product-image workflows.",
+            "Engineered workflows for reference-image conditioning, asynchronous processing, prompt classification, intent routing, and automated model selection.",
         ],
     ),
     (
-        "The Fitting Room - Cross-Brand Virtual Try-On Platform",
-        "In Development",
+        "The Fitting Room - Cross-Brand Virtual Try-On Platform (In development)",
+        "",
         [
-            "Conceived and co-led a unified cross-brand virtual try-on platform covering 170+ brands.",
+            "Conceived and co-led a unified cross-brand virtual try-on platform supporting products from 170+ brands.",
             "Architected a Dockerized FastAPI/Nginx backend using SQL Server, Google Cloud Storage, Redis, recommendation services, and 2D virtual try-on pipelines.",
         ],
     ),
     (
-        "Enterprise AI Catalog Audit and Image Quality Assurance Platform",
-        "In Development",
+        "Enterprise AI Catalog Audit and Image Quality Assurance Platform (In development)",
+        "",
         [
-            "Lead development of an AI catalog-audit and image quality assurance platform for a major US retail client.",
-            "Automate image QA, catalog validation, metadata checks, and content-health monitoring across DAM and CMS workflows using computer vision, NLP, PyTorch, and FastAPI.",
+            "Leading the development of an AI catalog-audit and image quality assurance platform for a major US retail client.",
+            "Automating image QA, catalog validation, metadata checks, and content-health monitoring across DAM and CMS workflows using NLP, PyTorch, and FastAPI.",
         ],
     ),
     (
-        "CogniX - Proprietary Multimodal Image Generation and Editing",
-        "Active R&D",
+        "CogniX - Proprietary Multimodal Content Creation Platform (Active R&D)",
+        "",
         [
-            "Leading early-stage R&D for a proprietary multimodal image-generation and editing system for product-visualization workflows.",
-            "Researching and prototyping multi-reference fusion and prompt-guided image-editing workflows for garment replacement, scene composition, product visualization, and style transfer using PyTorch, Diffusers, ComfyUI, and parameter-efficient fine-tuning (LoRA, QLoRA).",
+            "Leading early-stage R&D for multimodal product-visualization and editing workflows.",
+            "Researching and prototyping multi-reference fusion and editing workflows for garment replacement, scene composition, product visualization, and style transfer using PyTorch, Diffusers, ComfyUI, and parameter-efficient fine-tuning (LoRA, QLoRA).",
         ],
     ),
 ]
@@ -141,10 +140,16 @@ PEER_REVIEWED = [
     '<i>International Conference on Document Analysis and Recognition (ICDAR)</i>, 2026. '
     'Accepted for oral presentation. *Corresponding author. '
     '<link href="https://github.com/tkcl-research/LogicBench1k" color="#9b1b30"><u>[Code]</u></link>',
+    '[P2] Juena Noshin, Kawser Irom Rushee, Mohammad Rabiul Islam, Sifat Rahman Ahona, '
+    '<b>Md Ashikur Rahman</b>. '
+    '&ldquo;UCAR: Uncertainty-Calibrated Adaptive Retrieval for Hallucination Reduction in '
+    'Medical Vision-Language Models.&rdquo; '
+    '<i>International Conference on Computing Advancements (ICCA)</i>, 2026.',
 ]
 
 ADDITIONAL_PUBLICATION = [
-    '[A1] &ldquo;Automated Detection of Diabetic Retinopathy Using Deep Residual Learning.&rdquo; '
+    '[A1] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Juena Ahmed Noshin. '
+    '&ldquo;Automated Detection of Diabetic Retinopathy Using Deep Residual Learning.&rdquo; '
     '<i>International Journal of Computer Applications</i>, 2020.',
 ]
 
@@ -159,17 +164,21 @@ PREPRINTS = [
     'Claims in Video-QA Reasoning Traces.&rdquo; '
     'Manuscript under review, 2026.',
     '[M3] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Nusrat Jahan Trisna, Juena Ahmed Noshin. '
-    '&ldquo;Math-Encoded Jailbreaks Across Provider-Matched Models and Inference-Time Reasoning '
-    'Configurations.&rdquo; '
+    '&ldquo;Decoding Harm: Do Reasoning Models Resist Math-Encoded Jailbreaks?&rdquo; '
+    'Manuscript under review, 2026.',
+    '[M4] Niamul Hassan Samin, Abdullah Ibne Hanif Arean, Md Arifur Rahman, Md Hasibul Amin, '
+    'Renu Akter Suity, Juena Ahmed Noshin, <b>Md Ashikur Rahman</b>. '
+    '&ldquo;Residual Stream Rebalancing: Training-Free Hallucination Mitigation in '
+    'Vision-Language Models.&rdquo; '
     'Manuscript under review, 2026.',
 ]
 
 SKILLS = [
     ("Multimodal and Vision-Language AI:", "Python, PyTorch, Vision-Language Models, Visual Grounding, Hallucination Evaluation, Multimodal Learning"),
-    ("Generative AI and LLMs:", "Diffusion Models, Large Language Models (Llama, Qwen), Prompt Safety, Parameter-Efficient Fine-Tuning (LoRA, QLoRA), Prompt-Guided Image Editing"),
+    ("Generative AI and LLMs:", "Diffusion Models, Large Language Models (including Llama and Qwen), Prompt Safety, Parameter-Efficient Fine-Tuning (LoRA, QLoRA)"),
     ("Computer Vision:", "Object Detection, Segmentation, Pose Estimation, Image Quality Assurance"),
     ("3D Vision:", "Structure from Motion, Multi-View Stereo, COLMAP, Open3D, Neural Radiance Fields (NeRF), 3D Gaussian Splatting"),
-    ("Production ML and MLOps:", "Model Serving, Production Deployment, Offline Evaluation, Production A/B Testing, Model Evaluation, Dataset Design"),
+    ("Production ML and MLOps:", "Model Serving, Deployment, Offline and Online Evaluation, A/B Testing, Dataset Design"),
     ("Backend and Cloud:", "FastAPI, Docker, Nginx, Redis, Google Cloud Platform, Google Cloud Storage, SQL Server"),
 ]
 
@@ -335,7 +344,10 @@ class EntryHeader(Flowable):
 
     def __init__(self, title: str, dates: str, styles, date_width=1.55 * inch):
         Flowable.__init__(self)
-        self._title = Paragraph(_escape(title), styles["EntryTitle"])
+        self._title = Paragraph(
+            title if "<link" in title else _escape(title),
+            styles["EntryTitle"],
+        )
         self._dates = Paragraph(_escape(dates), styles["EntryDates"]) if dates else None
         self._date_width = date_width
         self._title_h = 0
@@ -533,21 +545,32 @@ def add_section_heading(doc, text):
     return p
 
 
+def plain_title(title: str) -> str:
+    """Strip reportlab link/markup for plain-text consumers (e.g. DOCX)."""
+    import re
+
+    text = re.sub(r'<link[^>]*>', "", title)
+    for tag in ("</link>", "<u>", "</u>", "<b>", "</b>", "<i>", "</i>"):
+        text = text.replace(tag, "")
+    return text
+
+
 def add_entry_header(doc, title, dates=""):
     p = doc.add_paragraph()
     set_paragraph_spacing(p, before=4, after=1, line=1.1)
     p.paragraph_format.left_indent = Inches(0)
     p.paragraph_format.first_line_indent = Inches(0)
+    display_title = plain_title(title)
     if dates:
         tab_stops = p.paragraph_format.tab_stops
         tab_stops.add_tab_stop(Inches(7.0), WD_TAB_ALIGNMENT.RIGHT)
-        run = p.add_run(title)
+        run = p.add_run(display_title)
         set_run_font(run, size=10, bold=True, color=BODY_RGB)
         p.add_run("\t")
         date_run = p.add_run(dates)
         set_run_font(date_run, size=9, bold=False, color=MUTED_RGB)
     else:
-        run = p.add_run(title)
+        run = p.add_run(display_title)
         set_run_font(run, size=10, bold=True, color=BODY_RGB)
     return p
 

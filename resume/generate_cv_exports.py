@@ -54,6 +54,11 @@ PEER_REVIEWED = [
     "<i>International Conference on Document Analysis and Recognition (ICDAR)</i>, 2026. "
     "Accepted for oral presentation. *Corresponding author. "
     '<link href="https://github.com/tkcl-research/LogicBench1k" color="#00274c"><u>[Code]</u></link>',
+    "[P2] Juena Noshin, Kawser Irom Rushee, Mohammad Rabiul Islam, Sifat Rahman Ahona, "
+    "<b>Md Ashikur Rahman</b>. "
+    "&ldquo;UCAR: Uncertainty-Calibrated Adaptive Retrieval for Hallucination Reduction in "
+    "Medical Vision-Language Models.&rdquo; "
+    "<i>International Conference on Computing Advancements (ICCA)</i>, 2026.",
 ]
 
 UNDER_REVIEW = [
@@ -67,13 +72,18 @@ UNDER_REVIEW = [
     "Claims in Video-QA Reasoning Traces.&rdquo; "
     "Manuscript under review, 2026.",
     "[M3] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Nusrat Jahan Trisna, Juena Ahmed Noshin. "
-    "&ldquo;Math-Encoded Jailbreaks Across Provider-Matched Models and Inference-Time Reasoning "
-    "Configurations.&rdquo; "
+    "&ldquo;Decoding Harm: Do Reasoning Models Resist Math-Encoded Jailbreaks?&rdquo; "
+    "Manuscript under review, 2026.",
+    "[M4] Niamul Hassan Samin, Abdullah Ibne Hanif Arean, Md Arifur Rahman, Md Hasibul Amin, "
+    "Renu Akter Suity, Juena Ahmed Noshin, <b>Md Ashikur Rahman</b>. "
+    "&ldquo;Residual Stream Rebalancing: Training-Free Hallucination Mitigation in "
+    "Vision-Language Models.&rdquo; "
     "Manuscript under review, 2026.",
 ]
 
 ADDITIONAL_PUBLICATION = [
-    "[A1] &ldquo;Automated Detection of Diabetic Retinopathy Using Deep Residual Learning.&rdquo; "
+    "[A1] <b>Md Ashikur Rahman</b>, Md Arifur Rahman, Juena Ahmed Noshin. "
+    "&ldquo;Automated Detection of Diabetic Retinopathy Using Deep Residual Learning.&rdquo; "
     "<i>International Journal of Computer Applications</i>, 2020.",
 ]
 
@@ -304,7 +314,7 @@ def build_pdf():
     story.extend(
         [
             Paragraph(
-                "• CGPA: 3.87/4.00; top 3%; <i>magna cum laude</i>",
+                "• CGPA: 3.87/4.00; top 3%; magna cum laude",
                 styles["ResumeBullet"],
             ),
             Paragraph(
@@ -343,8 +353,10 @@ def build_pdf():
                 "Lead applied research on AI safety, multimodal reliability, vision-language grounding and hallucination, uncertainty estimation, and risk-controlled LLM tool use.",
                 "Designed a role-stratified conformal risk-control framework for heterogeneous LLM tool calls [M1].",
                 "Conducted a cautionary audit of detector-based grounding metrics on video question-answering reasoning traces [M2].",
-                "Designed evaluations of math-encoded jailbreaks across provider-matched models and inference-time reasoning configurations [M3].",
+                "Designed evaluations of math-encoded jailbreaks for reasoning models [M3].",
+                "Developed residual stream rebalancing for training-free hallucination mitigation in vision-language models [M4].",
                 "Developed stroke-level connectivity verification for topology hallucination in diagram understanding; last and corresponding author on an ICDAR 2026 oral paper [P1].",
+                "Co-authored uncertainty-calibrated adaptive retrieval for hallucination reduction in medical vision-language models [P2].",
                 "Develop evaluation frameworks, benchmarks, and reproducible pipelines for multimodal grounding, hallucination analysis, and model reliability.",
             ],
             styles,
@@ -354,13 +366,14 @@ def build_pdf():
     story.extend(
         bullets(
             [
-                "Lead a multidisciplinary engineering team building and deploying multimodal AI products spanning image generation, virtual try-on, computer vision, and 3D reconstruction (Retouched.ai, Omnimage.ai, HoloSnap.ai, CogniX, and The Fitting Room).",
-                "Provide technical leadership across machine-learning architecture, code review, offline evaluation, production deployment, and cross-functional delivery.",
+                "Lead a multidisciplinary team of 15+ ML engineers, software engineers, and junior researchers, driving technical strategy, system architecture, engineering execution, quality standards, and cross-functional delivery.",
+                "Lead the design, development, and deployment of scalable AI systems spanning virtual try-on, computer vision, 3D reconstruction, and multimodal content creation (Retouched.ai, Omnimage.ai, HoloSnap.ai, CogniX, and The Fitting Room).",
             ],
             styles,
         )
     )
 
+    story.append(PageBreak())
     story.append(Paragraph("RESEARCH MENTORING", styles["SectionTitle"]))
     story.append(section_rule())
     story.extend(
@@ -387,7 +400,6 @@ def build_pdf():
         )
     )
 
-    story.append(PageBreak())
     story.append(Paragraph("PRIOR EXPERIENCE", styles["SectionTitle"]))
     story.append(section_rule())
     story.append(
@@ -395,8 +407,8 @@ def build_pdf():
             "Senior Machine Learning Engineer, The KOW Company",
             "Jul 2021 - Dec 2022",
             [
-                "Improved object-detection and segmentation performance by 20-35% on internal benchmarks; resulting models were deployed through Retouched.ai.",
-                "Led more than six client machine-learning engagements and built offline evaluation and production A/B testing workflows for model quality and reliability.",
+                "Improved object-detection and segmentation performance by 20-35% on internal benchmarks; resulting models were deployed in Retouched.ai.",
+                "Led more than six client machine-learning engagements from requirements gathering through production delivery; built offline evaluation and A/B testing workflows for model quality and reliability.",
             ],
             styles,
         )
@@ -406,7 +418,7 @@ def build_pdf():
             "Machine Learning Engineer, The KOW Company",
             "Jul 2020 - Jun 2021",
             [
-                "Developed production deep-learning models and scalable training and evaluation pipelines for object recognition, segmentation, and background removal.",
+                "Developed deep-learning models and scalable training and evaluation pipelines for object recognition, segmentation, and background removal.",
             ],
             styles,
         )
@@ -426,7 +438,7 @@ def build_pdf():
             "Software Engineer, Proggasoft",
             "Mar 2015 - Aug 2016",
             [
-                "Developed production web applications and backend systems for DevSkill.com using ASP.NET MVC and SQL.",
+                "Developed web applications and backend systems for DevSkill.com using ASP.NET MVC and SQL.",
             ],
             styles,
         )
